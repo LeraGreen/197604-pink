@@ -9,20 +9,24 @@
     <header class="page-header">
         <nav class="main-nav">
           <div class="main-nav__inner">
-            <div class="main-nav__main-logo"><a href=" class="main-logo"><img src=" alt="pink"></a></div>
+            <div class="main-nav__main-logo">
+              <a href="" class="main-logo">
+                <img src="" alt="pink">
+              </a>
+            </div>
             <div class="menu-toggler"><span class="menu-toggler__item"></span></div>
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a href=" class="main-nav__link">главная</a>
+                <a href="" class="main-nav__link">главная</a>
               </li>
               <li class="main-nav__item">
-                <a href=" class="main-nav__link">фотографии</a>
+                <a href="" class="main-nav__link">фотографии</a>
               </li>
               <li class="main-nav__item">
-                <a href=" class="main-nav__link">конкурс</a>
+                <a href="" class="main-nav__link">конкурс</a>
               </li>
               <li class="main-nav__item">
-                <a href=" class="main-nav__link">html academy</a>
+                <a href="" class="main-nav__link">html academy</a>
               </li>
             </ul>
           </div>
@@ -42,40 +46,22 @@
             </div>
 
             <div class="gallery__item">
-              <div class="gallery__panorama">
+              <div class="gallery__photo  gallery__photo--panorama">
                 <a href="" class="gallery__photo-link">
                   <img src="" alt="">
                 </a>
-                <div class="gallery__daily-picture  gallery__daily-picture--bg-pink">
-                  <span>Панорама дня</span>
-                </div>
+                <span class="gallery__item-label">Панорама дня</span>
               </div>
-              <div class="gallery__comment  comment  comment--bg-gray">
-                <div class="comment__inner">
-                <p class="comment__author">
-                  <span class="comment__author-name">Анна</span>
-                  <span class="comment__time">(5 минут назад)</span>
-                </p>
-                <p class="comment__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <span class="comment__like">нравится:<span class="comment__like-count">215</span></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="gallery__item">
-              <div class="gallery__photo">
-                <a href="" class="gallery__photo-link">
-                  <img src="" alt="">
-                </a>
-              </div>
-              <div class="gallery__comment  comment  comment--bg-gray">
-                <div class="comment__inner">
-                <p class="comment__author">
-                  <span class="comment__author-name">Левон</span>
-                  <span class="comment__time">(5 часов назад)</span>
-                </p>
-                <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал!</p>
-                <span class="comment__like">нравится:<span class="comment__like-count">356</span></span>
+              <div class="gallery__item-comment  gallery__item-comment--bg-gray">
+                <div class="gallery__item-inner">
+                  <p class="gallery__comment-author">
+                    <span class="gallery__comment-author-name">Анна</span>
+                    <span class="gallery__comment-time">(5 минут назад)</span>
+                  </p>
+                  <p class="gallery__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                  <div class="like">
+                    <p class="like__text">нравится:<span class="like__count">215</span></p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -86,14 +72,16 @@
                   <img src="" alt="">
                 </a>
               </div>
-              <div class="gallery__comment  comment  comment--bg-gray">
-                <div class="comment__inner">
-                <p class="comment__author">
-                  <span class="comment__author-name">Антон</span>
-                  <span class="comment__time">(12 часов назад)</span>
-                </p>
-                <p class="comment__text">Соседи будут рады!</p>
-                <span class="comment__like">нравится:<span class="comment__like-count">667</span></span>
+              <div class="gallery__item-comment  gallery__item-comment--bg-gray">
+                <div class="gallery__item-inner">
+                  <p class="gallery__comment-author">
+                    <span class="gallery__comment-author-name">Левон</span>
+                    <span class="gallery__comment-time">(5 часов назад)</span>
+                  </p>
+                  <p class="gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал!</p>
+                  <div class="like">
+                    <p class="like__text">нравится:<span class="like__count">356</span></p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -104,14 +92,16 @@
                   <img src="" alt="">
                 </a>
               </div>
-              <div class="gallery__comment  comment  comment--bg-gray">
-                <div class="comment__inner">
-                <p class="comment__author">
-                  <span class="comment__author-name">Борис</span>
-                  <span class="comment__time">(20 часов назад)</span>
-                </p>
-                <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном</p>
-                <span class="comment__like">нравится:<span class="comment__like-count">215</span></span>
+              <div class="gallery__item-comment  gallery__item-comment--bg-gray">
+                <div class="gallery__item-inner">
+                  <p class="gallery__comment-author">
+                    <span class="gallery__comment-author-name">Антон</span>
+                    <span class="gallery__comment-time">(12 часов назад)</span>
+                  </p>
+                  <p class="gallery__comment">Соседи будут рады!</p>
+                  <div class="like">
+                    <p class="like__text">нравится:<span class="like__count">666</span></p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -122,14 +112,16 @@
                   <img src="" alt="">
                 </a>
               </div>
-              <div class="gallery__comment  comment  comment--bg-gray">
-                <div class="comment__inner">
-                <p class="comment__author">
-                  <span class="comment__author-name">Сергей</span>
-                  <span class="comment__time">(25 часов назад)</span>
-                </p>
-                <p class="comment__text">Самая кубанская в мире!</p>
-                <span class="comment__like">нравится:<span class="comment__like-count">4</span></span>
+              <div class="gallery__item-comment  gallery__item-comment--bg-gray">
+                <div class="gallery__item-inner">
+                  <p class="gallery__comment-author">
+                    <span class="gallery__comment-author-name">Борис</span>
+                    <span class="gallery__comment-time">(20 часов назад)</span>
+                  </p>
+                  <p class="gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <div class="like">
+                    <p class="like__text">нравится:<span class="like__count">215</span></p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -140,14 +132,16 @@
                   <img src="" alt="">
                 </a>
               </div>
-              <div class="gallery__comment  comment  comment--bg-gray">
-                <div class="comment__inner">
-                <p class="comment__author">
-                  <span class="comment__author-name">Максим</span>
-                  <span class="comment__time">(40 часов назад)</span>
-                </p>
-                <p class="comment__text">Где снег-то?</p>
-                <span class="comment__like">нравится:<span class="comment__like-count">150</span></span>
+              <div class="gallery__item-comment  gallery__item-comment--bg-gray">
+                <div class="gallery__item-inner">
+                  <p class="gallery__comment-author">
+                    <span class="gallery__comment-author-name">Сергей</span>
+                    <span class="gallery__comment-time">(25 часов назад)</span>
+                  </p>
+                  <p class="gallery__comment">Самая кубанская в мире!</p>
+                  <div class="like">
+                    <p class="like__text">нравится:<span class="like__count">4</span></p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -158,14 +152,36 @@
                   <img src="" alt="">
                 </a>
               </div>
-              <div class="gallery__comment  comment  comment--bg-gray">
-                <div class="comment__inner">
-                <p class="comment__author">
-                  <span class="comment__author-name">Надежда</span>
-                  <span class="comment__time">(45 часов назад)</span>
-                </p>
-                <p class="comment__text">Всем GM и взаимные лайки!</p>
-                <span class="comment__like">нравится:<span class="comment__like-count">2560</span></span>
+              <div class="gallery__item-comment  gallery__item-comment--bg-gray">
+                <div class="gallery__item-inner">
+                  <p class="gallery__comment-author">
+                    <span class="gallery__comment-author-name">Маским</span>
+                    <span class="gallery__comment-time">(40 часов назад)</span>
+                  </p>
+                  <p class="gallery__comment">Где снег-то?</p>
+                  <div class="like">
+                    <p class="like__text">нравится:<span class="like__count">150</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery__item">
+              <div class="gallery__photo">
+                <a href="" class="gallery__photo-link">
+                  <img src="" alt="">
+                </a>
+              </div>
+              <div class="gallery__item-comment  gallery__item-comment--bg-gray">
+                <div class="gallery__item-inner">
+                  <p class="gallery__comment-author">
+                    <span class="gallery__comment-author-name">Анна</span>
+                    <span class="gallery__comment-time">(45 часов назад)</span>
+                  </p>
+                  <p class="gallery__comment">Всем GM и взаимные лайки!</p>
+                  <div class="like">
+                    <p class="like__text">нравится:<span class="like__count">2560</span></p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -202,7 +218,7 @@
             </div>
             <div class="filter-form__buttons">
               <button type="submit" class="btn  btn--pink-border">Запостить</button>
-              <button type="reset" class="btn btn--grey">Отмена</button>
+              <button type="reset" class="btn  btn--grey">Отмена</button>
             </div>
           </div>
         </form>
@@ -211,9 +227,9 @@
       <footer class="page-footer">
         <div class="logo"></div>
         <div class="page-footer__social">
-          <a href="" class="social-btn">twitter</a>
-          <a href="" class="social-btn">facebook</a>
-          <a href="" class="social-btn">youtube</a>
+          <a href="" class="social-btn  social-btn--twitter">twitter</a>
+          <a href="" class="social-btn  social-btn--facebook">facebook</a>
+          <a href="" class="social-btn  social-btn--youtube">youtube</a>
         </div>
         <div class="page-footer__copyright">
           <span>Разработано</span>

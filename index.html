@@ -9,33 +9,32 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__inner">
-          <div class="main-nav__main-logo"><a href=" class="main-logo"><img src=" alt="pink"></a></div>
+          <div class="main-nav__main-logo">
+            <a href="" class="main-logo">
+              <img src="" alt="pink">
+            </a>
+          </div>
           <div class="menu-toggler"><span class="menu-toggler__item"></span></div>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href=" class="main-nav__link">главная</a>
+              <a href="" class="main-nav__link">главная</a>
             </li>
             <li class="main-nav__item">
-              <a href=" class="main-nav__link">фотографии</a>
+              <a href="" class="main-nav__link">фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a href=" class="main-nav__link">конкурс</a>
+              <a href="" class="main-nav__link">конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a href=" class="main-nav__link">html academy</a>
+              <a href="" class="main-nav__link">html academy</a>
             </li>
           </ul>
         </div>
       </nav>
-    </header>
-
-    <main>
-      <div class="intro">
-      </div>
 
       <div class="download-app">
         <div class="download-app__inner">
-          <a href=" class="btn">Скачать приложение</a>
+          <a href="" class="btn">Скачать приложение</a>
           <ul class="download-app__platforms-list  platforms-list">
             <li class="platforms-list__item">
               <a href="" class="platforms-list__link">apple</a>
@@ -47,10 +46,12 @@
               <a href="" class="platforms-list__link">windows</a>
             </li>
           </ul>
-          <p class="download-app__text"></p>
+          <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </div>
+    </header>
 
+    <main>
       <section class="features">
         <h1 class="hide">Преимущества приложения pink</h1>
         <p class="features__promo">Устали от серости мегаполиса?</p>
@@ -70,71 +71,79 @@
       </section>
 
       <div class="reviews">
-        <div class="reviews__item">
+        <blockquote class="review">
           <span class="reviews__author">Николай Петров</span>
           <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-        </div>
-        <div class="reviews__item">
+        </blockquote>
+        <blockquote class="review">
           <span class="reviews__author">Петр Николаев</span>
           <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-        </div>
-        <div class="reviews__item">
+        </blockquote>
+        <blockquote class="review">
           <span class="reviews__author">Иван Петров</span>
           <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-        </div>
-        <div class="reviews__tabs tabs">
-          <div class="tabs__item"><a href="" class="tabs__link"></a></div>
-          <div class="tabs__item"><a href="" class="tabs__link"></a></div>
-          <div class="tabs__item"><a href="" class="tabs__link"></a></div>
+        </blockquote>
+        <div class="reviews__pagination pagination">
+          <div class="pagination__item"><a href="" class="pagination__link"></a></div>
+          <div class="pagination__item"><a href="" class="pagination__link"></a></div>
+          <div class="pagination__item"><a href="" class="pagination__link"></a></div>
         </div>
       </div>
 
-      <div class="tariffs">
-      <article class="tariffs__item tariff">
-          <header class="tariff__header">
-            <h1 class="tariff__title">база</h1>
-            <span class="tariff__price">1,99 usd</span>
-          </header>
-          <ul class="tariff__features">
-            <li class="tariff__feauture">розовый фильтр</li>
-            <li class="tariff__feauture">смайлики</li>
-            <li class="tariff__feauture">комментарии</li>
-          </ul>
-        </article>
-        <article class="tariffs__item tariff">
-          <header class="tariff__header">
-            <h1 class="tariff__title">стандарт</h1>
-            <span class="tariff__price">3,99 usd</span>
-          </header>
-          <ul class="tariff__features">
-            <li class="tariff__feauture">розовый фильтр</li>
-            <li class="tariff__feauture">смайлики</li>
-            <li class="tariff__feauture">комментарии</li>
-          </ul>
-        </article>
-        <article class="tariffs__item tariff">
-          <header class="tariff__header">
-            <h1 class="tariff__title">анлим</h1>
-            <span class="tariff__price">9,99 usd</span>
-          </header>
-          <ul class="tariff__features">
-            <li class="tariff__feauture">розовый фильтр</li>
-            <li class="tariff__feauture">смайлики</li>
-            <li class="tariff__feauture">комментарии</li>
-          </ul>
-        </article>
-        <div class="tariffs__tabs tabs">
-          <div class="tabs__item"><a href="" class="tabs__link"></a></div>
-          <div class="tabs__item"><a href="" class="tabs__link"></a></div>
-          <div class="tabs__item"><a href="" class="tabs__link"></a></div>
+     <div class="tariffs">
+        <div class="tariffs__table-wrapper">
+          <table class="tariffs-table">
+            <tr class="tariffs-table__header">
+              <th colspan="2" class="tariffs-table__item-header">
+                <p class="tariffs-table__item-title">база</p>
+                <p class="tariffs-table__item-price">1,99 usd</p>
+              </th>
+              <th colspan="2">
+                <p class="tariffs-table__item-title">стандарт</p>
+                <p class="tariffs-table__item-price">3,99 usd</p>
+              </th>
+              <th colspan="2">
+                <p class="tariffs-table__item-title">анлим</p>
+                <p class="tariffs-table__item-price">9,99 usd</p>
+              </th>
+            </tr>
+            <tr class="tariffs-table__feautures">
+              <td class="tariffs-table__feauture">розовый фильтр</td>
+              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
+              <td class="tariffs-table__feauture">розовый фильтр</td>
+              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
+              <td class="tariffs-table__feauture">розовый фильтр</td>
+              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
+            </tr>
+            <tr class="tariffs-table__feautures">
+              <td class="tariffs-table__feauture">смайлики</td>
+              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--no">нет</td>
+              <td class="tariffs-table__feauture">смайлики</td>
+              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
+              <td class="tariffs-table__feauture">смайлики</td>
+              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
+            </tr>
+            <tr class="tariffs-table__feautures">
+              <td class="tariffs-table__feauture">комментарии</td>
+              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--no">нет</td>
+              <td class="tariffs-table__feauture">комментарии</td>
+              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--no">нет</td>
+              <td class="tariffs-table__feauture">комментарии</td>
+              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
+            </tr>
+          </table>
+        </div>
+        <div class="tariffs__pagination pagination">
+          <div class="pagination__item"><a href="" class="pagination__link"></a></div>
+          <div class="pagination__item"><a href="" class="pagination__link"></a></div>
+          <div class="pagination__item"><a href="" class="pagination__link"></a></div>
         </div>
       </div>
     </main>
 
     <footer class="main-page-footer">
       <div class="main-page__map map"></div>
-      <section class="main-page__contacts  contacts">
-        <h1 class="hide">pink. контакты и адрес</h1>
+      <div class="main-page__contacts  contacts">
         <p class="contacts__promo">Остались вопросы? Свяжитесь с нами!</p>
         <div class="contacts__item">
           <b class="contacts__title">Звоните:</b>
@@ -146,7 +155,7 @@
         <div class="contacts__item"></div>
           <b class="contacts__title">Приезжайте в гости:</b>
           <a href="" class="contacts__data  contacts__data--pink  contacts__address">ул. Большая Конюшенная, 19/8</a>
-      </section>
+      </div>
     </footer>
 
   </body>

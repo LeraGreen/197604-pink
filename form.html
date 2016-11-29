@@ -9,20 +9,24 @@
     <header class="page-header">
         <nav class="main-nav">
           <div class="main-nav__inner">
-            <div class="main-nav__main-logo"><a href=" class="main-logo"><img src=" alt="pink"></a></div>
+            <div class="main-nav__main-logo">
+              <a href="" class="main-logo">
+                <img src="" alt="pink">
+              </a>
+            </div>
             <div class="menu-toggler"><span class="menu-toggler__item"></span></div>
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a href=" class="main-nav__link">главная</a>
+                <a href="" class="main-nav__link">главная</a>
               </li>
               <li class="main-nav__item">
-                <a href=" class="main-nav__link">фотографии</a>
+                <a href="" class="main-nav__link">фотографии</a>
               </li>
               <li class="main-nav__item">
-                <a href=" class="main-nav__link">конкурс</a>
+                <a href="" class="main-nav__link">конкурс</a>
               </li>
               <li class="main-nav__item">
-                <a href=" class="main-nav__link">html academy</a>
+                <a href="" class="main-nav__link">html academy</a>
               </li>
             </ul>
           </div>
@@ -35,9 +39,9 @@
         </div>
 
         <form action="" class="form">
-          <div class="form__step">
+          <fieldset class="form__step">
             <div class="form__step-inner">
-              <p class="form__promo">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!</p>
+              <p class="field-text">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!</p>
               <div class="form__personal-data">
                 <label for="user-surname">Фамилия:</label>
                 <input type="text" class="form__personal-field" name="surname" id="user-surname" placeholder="Укажите фамилию*" required>
@@ -51,41 +55,41 @@
                 <input type="text" class="form__personal-field" name="patronymic" id="user-patronymic" placeholder="Ну и отчество тоже" required>
               </div>
             </div>
-          </div>
+          </fieldset>
 
-          <div class="form__step  form__step--bg-grey">
+          <fieldset class="form__step  form__step--bg-grey">
             <div class="form__step-inner">
               <h2 class="form__step-title">Ваши безбашенные достижения в путешествии</h2>
               <ul class="form__achieves-list">
-                <li class="form__achieve">
+                <li class="form-achieve">
                   <input type="checkbox" name="" id="selfie" checked="checked">
                   <label for="selfie">Сделал селфи с акулой</label>
                 </li>
-                <li class="form__achieve">
+                <li class="form-achieve">
                   <input type="checkbox" name="" id="sunburn" checked="checked">
                   <label for="sunburn">Обгорел на пляже</label>
                 </li>
-                <li class="form__achieve">
+                <li class="form-achieve">
                   <input type="checkbox" name="" id="chuck-norris"">
                   <label for="chuck-norris">Видел Чака Норриса</label>
                 </li>
-                <li class="form__achieve">
+                <li class="form-achieve">
                   <input type="checkbox" name="" id="souvenirs">
                   <label for="souvenirs">Накупил сувениров</label>
                 </li>
-                <li class="form__achieve">
+                <li class="form-achieve">
                   <input type="checkbox" name="" id="tower" checked="checked">
                   <label for="tower">Удержал башню</label>
                 </li>
-                <li class="form__achieve">
+                <li class="form-achieve">
                   <input type="checkbox" name="" id="hotel">
                   <label for="hotel">Разгромил отель</label>
                 </li>
               </ul>
             </div>
-          </div>
+          </fieldset>
 
-          <div class="form__step">
+          <fieldset class="form__step">
             <div class="form__step-inner">
                 <div class="form__personal-data">
                   <label for="user-phone">Номер телефона</label>
@@ -96,9 +100,9 @@
                   <input type="email" class="form__personal-field" name="" id="user-mail" placeholder="Введите почту*" required>
                 </div>
             </div>
-          </div>
+          </fieldset>
 
-          <div class="form__step  form__step--bg-grey">
+          <fieldset class="form__step  form__step--bg-grey">
             <div class="form__step-inner">
               <h2 class="form__step-title">С каким приложением путешествовали?</h2>
               <ul class="form__user-platforms">
@@ -116,9 +120,9 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </fieldset>
 
-          <div class="form__step">
+          <fieldset class="form__step">
             <div class="form__step-inner">
               <h2 class="form__step-title">Опишите свои эмоции</h2>
               <textarea name="" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -127,13 +131,13 @@
               </div>
               <p class="form__note">* &#8212; обязательные поля</p>
             </div>
-          </div>
+          </fieldset>
         </form>
 
         <div class="form__popup  form__popup-success  popup-success">
           <div class="form__popup-inner">
             <b class="form__popup-title">Ваша заявка отправлена</b>
-            <p class="form__popup-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+            <p class="field-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
             <div class="popup-success__footer  popup-success__footer--bg-grey">
               <div class="form__button-wrapper">
                 <button class="btn  btn--green-large" type="button">Закрыть окно</button>
@@ -145,7 +149,7 @@
         <div class="form__popup  form__popup-fail  popup-fail">
           <div class="form__popup-inner">
             <b class="form__popup-title">Что-то пошло не так!</b>
-            <p class="form__popup-text">Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить.</p>
+            <p class="field-text">Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить.</p>
             <div class="form__button-wrapper">
               <button class="btn  btn--green-large" type="button">ok</button>
             </div>
@@ -156,9 +160,9 @@
       <footer class="page-footer">
         <div class="logo"></div>
         <div class="page-footer__social">
-          <a href="" class="social-btn">twitter</a>
-          <a href="" class="social-btn">facebook</a>
-          <a href="" class="social-btn">youtube</a>
+          <a href="" class="social-btn  social-btn--twitter">twitter</a>
+          <a href="" class="social-btn  social-btn--facebook">facebook</a>
+          <a href="" class="social-btn  social-btn--youtube">youtube</a>
         </div>
         <div class="page-footer__copyright">
           <span>Разработано</span>
