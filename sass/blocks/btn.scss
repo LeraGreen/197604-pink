@@ -1,0 +1,15 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  color: $font-color-second;
+  font-size: $font-size-big;
+  font-weight: $bold;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 34px;
+  padding-right: 34px;
+  border: 5px solid $font-color-second;
+  border-radius: 40px;
+}
