@@ -1,0 +1,15 @@
+.like__text {
+  font-size: $font-size-small;
+  text-transform: uppercase;
+  line-height: 24px;
+
+  &--pink {
+    color: $main-color;
+  }
+}
+
+.like__count {
+  font-size: $font-size-small;
+  text-transform: uppercase;
+  line-height: 24px;
+}

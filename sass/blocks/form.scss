@@ -1,0 +1,68 @@
+.form__step {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.form__step-inner {
+  padding-top: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form__step--bg-grey {
+  background-color: $bg-second;
+}
+
+.form__personal-field {
+  width: 280px;
+  font-size: $font-size-big;
+  line-height: 30px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid $grey-lighter;
+  box-sizing: border-box;
+}
+
+.form__personal-data-label {
+  font-size: $font-size;
+  text-transform: uppercase;
+  line-height: 30px;
+
+  &--pink {
+    color: $main-color;
+  }
+}
+
+.form__step-title {
+  font-size: $font-size;
+  text-transform: uppercase;
+  line-height: 18px;
+  font-weight: $normal;
+  text-align: center;
+
+  &--pink {
+    color: $main-color;
+  }
+}
+
+.form__field-achieves-label,
+.form__field-platforms-label {
+  font-size: $font-size-big;
+  color: $font-color-main;
+  line-height: 30px;
+}
+
+.form__popup-inner {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.form__popup-title {
+  font-size: $font-size-big;
+  line-height: 24px;
+  color: $font-color-main;
+}
