@@ -15,4 +15,34 @@
 
 .features__descr {
   font-weight: $light;
+  line-height: 24px;
+}
+
+.features__container {
+  padding-top: 46px;
+}
+
+.features__item {
+  margin-bottom: 40px;
+}
+
+.features__list {
+  background-color: $bg-second;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 300px;
+  padding-top: 52px;
+  position: relative;
+
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 156px;
+    background-image: url('../img/iphone-screen-mobile@1x.png');
+    background-repeat: no-repeat;
+    height: 279px;
+    bottom: 0;
+    left: 28%;
+  }
 }

@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <header class="page-header">
+    <header class="page-header  main-page-header">
       <div class="page-header__container">
         <nav class="main-nav">
           <div class="main-nav__inner">
@@ -65,17 +65,19 @@
           <h1 class="hide">Преимущества приложения pink</h1>
           <p class="features__promo">Устали от серости мегаполиса?</p>
           <p class="features__promo">Нам есть, что вам предложить!</p>
-          <div class="features__item">
-            <b class="features__title">Поднимает настроение</b>
-            <p class="features__descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </div>
-          <div class="features__item">
-            <b class="features__title">Меняет мир вокруг</b>
-            <p class="features__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </div>
-          <div class="features__item">
-            <b class="features__title">Заводит новых друзей</b>
-            <p class="features__descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <div class="features__list">
+            <div class="features__item">
+              <b class="features__title">Поднимает настроение</b>
+              <p class="features__descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="features__item">
+              <b class="features__title">Меняет мир вокруг</b>
+              <p class="features__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </div>
+            <div class="features__item">
+              <b class="features__title">Заводит новых друзей</b>
+              <p class="features__descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
           </div>
         </div>
       </section>
@@ -95,7 +97,7 @@
             <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
           </blockquote>
           <div class="reviews__pagination pagination">
-            <div class="pagination__item"><a href="" class="pagination__link"></a></div>
+            <div class="pagination__item"><a href="" class="pagination__link  pagination__link--active"></a></div>
             <div class="pagination__item"><a href="" class="pagination__link"></a></div>
             <div class="pagination__item"><a href="" class="pagination__link"></a></div>
           </div>
@@ -103,70 +105,76 @@
       </div>
 
       <div class="tariffs">
-        <div class="tariffs__table-wrapper">
-          <table class="tariffs-table">
-            <tr class="tariffs-table__header">
-              <th colspan="2" class="tariffs-table__item-header">
-                <div class="tariffs-table__item-title">база</div>
-                <div class="tariffs-table__item-price">1,99 usd</div>
-              </th>
-              <th colspan="2">
-                <div class="tariffs-table__item-title">стандарт</div>
-                <div class="tariffs-table__item-price">3,99 usd</div>
-              </th>
-              <th colspan="2">
-                <div class="tariffs-table__item-title">анлим</div>
-                <div class="tariffs-table__item-price">9,99 usd</div>
-              </th>
-            </tr>
-            <tr class="tariffs-table__feautures">
-              <td class="tariffs-table__feauture">розовый фильтр</td>
-              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
-              <td class="tariffs-table__feauture">розовый фильтр</td>
-              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
-              <td class="tariffs-table__feauture">розовый фильтр</td>
-              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
-            </tr>
-            <tr class="tariffs-table__feautures">
-              <td class="tariffs-table__feauture">смайлики</td>
-              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--no">нет</td>
-              <td class="tariffs-table__feauture">смайлики</td>
-              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
-              <td class="tariffs-table__feauture">смайлики</td>
-              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
-            </tr>
-            <tr class="tariffs-table__feautures">
-              <td class="tariffs-table__feauture">комментарии</td>
-              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--no">нет</td>
-              <td class="tariffs-table__feauture">комментарии</td>
-              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--no">нет</td>
-              <td class="tariffs-table__feauture">комментарии</td>
-              <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
-            </tr>
-          </table>
-        </div>
-        <div class="tariffs__pagination pagination">
-          <div class="pagination__item"><a href="" class="pagination__link"></a></div>
-          <div class="pagination__item"><a href="" class="pagination__link"></a></div>
-          <div class="pagination__item"><a href="" class="pagination__link"></a></div>
+        <div class="tariffs__container">
+          <div class="tariffs__table-wrapper">
+            <table class="tariffs-table">
+              <tr class="tariffs-table__header">
+                <th colspan="2" class="tariffs-table__item-header">
+                  <div class="tariffs-table__item-title">база</div>
+                  <div class="tariffs-table__item-price">1,99 usd</div>
+                </th>
+                <th colspan="2" class="tariffs-table__item-header">
+                  <div class="tariffs-table__item-title">стандарт</div>
+                  <div class="tariffs-table__item-price">3,99 usd</div>
+                </th>
+                <th colspan="2" class="tariffs-table__item-header">
+                  <div class="tariffs-table__item-title">анлим</div>
+                  <div class="tariffs-table__item-price">9,99 usd</div>
+                </th>
+              </tr>
+              <tr class="tariffs-table__feautures">
+                <td class="tariffs-table__feauture">розовый фильтр</td>
+                <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
+                <td class="tariffs-table__feauture">розовый фильтр</td>
+                <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
+                <td class="tariffs-table__feauture">розовый фильтр</td>
+                <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
+              </tr>
+              <tr class="tariffs-table__feautures">
+                <td class="tariffs-table__feauture">смайлики</td>
+                <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--no">нет</td>
+                <td class="tariffs-table__feauture">смайлики</td>
+                <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
+                <td class="tariffs-table__feauture">смайлики</td>
+                <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
+              </tr>
+              <tr class="tariffs-table__feautures">
+                <td class="tariffs-table__feauture">комментарии</td>
+                <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--no">нет</td>
+                <td class="tariffs-table__feauture">комментарии</td>
+                <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--no">нет</td>
+                <td class="tariffs-table__feauture">комментарии</td>
+                <td class="tariffs-table__feauture-available  tariffs-table__feauture-available--yes">есть</td>
+              </tr>
+            </table>
+          </div>
+          <div class="tariffs__pagination pagination">
+            <div class="pagination__item"><a href="" class="pagination__link"></a></div>
+            <div class="pagination__item"><a href="" class="pagination__link  pagination__link--active"></a></div>
+            <div class="pagination__item"><a href="" class="pagination__link"></a></div>
+          </div>
         </div>
       </div>
     </main>
 
     <footer class="main-page-footer">
-      <div class="main-page__map map"></div>
-      <div class="main-page__contacts  contacts">
-        <p class="contacts__promo">Остались вопросы? Свяжитесь с нами!</p>
-        <div class="contacts__item">
-          <b class="contacts__title">Звоните:</b>
-          <a href="" class="contacts__data  contacts__data--pink  contacts__phone">+7 (812) 555-66-66</a>
+      <div class="main-page-footer__container">
+        <div class="main-page__map map"></div>
+        <div class="main-page__contacts  contacts">
+          <p class="contacts__promo">Остались вопросы? Свяжитесь с нами!</p>
+          <div class="contacts__item">
+            <b class="contacts__title">Звоните:</b>
+            <a href="" class="contacts__data  contacts__data--pink  contacts__phone">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contacts__item">
+            <b class="contacts__title">Пишите:</b>
+            <a href="" class="contacts__data  contacts__data--pink  contacts__mail">mail@academy.ru</a>
+          </div>
+          <div class="contacts__item">
+            <b class="contacts__title">Приезжайте в гости:</b>
+            <a href="" class="contacts__data  contacts__data--pink  contacts__address">ул. Большая Конюшенная, 19/8</a>
+          </div>
         </div>
-        <div class="contacts__item"></div>
-          <b class="contacts__title">Пишите:</b>
-          <a href="" class="contacts__data  contacts__data--pink  contacts__mail">mail@academy.ru</a>
-        <div class="contacts__item"></div>
-          <b class="contacts__title">Приезжайте в гости:</b>
-          <a href="" class="contacts__data  contacts__data--pink  contacts__address">ул. Большая Конюшенная, 19/8</a>
       </div>
     </footer>
 

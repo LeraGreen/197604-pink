@@ -1,0 +1,56 @@
+.tariffs-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.tariffs-table__item-header {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: $header-menu-color;
+  padding-left: 90px;
+  padding-right: 90px;
+  border-left: 2px solid $grey-lighter;
+  border-right: 2px solid $grey-lighter;
+}
+
+.tariffs-table__item-title {
+  color: $font-color-second;
+  font-size: $font-size-big;
+  font-weight: $bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.tariffs-table__item-price {
+  color: $font-color-second;
+  font-size: $font-size-title;
+  font-weight: $light;
+  line-height: 30px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.tariffs-table__feauture,
+.tariffs-table__feauture-available {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $bg-main;
+}
+
+.tariffs-table__feauture {
+  padding-left: 28px;
+  text-transform: uppercase;
+  border-left: 2px solid $grey-lighter;
+  border-bottom: 2px solid $grey-lighter;
+}
+
+.tariffs-table__feauture-available {
+  border-right: 2px solid $grey-lighter;
+  border-bottom: 2px solid $grey-lighter;
+}
+
+.tariffs__table-wrapper {
+  padding-bottom: 40px;
+}
