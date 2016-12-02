@@ -1,11 +1,13 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: $font-family;
   font-weight: $normal;
   font-size: $font-size;
   min-width: $screen-sm;
-  box-sizing: border-box;
-}
-
-.hide {
-  display: none;
+  line-height: 1.375em;
 }

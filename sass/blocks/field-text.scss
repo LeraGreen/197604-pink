@@ -1,5 +1,15 @@
-.field-text {
-  text-align: center;
-  color: $font-color-main;
-  line-height: 30px;
+.field-text__name {
+  font-size: $font-size;
+  text-transform: uppercase;
+  color: $main-color;
+}
+
+.field-text__input {
+  width: 280px;
+  font-size: $font-size-big;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid $grey-lighter;
+  box-sizing: border-box;
 }

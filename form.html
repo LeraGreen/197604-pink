@@ -20,7 +20,7 @@
               </div>
               <div class="menu-toggler"><span class="menu-toggler__item"></span></div>
             </div>
-            <ul class="main-nav__list hide">
+            <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a href="" class="main-nav__link">главная</a>
               </li>
@@ -48,48 +48,66 @@
           <fieldset class="form__step">
             <div class="form__step-inner">
               <p class="field-text">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!</p>
-              <div class="form__personal-data">
-                <label for="user-surname" class="form__personal-data-label  form__personal-data-label--pink">Фамилия:</label>
-                <input type="text" class="form__personal-field" name="surname" id="user-surname" placeholder="Укажите фамилию*" required>
-              </div>
-              <div class="form__personal-data">
-                <label for="user-name" class="form__personal-data-label  form__personal-data-label--pink">Имя:</label>
-                <input type="text" class="form__personal-field" name="name" id="user-name" placeholder="Введите ваше имя*" required>
-              </div>
-              <div class="form__personal-data">
-                <label for="user-patronymic" class="form__personal-data-label  form__personal-data-label--pink">Отчество:</label>
-                <input type="text" class="form__personal-field" name="patronymic" id="user-patronymic" placeholder="Ну и отчество тоже" required>
-              </div>
+              <label class="field-text">
+                <div class="field-text__name">Фамилия:</div>
+                <div class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Укажите фамилию*" required>
+                </div>
+              </label>
+              <label class="field-text">
+                <div class="field-text__name">Имя:</div>
+                <div class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Введите ваше имя*" required>
+                </div>
+              </label>
+              <label class="field-text">
+                <div class="field-text__name">Отчество:</div>
+                <div class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Ну и отчество тоже" required>
+                </div>
+              </label>
             </div>
           </fieldset>
 
           <fieldset class="form__step  form__step--bg-grey">
             <div class="form__step-inner">
-              <h2 class="form__step-title  form__step-title--pink">Ваши безбашенные достижения в путешествии</h2>
+              <h2 class="form__step-title">Ваши безбашенные достижения в путешествии</h2>
               <ul class="form__achieves-list">
                 <li class="field-checkbox">
-                  <input type="checkbox" name="" id="selfie" checked="checked">
-                  <label for="selfie" class="form__field-achieves-label">Сделал селфи с акулой</label>
+                  <label class="field-checkbox__name">
+                    <input type="checkbox" class="field-checkbox__input" checked>
+                    <span class="field-checkbox__name-text">Сделал селфи с акулой</span>
+                  </label>
                 </li>
                 <li class="field-checkbox">
-                  <input type="checkbox" name="" id="sunburn" checked="checked">
-                  <label for="sunburn" class="form__field-achieves-label">Обгорел на пляже</label>
+                  <label class="field-checkbox__name">
+                    <input type="checkbox" class="field-checkbox__input" checked>
+                    <span class="field-checkbox__name-text">Обгорел на пляже</span>
+                  </label>
                 </li>
                 <li class="field-checkbox">
-                  <input type="checkbox" name="" id="chuck-norris"">
-                  <label for="chuck-norris" class="form__field-achieves-label">Видел Чака Норриса</label>
+                  <label class="field-checkbox__name">
+                    <input type="checkbox" class="field-checkbox__input">
+                    <span class="field-checkbox__name-text">Видел Чака Норриса</span>
+                  </label>
                 </li>
                 <li class="field-checkbox">
-                  <input type="checkbox" name="" id="souvenirs">
-                  <label for="souvenirs" class="form__field-achieves-label">Накупил сувениров</label>
+                  <label class="field-checkbox__name">
+                    <input type="checkbox" class="field-checkbox__input">
+                    <span class="field-checkbox__name-text">Накупил сувениров</span>
+                  </label>
                 </li>
                 <li class="field-checkbox">
-                  <input type="checkbox" name="" id="tower" checked="checked">
-                  <label for="tower" class="form__field-achieves-label">Удержал башню</label>
+                  <label class="field-checkbox__name">
+                    <input type="checkbox" class="field-checkbox__input" checked>
+                    <span class="field-checkbox__name-text">Удержал башню</span>
+                  </label>
                 </li>
                 <li class="field-checkbox">
-                  <input type="checkbox" name="" id="hotel">
-                  <label for="hotel" class="form__field-achieves-label">Разгромил отель</label>
+                  <label class="field-checkbox__name">
+                    <input type="checkbox" class="field-checkbox__input">
+                    <span class="field-checkbox__name-text">Разгромил отель</span>
+                  </label>
                 </li>
               </ul>
             </div>
@@ -97,32 +115,42 @@
 
           <fieldset class="form__step">
             <div class="form__step-inner">
-                <div class="form__personal-data">
-                  <label for="user-phone" class="form__personal-data-label  form__personal-data-label--pink">Номер телефона</label>
-                  <input type="tel" class="form__personal-field" name="" id="user-phone" placeholder="Номер, пожалуйста" required>
+              <label class="field-text">
+                <div class="field-text__name">Номер телефона</div>
+                <div class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Номер, пожалуйста" required>
                 </div>
-                <div class="form__personal-data">
-                  <label for="user-mail" class="form__personal-data-label  form__personal-data-label--pink">Адресок почты</label>
-                  <input type="email" class="form__personal-field" name="" id="user-mail" placeholder="Введите почту*" required>
+              </label>
+              <label class="field-text">
+                <div class="field-text__name">Адресок почты</div>
+                <div class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Введите почту*" required>
                 </div>
+              </label>
             </div>
           </fieldset>
 
           <fieldset class="form__step  form__step--bg-grey">
             <div class="form__step-inner">
-              <h2 class="form__step-title  form__step-title--pink">С каким приложением путешествовали?</h2>
+              <h2 class="form__step-title">С каким приложением путешествовали?</h2>
               <ul class="form__user-platforms">
-                <li class="form__user-platform">
-                  <input type="radio" class="form__platform" name="" id="ios" checked="checked">
-                  <label for="ios" class="form__field-platforms-label">Pink для iOS</label>
+                <li class="field-radio">
+                  <label class="field-radio__name">
+                    <input type="radio" class="field-radio__input" checked>
+                    <span class="field-radio__name-text">Pink для iOS</span>
+                  </label>
                 </li>
-                <li class="form__user-platform">
-                  <input type="radio" class="form__platform" name="" id="android">
-                  <label for="android" class="form__field-platforms-label">Pink на Android</label>
+                <li class="field-radio">
+                  <label class="field-radio__name">
+                    <input type="radio" class="field-radio__input">
+                    <span class="field-radio__name-text">Pink на Android</span>
+                  </label>
                 </li>
-                <li class="form__user-platform">
-                  <input type="radio" class="form__platform" name="" id="windows">
-                  <label for="windows" class="form__field-platforms-label">Windows Phone</label>
+                <li class="field-radio">
+                  <label class="field-radio__name">
+                    <input type="radio" class="field-radio__input">
+                    <span class="field-radio__name-text">Windows Phone</span>
+                  </label>
                 </li>
               </ul>
             </div>
@@ -130,7 +158,7 @@
 
           <fieldset class="form__step">
             <div class="form__step-inner">
-              <h2 class="form__step-title  form__step-title--pink">Опишите свои эмоции</h2>
+              <h2 class="form__step-title">Опишите свои эмоции</h2>
               <textarea name="" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               <div class="form__button-wrapper">
                 <button class="btn  btn--green-large" type="submit">Отправить форму</button>
@@ -141,23 +169,23 @@
         </div>
       </form>
 
-      <div class="form__popup  form__popup-success  popup-success  hide">
-        <div class="form__popup-inner">
-          <b class="form__popup-title">Ваша заявка отправлена</b>
+      <div class="popup">
+        <div class="popup-inner">
+          <b class="popup-title">Ваша заявка отправлена</b>
           <p class="field-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-          <div class="popup-success__footer  popup-success__footer--bg-grey">
-            <div class="form__button-wrapper">
+          <div class="popup__footer  popup__footer--bg-grey">
+            <div class="popup__button-wrapper">
               <button class="btn  btn--green-large" type="button">Закрыть окно</button>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="form__popup  form__popup-fail  popup-fail  hide">
-        <div class="form__popup-inner">
-          <b class="form__popup-title">Что-то пошло не так!</b>
+      <div class="popup">
+        <div class="popup-inner">
+          <b class="popup-title">Что-то пошло не так!</b>
           <p class="field-text">Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить.</p>
-          <div class="form__button-wrapper">
+          <div class="popup__button-wrapper">
             <button class="btn  btn--green-large" type="button">ok</button>
           </div>
         </div>
