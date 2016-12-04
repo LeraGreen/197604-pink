@@ -1,0 +1,24 @@
+.form__step {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+
+  &--bg-grey {
+  background-color: $bg-second;
+}
+}
+
+.form__step-inner {
+  padding-top: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form__step-title {
+  font-size: $font-size;
+  text-transform: uppercase;
+  font-weight: $normal;
+  text-align: center;
+  color: $main-color;
+}

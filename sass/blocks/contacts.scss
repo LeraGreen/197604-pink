@@ -1,0 +1,31 @@
+.contacts {
+  padding-bottom: 40px;
+  background-color: $bg-main;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+}
+
+.contacts__promo {
+  font-size: $font-size-title;
+  font-weight: $light;
+  margin-bottom: 40px;
+}
+
+.contacts__item {
+  margin-bottom: 30px;
+  white-space: pre-line;
+
+}
+
+.contacts__title {
+  font-size: $font-size-big;
+  font-weight: $bold;
+}
+
+.contacts__data {
+  text-decoration: none;
+  font-size: $font-size-title;
+  font-weight: $light;
+  color: $main-color;
+}

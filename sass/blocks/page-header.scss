@@ -1,0 +1,11 @@
+.page-header {
+  background-color: $header-color;
+  background-image: url('../img/bg-back-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  min-height: 236px;
+
+  &--main {
+  min-height: 733px;
+}
+}

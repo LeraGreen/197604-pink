@@ -1,0 +1,24 @@
+.pagination {
+  text-align: center;
+}
+
+.pagination__link {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  width: 6px;
+  height: 6px;
+  background-color: $grey-light;
+  border-radius: 50%;
+
+
+  &--active {
+    background-color: transparent;
+    border: 3px solid $font-color-main;
+  }
+}
+
+.pagination__item {
+  display: inline-block;
+  vertical-align: middle;
+}

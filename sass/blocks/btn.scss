@@ -1,0 +1,39 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  color: $font-color-second;
+  font-size: $font-size-big;
+  font-weight: $bold;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 34px;
+  padding-right: 34px;
+  border: 4px solid $font-color-second;
+  border-radius: 40px;
+  cursor: pointer;
+  background-color: $header-color;
+
+
+  &--pink-border {
+    background-color: $bg-second;
+    color: $main-color;
+    border-color: $main-color;
+  }
+
+  &--grey {
+    background-color: $bg-second;
+    color: $grey;
+    border-color: $grey;
+  }
+
+  &--green-large {
+    border-radius: 0;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    background-color: $form-btn;
+  }
+}

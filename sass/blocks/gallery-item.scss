@@ -1,0 +1,52 @@
+.gallery-item {
+  margin-bottom: 20px;
+}
+
+.gallery-item__photo--panorama {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  width: 320px;
+  z-index: 100;
+}
+
+.gallery-item__label {
+  position: absolute;
+  background-color: $main-color;
+  font-size: $font-size-small;
+  font-weight: $bold;
+  text-transform: uppercase;
+  color: $font-color-second;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  top: 0;
+  left: 50%;
+}
+
+.gallery-item__comment {
+  background-color: $bg-second;
+
+  &--panorama {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.gallery-item__comment-container {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.gallery-item__comment-time {
+  font-size: $font-size-small;
+  text-transform: uppercase;
+  font-weight: $light;
+}
+
+.gallery-item__comment-author {
+  font-weight: $bold;
+}
