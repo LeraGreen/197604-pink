@@ -9,6 +9,12 @@
   margin: 0;
   text-align: center;
   background-color: $header-menu-color;
+
+
+  @media (min-width: $screen-lg) {
+    display: flex;
+    background-color: transparent;
+  }
 }
 
 .main-nav__link {
@@ -28,10 +34,24 @@
   border-bottom: 1px solid $border-dark;
   border-top: 1px solid $border-light;
   cursor: pointer;
+
+  @media (min-width: $screen-lg) {
+    border: none;
+    padding: 0;
+  }
 }
 
 .main-nav__main-menu {
   min-height: 65px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.main-nav__inner {
+
+ @media (min-width: $screen-lg) {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+  }
 }

@@ -1,5 +1,31 @@
-.download-app__text{
+.download-app {
+  background-color: $header-color;
+  min-height: 272px;
+  margin-top: auto;
+
+  @media (min-width: $screen-md) {
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: transparent;
+
+  }
+
+  @media (min-width: $screen-lg) {
+    min-height: 528px;
+  }
+}
+
+.download-app__text {
   text-align: center;
   color: $font-color-second;
   font-weight: $light;
+}
+
+.download-app__title {
+  display: none;
+
+  @media (min-width: $screen-md) {
+    display: block;
+  }
 }

@@ -1,0 +1,23 @@
+.advert-promo {
+  display: none;
+
+  @media (min-width: $screen-md) {
+    display: block;
+    min-height: 420px;
+  }
+
+  @media (min-width: $screen-lg) {
+    background-color: $bg-second;
+    min-height: 446px;
+  }
+}
+
+.advert-promo__container {
+  @include container;
+  @include clearfix;
+}
+
+.advert-promo__content {
+  float: right;
+  width: 530px;
+}

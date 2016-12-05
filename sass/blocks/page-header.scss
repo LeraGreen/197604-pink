@@ -1,11 +1,23 @@
 .page-header {
   background-color: $header-color;
-  background-image: url('../img/bg-back-mobile@1x.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
   min-height: 236px;
+}
+
+.page-header__container {
 
   &--main {
-  min-height: 733px;
+    min-height: 992px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screen-md) {
+      min-height: 985px;
+      justify-content: flex-start;
+    }
+  }
 }
+
+.page-header__wrapper {
+   @include container;
 }
+
