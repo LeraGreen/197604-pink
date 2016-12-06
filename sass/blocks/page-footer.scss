@@ -1,6 +1,15 @@
 .page-footer__container {
-  padding-top: 40px;
   text-align: center;
+  @include container;
+
+  &--hide {
+    display: none;
+  }
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__copyright {

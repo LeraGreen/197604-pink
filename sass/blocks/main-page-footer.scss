@@ -2,5 +2,20 @@
   padding-top: 45px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: $bg-second;
+
+  @media (min-width: $screen-md) {
+    font-size: 0;
+  }
+
+  @media (min-width: $screen-md) {
+    font-size: 0;
+  }
+}
+
+.main-page-footer__content-wrap {
+  @include container;
+
+  @media (min-width: $screen-md) {
+    font-size: 0;
+  }
 }

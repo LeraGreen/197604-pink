@@ -9,3 +9,20 @@
   padding-bottom: 53px;
   padding-top: 25px;
 }
+
+.gallery__items-wrap {
+
+  @media (min-width: $screen-md) {
+    width: 620px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+}

@@ -23,16 +23,41 @@
 
 .features__item {
   margin-bottom: 40px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $screen-lg) {
+    display: inline-block;
+    width: 31%;
+    vertical-align: top;
+    text-align: center;
+  }
 }
 
 .features__list {
-  background-color: $bg-second;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 300px;
   padding-top: 52px;
-  position: relative;
 
+  @media (min-width: $screen-md) {
+    float: right;
+    width: 310px;
+    text-align: left;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $screen-lg) {
+    float: none;
+    min-width: 940px;
+  }
+}
+
+.features__wrap {
+  background-color: $bg-second;
+  position: relative;
 
   &::after {
     content: '';
@@ -43,5 +68,25 @@
     height: 279px;
     bottom: 0;
     left: 28%;
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+}
+
+.features__inner {
+  @include container;
+
+  @media (min-width: $screen-md) {
+    @include clearfix;
+  }
+}
+
+.features__img {
+  display: none;
+
+  @media (min-width: $screen-lg) {
+    display: block;
   }
 }

@@ -2,4 +2,39 @@
   margin-top: 40px;
   margin-left: 0;
   margin-right: 0;
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.review:nth-child(n+2) {
+  display: none;
+}
+
+.review__author {
+  font-size: $font-size-big;
+  font-weight: $bold;
+  color: $font-color-third;
+
+  @media (min-width: $screen-md) {
+    order: 2;
+  }
+}
+
+.review__text {
+  color: $font-color-main;
+
+  @media (min-width: $screen-md) {
+    order: 1;
+  }
+}
+
+.review__author-about {
+  display: none;
+
+  @media (min-width: $screen-md) {
+    display: block;
+  }
 }

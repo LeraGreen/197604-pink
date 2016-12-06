@@ -16,6 +16,17 @@
   margin-bottom: 30px;
   white-space: pre-line;
 
+  @media (min-width: $screen-md) {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+  }
+
+  @media (min-width: $screen-lg) {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+  }
 }
 
 .contacts__title {
