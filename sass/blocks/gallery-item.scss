@@ -13,16 +13,32 @@
   position: relative;
   margin-left: 0;
   margin-right: 0;
-  width: 320px;
-  background-color: green; //временно для сеток
-  height: 509px;  //временно для сеток
-  width: 100%;   //временно для сеток
+  width: 100%;
+
+  //временно для сеток, до урока по картинкам
+  background-color: $panorama-color;
+  height: 137px;
+  background-image: url('../../img/panorama-mobile@1x.jpg');
+  background-repeat: no-repeat;
+
+  @media (min-width: $screen-md) {
+    //временно для сеток, до урока по картинкам
+    height: 510px;
+    background-size: 100% 100%;
+  }
+
+  @media (min-width: $screen-lg) {
+    //временно для сеток, до урока по картинкам
+    height: 508px;
+    background-size: 100% 100%;
+  }
 }
 
 .gallery-item__label {
   position: absolute;
   background-color: $main-color;
   font-size: $font-size-small;
+  line-height: 2em;
   font-weight: $bold;
   text-transform: uppercase;
   color: $font-color-second;
@@ -32,12 +48,24 @@
   padding-top: 6px;
   top: 0;
   left: 50%;
+
+  @media (min-width: $screen-md) {
+    top: 12%;
+    left: 76%;
+  }
+
+  @media (min-width: $screen-lg) {
+    top: 11%;
+    left: 79%;
+  }
+
 }
 
 .gallery-item__comment-container {
+  padding-top: 4px;
+  padding-left: 18px;
+  padding-right: 10px;
   padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 15px;
   text-align: left;
 }
 
@@ -45,10 +73,13 @@
   font-size: $font-size-small;
   text-transform: uppercase;
   font-weight: $light;
+  line-height: 2em;
 }
 
 .gallery-item__comment-author {
   font-weight: $bold;
+  font-size: $font-size;
+  line-height: 1.714em;
 }
 
 .gallery-item__inner {
@@ -67,4 +98,19 @@
     @include container;
     background-color: $bg-second;
   }
+}
+
+.gallery-item__comment-text {
+  font-size: $font-size;
+  line-height: 1.714em;
+  margin-top: 0;
+}
+
+.gallery-item__photo-link {
+  cursor: pointer;
+}
+
+
+.gallery-item__comment-data {
+  margin-bottom: 0;
 }
