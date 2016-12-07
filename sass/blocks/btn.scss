@@ -10,7 +10,7 @@
   padding-bottom: 12px;
   padding-left: 34px;
   padding-right: 34px;
-  border: 4px solid $font-color-second;
+  border: 3px solid $font-color-second;
   border-radius: 40px;
   cursor: pointer;
   background-color: $header-color;
@@ -20,12 +20,56 @@
     background-color: $bg-second;
     color: $main-color;
     border-color: $main-color;
+    width: 100%;
+    margin-bottom: 15px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 27px;
+      width: 95%;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+      flex-basis: 45%;
+    }
+
+    &:hover {
+      background-color: $main-color;
+      color: $font-color-second;
+    }
+
+    &:focus {
+      color: $focus-pink-btn;
+    }
   }
 
   &--grey {
     background-color: $bg-second;
     color: $grey;
     border-color: $grey;
+    width: 100%;
+    margin-bottom: 15px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 27px;
+      width: 95%;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+      flex-basis: 45%;
+    }
+
+    &:hover {
+      border-color: $hover-btn-grey;
+      color: $hover-btn-grey;
+    }
+
+    &:focus {
+      color: $focus-btn-grey;
+      border-color: $hover-btn-grey;
+      background-color: $hover-btn-grey;
+    }
   }
 
   &--green-large {

@@ -10,10 +10,13 @@
 .filter-form__inner {
   width: 280px;
   margin: 0 auto;
+  padding-top: 19px;
 
   @media (min-width: $screen-md) {
     width: 620px;
     margin: 0 auto;
+    padding-top: 58px;
+    padding-bottom: 7px;
   }
 
   @media (min-width: $screen-lg) {
@@ -32,19 +35,128 @@
 
 
 .filter-form__photo {
+  margin-bottom: 40px;
 
   @media (min-width: $screen-md) {
     flex-basis: 300px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 0;
   }
 }
 
 .filter-form__wrapper {
 
   @media (min-width: $screen-md) {
-    flex-basis: 279px;
+    flex-basis: 272px;
+    margin-top: -26px;
   }
 
   @media (min-width: $screen-lg) {
     flex-basis: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
+
+.filter-form__filter label {
+  cursor: pointer;
+}
+
+.filter-form__filters {
+  padding-left: 17px;
+  padding-right: 17px;
+  margin-bottom: 17px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @media (min-width: $screen-md) {
+    align-items: baseline;
+  }
+}
+
+.filter-form__buttons {
+  margin-top: 67px;
+
+  @media (min-width: $screen-md) {
+    margin-top: 28px;
+  }
+
+  @media (min-width: $screen-lg) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.filter-form__crop,
+.filter-form__fill,
+.filter-form__contrast {
+  display: none;
+}
+
+//появление range при выбранном инпуте
+
+@media (min-width: $screen-sm) and (max-width: $screen-md) {
+
+  .filter-form__crop:checked ~ .field-range--crop {
+    display: block;
+  }
+
+  .filter-form__crop:checked ~ .field-range--contrast {
+    display: none;
+  }
+
+  .filter-form__crop:checked ~ .field-range--fill {
+    display: none;
+  }
+
+  .filter-form__fill:checked ~ .field-range--fill {
+    display: block;
+  }
+
+  .filter-form__fill:checked ~ .field-range--crop {
+    display: none;
+  }
+
+  .filter-form__fill:checked ~ .field-range--contrast {
+    display: none;
+  }
+
+  .filter-form__contrast:checked ~ .field-range--contrast {
+    display: block;
+  }
+
+  .filter-form__contrast:checked ~ .field-range--crop {
+    display: none;
+  }
+
+  .filter-form__contrast:checked ~ .field-range--fill {
+    display: none;
+  }
+}
+
+.filter-form__filter--crop {
+
+  @media (min-width: $screen-md) {
+    order: 1;
+  }
+}
+
+
+.filter-form__filter--fill {
+
+  @media (min-width: $screen-md) {
+    order: 3;
+  }
+}
+
+.filter-form__filter--contrast {
+
+  @media (min-width: $screen-md) {
+    order: 5;
+  }
+}
+
