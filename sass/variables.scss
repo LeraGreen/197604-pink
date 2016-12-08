@@ -8,6 +8,7 @@ $font-size-small: 12px;
 $font-size: 14px;
 $font-size-big: 18px;
 $font-size-title: 24px;
+$font-size-biggest: 30px;
 
 ///colors///
 
@@ -30,11 +31,14 @@ $grey: #dddfe0;
 $grey-light: #bec2c7;
 $grey-lighter: #e5e5e5;
 $grey-lightest: #e9ebec;
-
+$grey-shadow-dark: #dfdfdf;
+$grey-shadow-light: #fbfbfb;
 
 $panorama-color: #232c1e;
 
 $form-btn: #2aab6d;
+$form-btn-hover: #1c9b5e;
+$form-btn-focus: #61b98f;
 $focus-pink-btn: #e06989;
 $hover-btn-grey: #b5b9be;
 $focus-btn-grey: #cbced2;

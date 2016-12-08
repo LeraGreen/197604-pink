@@ -15,6 +15,13 @@
   @media (min-width: $screen-lg) {
     padding-top: 100px;
   }
+
+  &--padding-top  {
+
+    @media (min-width: $screen-lg) {
+      padding-top: 35px;
+    }
+  }
 }
 
 .page-footer__copyright {

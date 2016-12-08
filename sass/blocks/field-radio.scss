@@ -1,4 +1,38 @@
 .field-radio__name-text {
   font-size: $font-size-big;
   color: $font-color-main;
+  line-height: 1.667em;
+  padding-left: 3.889em;
+  position: relative;
+}
+
+.field-radio__input {
+  position: absolute;
+  opacity: 0;
+}
+
+.field-radio {
+  margin-bottom: 45px;
+}
+
+.field-radio__input {
+  position: absolute;
+  opacity: 0;
+}
+
+.field-radio__input + .field-radio__name-text:before {
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  top: -36%;
+  left: 0;
+  content: '';
+  background-color: $bg-main;
+  border: 2px solid $grey-lighter;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.field-radio__input + .field-radio__name-text {
+  cursor: pointer;
 }

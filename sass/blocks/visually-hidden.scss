@@ -7,4 +7,54 @@
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  &--sm {
+
+    @media (min-width: $screen-sm) and (max-width: $screen-md - 1px) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+
+    @media (min-width: $screen-md) {
+      display: inline;
+    }
+  }
+
+  &--md {
+
+    @media (min-width: $screen-md) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+  }
+
+  &--sm-md {
+
+    @media (max-width: $screen-lg - 1px) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: inline;
+    }
+  }
 }

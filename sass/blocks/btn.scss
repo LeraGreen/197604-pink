@@ -40,6 +40,7 @@
 
     &:focus {
       color: $focus-pink-btn;
+      outline: none;
     }
   }
 
@@ -69,15 +70,43 @@
       color: $focus-btn-grey;
       border-color: $hover-btn-grey;
       background-color: $hover-btn-grey;
+      outline: none;
     }
   }
 
   &--green-large {
-    border-radius: 0;
+    width: 100%;
+    border: 1px solid $form-btn;
+    border-radius: 1%;
     text-transform: uppercase;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
     background-color: $form-btn;
+    line-height: 1.667em;
+
+    &:hover {
+      background-color: $form-btn-hover;
+    }
+
+    &:focus {
+      color: $form-btn-focus;
+      outline: none;
+    }
+
+    &:disabled {
+      background-color: $grey-lighter;
+      outline: none;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 64%;
+    }
+  }
+
+  &--popup {
+
+    @media (min-width: $screen-lg) {
+      width: 100%;
+    }
   }
 }

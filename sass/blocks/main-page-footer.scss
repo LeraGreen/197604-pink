@@ -10,6 +10,13 @@
   @media (min-width: $screen-md) {
     font-size: 0;
   }
+
+  &--no-padding-top  {
+
+    @media (min-width: $screen-md) {
+      padding-top: 0;
+    }
+  }
 }
 
 .main-page-footer__content-wrap {
