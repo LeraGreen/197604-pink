@@ -3,7 +3,7 @@
 
   @media (min-width: $screen-md) {
     display: block;
-    min-height: 420px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $screen-lg) {
@@ -13,11 +13,54 @@
 }
 
 .advert-promo__container {
-  @include container;
-  @include clearfix;
+
+  @media (min-width: $screen-md) {
+    @include container;
+    @include clearfix;
+    padding-top: 56px;
+  }
 }
 
 .advert-promo__content {
-  float: right;
-  width: 530px;
+
+  @media (min-width: $screen-md) {
+    float: right;
+    width: 50%;
+    text-align: left;
+    margin-top: 41px;
+    padding-right: 14px;
+  }
+}
+
+.advert-promo__title {
+
+  @media (min-width: $screen-md) {
+    color: $font-color-third;
+    font-size: $font-size-biggest;
+    line-height: 1.200em;
+  }
+}
+
+
+.advert-promo__text {
+
+  @media (min-width: $screen-md) {
+    font-size: $font-size;
+    line-height: 1.714em;
+  }
+}
+
+.advert-promo__title-wrap {
+
+  @media (min-width: $screen-md) {
+    padding-right: 25px;
+  }
+}
+
+
+.advert-promo__link {
+
+  @media (min-width: $screen-md) {
+    color: $main-color;
+  }
 }

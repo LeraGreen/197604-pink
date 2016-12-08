@@ -5,27 +5,59 @@
 .features__promo {
   font-size: $font-size-title;
   font-weight: $light;
+  margin-bottom: 44px;
+
+  @media (min-width: $screen-md) {
+    font-size: $font-size-super-big;
+    line-height: 1.2em;
+  }
+
+  &--margin-bottom {
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--margin-top {
+
+    @media (min-width: $screen-md) {
+      margin-top: 0;
+    }
+  }
 }
 
 .features__title {
   font-size: $font-size-big;
   font-weight: $bold;
   color: $font-color-third;
+  line-height: 1.333em;
+
+  @media (min-width: $screen-md) {
+    line-height: 0.556em;
+  }
 }
 
 .features__descr {
   font-weight: $light;
+  font-size: $font-size;
+  line-height: 1.714em;
 }
 
 .features__container {
-  padding-top: 46px;
+  padding-top: 21px;
+
+  @media (min-width: $screen-md) {
+    padding-top: 11px;
+    @include clearfix;
+  }
 }
 
 .features__item {
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 
   @media (min-width: $screen-md) {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $screen-lg) {
@@ -37,16 +69,18 @@
 }
 
 .features__list {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 300px;
-  padding-top: 52px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 285px;
+  padding-top: 84px;
 
   @media (min-width: $screen-md) {
     float: right;
     width: 310px;
     text-align: left;
-    padding-bottom: 40px;
+    padding-bottom: 0;
+    padding-top: 22px;
+    padding-left: 0;
   }
 
   @media (min-width: $screen-lg) {
@@ -67,7 +101,16 @@
     background-repeat: no-repeat;
     height: 279px;
     bottom: 0;
-    left: 28%;
+    left: 25%;
+
+    @media (min-width: $screen-md) {
+      left: 5%;
+      //временно до урока по svg и picture
+      width: 267px;
+      height: 481px;
+      background-size: 100%;
+      background-position-y: -4%;
+    }
 
     @media (min-width: $screen-lg) {
       display: none;
@@ -88,5 +131,15 @@
 
   @media (min-width: $screen-lg) {
     display: block;
+  }
+}
+
+
+.features__promo-wrap {
+
+  @media (min-width: $screen-md) {
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-bottom: 100px;
   }
 }

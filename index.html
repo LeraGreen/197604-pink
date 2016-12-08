@@ -62,8 +62,10 @@
       <section class="features">
         <div class="features__container">
           <h1 class="visually-hidden">Преимущества приложения pink</h1>
-          <p class="features__promo">Устали от серости мегаполиса?</p>
-          <p class="features__promo">Нам есть, что вам предложить!</p>
+          <p class="features__promo  features__promo--margin-bottom">Устали от серости мегаполиса?</p>
+          <div class="features__promo-wrap">
+            <p class="features__promo  features__promo--margin-top">Нам есть, что вам предложить!</p>
+          </div>
           <div class="features__wrap">
             <div class="features__inner">
               <div class="features__list">
@@ -91,7 +93,9 @@
       <div class="advert-promo  advert-promo--bg-grey">
         <div class="advert-promo__container">
           <div class="advert-promo__content">
-            <b class="advert-promo__title">Эффект на 24 часа!</b>
+            <div class="advert-promo__title-wrap">
+              <b class="advert-promo__title">Эффект<br> на 24 часа!</b>
+            </div>
             <p class="advert-promo__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a href="" class="advert-promo__link">Узнать больше об исследовании</a>
           </div>
@@ -121,7 +125,7 @@
             </div>
             <p class="review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
           </blockquote>
-          <div class="reviews__pagination pagination  visually-hidden">
+          <div class="reviews__pagination pagination">
             <div class="pagination__item"><a href="" class="pagination__link  pagination__link--active"></a></div>
             <div class="pagination__item"><a href="" class="pagination__link"></a></div>
             <div class="pagination__item"><a href="" class="pagination__link"></a></div>
@@ -151,7 +155,7 @@
               </tr>
               <tr class="tariffs-table__feautures">
                 <td class="tariffs-table__feauture">
-                  <span class="tariffs-table__feauture-name">розовый фильтр</span>
+                  <span class="tariffs-table__feauture-name">Розовый фильтр</span>
                 </td>
                 <td class="tariffs-table__feauture">
                   <span class="tariffs-table__feauture-name  tariffs-table__feauture-name--hide">розовый фильтр</span>
@@ -168,7 +172,7 @@
               </tr>
               <tr class="tariffs-table__feautures">
                 <td class="tariffs-table__feauture">
-                  <span class="tariffs-table__feauture-name">смайлики</span>
+                  <span class="tariffs-table__feauture-name">Смайлики</span>
                 </td>
                 <td class="tariffs-table__feauture">
                   <span class="tariffs-table__feauture-name  tariffs-table__feauture-name--hide">смайлики</span>
@@ -185,7 +189,7 @@
               </tr>
               <tr class="tariffs-table__feautures">
                 <td class="tariffs-table__feauture">
-                  <span class="tariffs-table__feauture-name">комментарии</span>
+                  <span class="tariffs-table__feauture-name">Комментарии</span>
                 </td>
                 <td class="tariffs-table__feauture">
                   <span class="tariffs-table__feauture-name  tariffs-table__feauture-name--hide">комментарии</span>
@@ -202,7 +206,7 @@
               </tr>
             </table>
           </div>
-          <div class="tariffs__pagination  pagination  visually-hidden">
+          <div class="tariffs__pagination  pagination  visually-hidden--md">
             <div class="pagination__item"><a href="" class="pagination__link"></a></div>
             <div class="pagination__item"><a href="" class="pagination__link  pagination__link--active"></a></div>
             <div class="pagination__item"><a href="" class="pagination__link"></a></div>
@@ -212,11 +216,13 @@
     </main>
 
     <footer class="main-page-footer">
+      <div class="main-page__map map"></div>
       <div class="main-page-footer__container">
-        <div class="main-page__map map"></div>
         <div class="main-page-footer__content-wrap">
-          <div class="main-page__contacts  contacts">
-            <p class="contacts__promo">Остались вопросы? Свяжитесь с нами!</p>
+          <div class="main-page-footer__contacts  contacts">
+            <div class="contacts__promo-wrap">
+              <p class="contacts__promo">Остались вопросы? Свяжитесь с нами!</p>
+            </div>
             <div class="contacts__item">
               <b class="contacts__title">Звоните:</b>
               <a href="tel:+78125556666" class="contacts__data">+7 (812) 555-66-66</a>

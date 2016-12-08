@@ -6,6 +6,7 @@
   @media (min-width: $screen-md) {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
   }
 }
 
@@ -25,9 +26,13 @@
 
 .review__text {
   color: $font-color-main;
+  font-size: $font-size;
+  line-height: 2.143em;
 
   @media (min-width: $screen-md) {
     order: 1;
+    font-size: $font-size-big;
+    line-height: 1.667em;
   }
 }
 
@@ -36,5 +41,22 @@
 
   @media (min-width: $screen-md) {
     display: block;
+    color: $font-color-main;
+    font-weight: $normal;
+    font-size: $font-size;
+    line-height: 2.143em;
+    margin-top: 0;
+  }
+}
+
+
+.review__author-name {
+
+  @media (min-width: $screen-md) {
+    font-size: $font-size-medium;
+    color: $font-color-main;
+    line-height: 1.500em;
+    margin-bottom: 5px;
+
   }
 }

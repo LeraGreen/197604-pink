@@ -1,0 +1,9 @@
+.map {
+  background-color: green;
+  width: 100%;
+  min-height: 614px;
+
+  @media (min-width: $screen-md) {
+    min-height: 781px;
+  }
+}

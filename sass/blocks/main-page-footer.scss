@@ -1,11 +1,16 @@
-.main-page-footer__container {
-  padding-top: 45px;
-  padding-bottom: 200px;
-  text-align: center;
+.main-page-footer {
+  position: relative;
+}
 
-  @media (min-width: $screen-md) {
-    font-size: 0;
-  }
+.main-page-footer__container {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $bg-main;
+  padding-bottom: 0;
+  text-align: center;
 
   @media (min-width: $screen-md) {
     font-size: 0;
@@ -26,3 +31,5 @@
     font-size: 0;
   }
 }
+
+
