@@ -11,17 +11,19 @@
   width: 280px;
   margin: 0 auto;
   padding-top: 19px;
+  padding-bottom: 29px;
 
   @media (min-width: $screen-md) {
     width: 620px;
     margin: 0 auto;
     padding-top: 58px;
-    padding-bottom: 7px;
+    padding-bottom: 15px;
   }
 
   @media (min-width: $screen-lg) {
     width: 801px;
     margin: 0 auto;
+    padding-bottom: 55px;
   }
 }
 

@@ -1,6 +1,7 @@
 .page-footer__container {
   text-align: center;
   @include container;
+  padding-top: 32px;
 
   &--hide {
     display: none;
@@ -10,8 +11,17 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $screen-lg) {
+    padding-top: 100px;
+  }
 }
 
 .page-footer__copyright {
   color: $font-color-main;
+  margin-bottom: 40px;
+
+  @media (min-width: $screen-md) {
+    align-self: center;
+  }
 }
