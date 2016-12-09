@@ -14,6 +14,27 @@
   border-radius: 40px;
   cursor: pointer;
   background-color: $header-color;
+  touch-action: manipulation;
+  width: 100%;
+
+  @media (min-width: $screen-md) {
+    background-color: transparent;
+  }
+
+  &:hover {
+
+    @media (min-width: $screen-md) {
+      background-color: $bg-main;
+      color: $main-color;
+    }
+  }
+
+  &:focus {
+
+    @media (min-width: $screen-md) {
+      color: $focus-transparent-btn;
+    }
+  }
 
 
   &--pink-border {

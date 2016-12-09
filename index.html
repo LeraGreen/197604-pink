@@ -9,50 +9,57 @@
   <body>
 
     <header class="page-header  page-header--main">
-      <div class="page-header__container  page-header__container--main">
-        <nav class="main-nav">
-          <div class="main-nav__inner">
-            <div class="main-nav__main-menu">
-              <a href="" class="main-nav-logo">
-                <img src="" alt="pink">
-              </a>
-              <div class="menu-toggler"><span class="menu-toggler__item"></span></div>
-            </div>
-            <ul class="main-nav__list ">
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">html academy</a>
-              </li>
-            </ul>
+      <div id="main-menu-wrapper" class="page-header__top-line  page-header__top-line--open">
+        <div class="page-header__container">
+          <div class="page-header__top-line-inner">
+            <a href="/" class="page-header__logo">PINK</a>
+            <span id="main-menu-toggler" class="page-header__menu-toggler  page-header__menu-toggler--close"><span></span></span>
           </div>
-        </nav>
-
-        <div class="download-app">
-          <div class="download-app__container">
-            <div class="download-app__inner">
-              <p class="download-app__title">Взгляните на жизнь иначе!</p>
-              <a href="" class="btn">Скачать приложение</a>
-              <ul class="download-app__platforms-list  platforms-list">
-                <li class="platforms-list__item">
-                  <a href="" class="platforms-list__link">apple</a>
+            <nav class="main-nav">
+              <ul class="main-nav__list ">
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">Главная</a>
+                  </div>
                 </li>
-                <li class="platforms-list__item">
-                  <a href="" class="platforms-list__link">android</a>
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">Фотографии</a>
+                  </div>
                 </li>
-                <li class="platforms-list__item">
-                  <a href="" class="platforms-list__link">windows</a>
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">Конкурс</a>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">HTML Academy</a>
+                  </div>
                 </li>
               </ul>
-              <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-            </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header__download-block  download">
+        <div class="download__inner">
+          <div class="download__container">
+            <div class="download__title  visually-hidden--sm">Взгляните на жизнь иначе!</div>
+            <a href="" class="btn">Скачать приложение</a>
+            <ul class="download__os-list">
+              <li class="download__item">
+                <a href="" class="download__link  download__link--osx">Apple</a>
+              </li>
+              <li class="download__item">
+                <a href="" class="download__link  download__link--andriod">Android</a>
+              </li>
+              <li class="download__item">
+                <a href="" class="download__link  download__link--windows">Windows</a>
+              </li>
+            </ul>
+            <p class="download__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
       </div>
@@ -267,5 +274,6 @@
       </div>
     </footer>
 
+  <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

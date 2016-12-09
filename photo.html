@@ -8,35 +8,42 @@
   </head>
   <body>
 
-    <header class="page-header">
-      <div class="page-header__container">
-        <nav class="main-nav">
-          <div class="main-nav__inner">
-            <div class="main-nav__main-menu">
-              <div class="main-nav__main-logo">
-                <a href="" class="main-logo">
-                  <img src="" alt="pink">
-                </a>
-              </div>
-              <div class="menu-toggler"><span class="menu-toggler__item"></span></div>
-            </div>
-            <ul class="main-nav__list visually-hidden">
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">html academy</a>
-              </li>
-            </ul>
+    <header class="page-header  page-header--no-bg">
+      <div id="main-menu-wrapper" class="page-header__top-line  page-header__top-line--open">
+        <div class="page-header__container">
+          <div class="page-header__top-line-inner">
+            <a href="/" class="page-header__logo">PINK</a>
+            <span id="main-menu-toggler" class="page-header__menu-toggler  page-header__menu-toggler--close"><span></span></span>
           </div>
-        </nav>
-        <div class="promo">
+            <nav class="main-nav">
+              <ul class="main-nav__list ">
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">Главная</a>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">Фотографии</a>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">Конкурс</a>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">HTML Academy</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="promo">
+        <div class="promo__inner">
           <h1 class="promo__title">Фотографии пользователей</h1>
         </div>
       </div>
@@ -274,5 +281,6 @@
       </div>
     </footer>
 
+  <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
