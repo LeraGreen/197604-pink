@@ -12,4 +12,9 @@
     padding-top: 32px;
     padding-bottom: 23px;
   }
+
+  @media (min-width: $screen-lg) {
+    padding-top: 80px;
+    padding-bottom: 23px;
+  }
 }

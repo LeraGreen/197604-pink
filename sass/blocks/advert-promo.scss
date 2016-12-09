@@ -8,7 +8,7 @@
 
   @media (min-width: $screen-lg) {
     background-color: $bg-second;
-    min-height: 446px;
+    padding-bottom: 111px;
   }
 }
 
@@ -30,6 +30,10 @@
     margin-top: 41px;
     padding-right: 14px;
   }
+
+  @media (min-width: $screen-lg) {
+    width: 61%;
+  }
 }
 
 .advert-promo__title {
@@ -38,6 +42,17 @@
     color: $font-color-third;
     font-size: $font-size-biggest;
     line-height: 1.200em;
+
+    @media (min-width: $screen-lg) {
+      line-height: 1em;
+    }
+  }
+}
+
+.advert-promo__title br {
+
+  @media (min-width: $screen-lg) {
+    display: none;
   }
 }
 
@@ -47,6 +62,11 @@
   @media (min-width: $screen-md) {
     font-size: $font-size;
     line-height: 1.714em;
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size-big;
+    line-height: 1.667em;
   }
 }
 
@@ -62,5 +82,10 @@
 
   @media (min-width: $screen-md) {
     color: $main-color;
+  }
+
+   @media (min-width: $screen-lg) {
+    font-size: $font-size-big;
+    line-height: 1.667em;
   }
 }

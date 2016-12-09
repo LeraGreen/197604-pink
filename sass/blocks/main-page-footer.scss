@@ -16,6 +16,10 @@
     font-size: 0;
   }
 
+  @media (min-width: $screen-lg) {
+    padding-top: 23px;
+  }
+
   &--no-padding-top  {
 
     @media (min-width: $screen-md) {

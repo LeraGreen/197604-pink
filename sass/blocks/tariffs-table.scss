@@ -25,6 +25,13 @@
     padding-top: 15px;
     padding-bottom: 5px;
   }
+
+  @media (min-width: $screen-lg) {
+    padding-left: 67px;
+    padding-right: 67px;
+    padding-top: 16px;
+    padding-bottom: 23px;
+  }
 }
 
 .tariffs-table__item-title {
@@ -36,6 +43,11 @@
   @media (min-width: $screen-md) {
     font-size: $font-size-bigger;
     line-height: 1.875em;
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size-big;
+    line-height: 1.667em;
   }
 }
 
@@ -49,6 +61,11 @@
   @media (min-width: $screen-md) {
     font-size: $font-size-big;
     line-height: 1.667em;
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size-title;
+    line-height: 1.250em;
   }
 }
 
@@ -67,10 +84,21 @@
     padding-bottom: 8px;
     padding-top: 8px;
   }
+
+  @media (min-width: $screen-lg) {
+    padding-left: 25px;
+    padding-right: 61px;
+    padding-bottom: 12px;
+    padding-top: 17px;
+  }
 }
 
 .tariffs__table-wrapper {
   padding-bottom: 40px;
+
+  @media (min-width: $screen-lg) {
+    padding-bottom: 71px;
+  }
 }
 
 .tariffs-table__item-header:first-child {
@@ -96,6 +124,11 @@
     font-size: $font-size;
     text-transform: none;
     line-height: 2.143em;
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size-big;
+    line-height: 1.667em;
   }
 
   &--hide {

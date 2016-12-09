@@ -1,6 +1,5 @@
 .reviews {
   text-align: center;
-  padding-bottom: 70px;
 
 }
 
@@ -8,6 +7,11 @@
   padding-top: 7px;
   padding-right: 7px;
   padding-left: 7px;
+  padding-bottom: 70px;
 
   @include container;
+
+  @media (min-width: $screen-lg) {
+    padding-top: 67px;
+  }
 }

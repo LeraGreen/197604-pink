@@ -9,17 +9,29 @@
     padding-top: 0;
     padding-bottom: 10px;
   }
+
+  @media (min-width: $screen-lg) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+  }
 }
 
 .contacts__promo {
   font-size: $font-size-title;
   font-weight: $light;
   margin-bottom: 24px;
+  line-height: 1.2em;
 
   @media (min-width: $screen-md) {
     font-size: $font-size-super-big;
     margin-top: 49px;
     line-height: 1.2em;
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size-gigant;
+    line-height: 1em;
   }
 }
 
@@ -28,6 +40,11 @@
   @media (min-width: $screen-md) {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
@@ -43,9 +60,30 @@
   }
 
   @media (min-width: $screen-lg) {
-    display: inline-block;
+    display: block;
     width: 33%;
     vertical-align: top;
+  }
+
+  &--order-1 {
+
+    @media (min-width: $screen-lg) {
+      order: 1;
+    }
+  }
+
+  &--order-2 {
+
+    @media (min-width: $screen-lg) {
+      order: 2;
+    }
+  }
+
+  &--order-3 {
+
+    @media (min-width: $screen-lg) {
+      order: 3;
+    }
   }
 }
 
@@ -59,4 +97,11 @@
   font-size: $font-size-title;
   font-weight: $light;
   color: $main-color;
+}
+
+.contacts__title-wrap {
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 2px;
+  }
 }
