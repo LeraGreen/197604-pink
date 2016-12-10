@@ -1,4 +1,33 @@
+.field-checkbox {
+  margin-bottom: 52px;
+}
+
 .field-checkbox__name-text {
   font-size: $font-size-big;
   color: $font-color-main;
+  line-height: 1.667em;
+  padding-left: 3.889em;
+  position: relative;
+}
+
+.field-checkbox__input {
+  position: absolute;
+  opacity: 0;
+}
+
+.field-checkbox__input + .field-checkbox__name-text:before {
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  top: -36%;
+  left: 0;
+  content: '';
+  background-color: $bg-main;
+  border: 2px solid $grey-lighter;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.field-checkbox__input + .field-checkbox__name-text {
+  cursor: pointer;
 }

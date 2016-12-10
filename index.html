@@ -9,50 +9,57 @@
   <body>
 
     <header class="page-header  page-header--main">
-      <div class="page-header__container  page-header__container--main">
-        <nav class="main-nav">
-          <div class="main-nav__inner">
-            <div class="main-nav__main-menu">
-              <a href="" class="main-nav-logo">
-                <img src="" alt="pink">
-              </a>
-              <div class="menu-toggler"><span class="menu-toggler__item"></span></div>
-            </div>
-            <ul class="main-nav__list ">
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">html academy</a>
-              </li>
-            </ul>
+      <div id="main-menu-wrapper" class="page-header__top-line  page-header__top-line--open">
+        <div class="page-header__container">
+          <div class="page-header__top-line-inner">
+            <a href="/" class="page-header__logo">PINK</a>
+            <span id="main-menu-toggler" class="page-header__menu-toggler  page-header__menu-toggler--close"><span></span></span>
           </div>
-        </nav>
-
-        <div class="download-app">
-          <div class="download-app__container">
-            <div class="download-app__inner">
-              <p class="download-app__title">Взгляните на жизнь иначе!</p>
-              <a href="" class="btn">Скачать приложение</a>
-              <ul class="download-app__platforms-list  platforms-list">
-                <li class="platforms-list__item">
-                  <a href="" class="platforms-list__link">apple</a>
+            <nav class="main-nav">
+              <ul class="main-nav__list ">
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">Главная</a>
+                  </div>
                 </li>
-                <li class="platforms-list__item">
-                  <a href="" class="platforms-list__link">android</a>
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">Фотографии</a>
+                  </div>
                 </li>
-                <li class="platforms-list__item">
-                  <a href="" class="platforms-list__link">windows</a>
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">Конкурс</a>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">HTML Academy</a>
+                  </div>
                 </li>
               </ul>
-              <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-            </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header__download-block  download">
+        <div class="download__inner">
+          <div class="download__container">
+            <div class="download__title  visually-hidden--sm">Взгляните на жизнь иначе!</div>
+            <a href="" class="btn">Скачать приложение</a>
+            <ul class="download__os-list">
+              <li class="download__item">
+                <a href="" class="download__link  download__link--osx">Apple</a>
+              </li>
+              <li class="download__item">
+                <a href="" class="download__link  download__link--andriod">Android</a>
+              </li>
+              <li class="download__item">
+                <a href="" class="download__link  download__link--windows">Windows</a>
+              </li>
+            </ul>
+            <p class="download__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
       </div>
@@ -62,24 +69,34 @@
       <section class="features">
         <div class="features__container">
           <h1 class="visually-hidden">Преимущества приложения pink</h1>
-          <p class="features__promo">Устали от серости мегаполиса?</p>
-          <p class="features__promo">Нам есть, что вам предложить!</p>
+          <div class="features__promo-container">
+            <p class="features__promo  features__promo--margin-bottom">Устали от серости мегаполиса?</p>
+            <div class="features__promo-wrap">
+              <p class="features__promo  features__promo--margin-top">Нам есть, что вам предложить!</p>
+            </div>
+          </div>
           <div class="features__wrap">
             <div class="features__inner">
               <div class="features__list">
                 <div class="features__item">
-                  <div class="features__img"></div>
-                  <b class="features__title">Поднимает настроение</b>
+                  <div class="features__img  visually-hidden--sm-md" style="background-image: url('img/iphone-screen-mobile@1x.png')"></div>
+                  <div class="features__title-wrap">
+                    <b class="features__title">Поднимает настроение</b>
+                  </div>
                   <p class="features__descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
                 </div>
                 <div class="features__item">
-                  <div class="features__img"></div>
-                  <b class="features__title">Меняет мир вокруг</b>
+                  <div class="features__img  visually-hidden--sm-md" style="background-image: url('img/iphone-screen-mobile@1x.png')"></div>
+                  <div class="features__title-wrap">
+                    <b class="features__title">Меняет мир вокруг</b>
+                  </div>
                   <p class="features__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                 </div>
                 <div class="features__item">
-                  <div class="features__img"></div>
-                  <b class="features__title">Заводит новых друзей</b>
+                  <div class="features__img  visually-hidden--sm-md" style="background-image: url('img/iphone-screen-mobile@1x.png')"></div>
+                  <div class="features__title-wrap">
+                    <b class="features__title">Заводит новых друзей</b>
+                  </div>
                   <p class="features__descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                 </div>
               </div>
@@ -91,7 +108,9 @@
       <div class="advert-promo  advert-promo--bg-grey">
         <div class="advert-promo__container">
           <div class="advert-promo__content">
-            <b class="advert-promo__title">Эффект на 24 часа!</b>
+            <div class="advert-promo__title-wrap">
+              <b class="advert-promo__title">Эффект<br> на 24 часа!</b>
+            </div>
             <p class="advert-promo__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a href="" class="advert-promo__link">Узнать больше об исследовании</a>
           </div>
@@ -105,23 +124,23 @@
               <p class="review__author-name">Николай Петров</p>
               <p class="review__author-about">25 лет, водитель трамвая</p>
             </div>
-            <p class="review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+            <p class="review__text"><span class="visually-hidden--lg">&laquo;</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="visually-hidden--lg">&raquo;</span></p>
           </blockquote>
           <blockquote class="review">
             <div class="review__author">
               <p class="review__author-name">Петр Николаев</p>
               <p class="review__author-about">25 лет, летчик</p>
             </div>
-            <p class="review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+            <p class="review__text"><span class="visually-hidden--lg">&laquo;</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="visually-hidden--lg">&raquo;</span></p>
           </blockquote>
           <blockquote class="review">
             <div class="review__author">
               <p class="review__author-name">Иван Петров</p>
               <p class="review__author-about">25 лет, футболист</p>
             </div>
-            <p class="review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+            <p class="review__text"><span class="visually-hidden--lg">&laquo;</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="visually-hidden--lg">&raquo;</span></p>
           </blockquote>
-          <div class="reviews__pagination pagination  visually-hidden">
+          <div class="reviews__pagination  pagination  visually-hidden--lg">
             <div class="pagination__item"><a href="" class="pagination__link  pagination__link--active"></a></div>
             <div class="pagination__item"><a href="" class="pagination__link"></a></div>
             <div class="pagination__item"><a href="" class="pagination__link"></a></div>
@@ -151,7 +170,7 @@
               </tr>
               <tr class="tariffs-table__feautures">
                 <td class="tariffs-table__feauture">
-                  <span class="tariffs-table__feauture-name">розовый фильтр</span>
+                  <span class="tariffs-table__feauture-name">Розовый фильтр</span>
                 </td>
                 <td class="tariffs-table__feauture">
                   <span class="tariffs-table__feauture-name  tariffs-table__feauture-name--hide">розовый фильтр</span>
@@ -168,7 +187,7 @@
               </tr>
               <tr class="tariffs-table__feautures">
                 <td class="tariffs-table__feauture">
-                  <span class="tariffs-table__feauture-name">смайлики</span>
+                  <span class="tariffs-table__feauture-name">Смайлики</span>
                 </td>
                 <td class="tariffs-table__feauture">
                   <span class="tariffs-table__feauture-name  tariffs-table__feauture-name--hide">смайлики</span>
@@ -185,7 +204,7 @@
               </tr>
               <tr class="tariffs-table__feautures">
                 <td class="tariffs-table__feauture">
-                  <span class="tariffs-table__feauture-name">комментарии</span>
+                  <span class="tariffs-table__feauture-name">Комментарии</span>
                 </td>
                 <td class="tariffs-table__feauture">
                   <span class="tariffs-table__feauture-name  tariffs-table__feauture-name--hide">комментарии</span>
@@ -202,7 +221,7 @@
               </tr>
             </table>
           </div>
-          <div class="tariffs__pagination  pagination  visually-hidden">
+          <div class="tariffs__pagination  pagination  visually-hidden--md">
             <div class="pagination__item"><a href="" class="pagination__link"></a></div>
             <div class="pagination__item"><a href="" class="pagination__link  pagination__link--active"></a></div>
             <div class="pagination__item"><a href="" class="pagination__link"></a></div>
@@ -212,28 +231,36 @@
     </main>
 
     <footer class="main-page-footer">
+      <div class="main-page__map map"></div>
       <div class="main-page-footer__container">
-        <div class="main-page__map map"></div>
         <div class="main-page-footer__content-wrap">
-          <div class="main-page__contacts  contacts">
+          <div class="contacts__promo-wrap">
             <p class="contacts__promo">Остались вопросы? Свяжитесь с нами!</p>
-            <div class="contacts__item">
-              <b class="contacts__title">Звоните:</b>
+          </div>
+          <div class="main-page-footer__contacts  contacts">
+            <div class="contacts__item  contacts__item--order-1">
+              <div class="contacts__title-wrap">
+                <b class="contacts__title">Звоните:</b>
+              </div>
               <a href="tel:+78125556666" class="contacts__data">+7 (812) 555-66-66</a>
             </div>
-            <div class="contacts__item">
-              <b class="contacts__title">Пишите:</b>
+            <div class="contacts__item  contacts__item--order-3">
+              <div class="contacts__title-wrap">
+                <b class="contacts__title">Пишите:</b>
+              </div>
               <a href="mailto:mail@academy.ru" class="contacts__data">mail@academy.ru</a>
             </div>
-            <div class="contacts__item">
-              <b class="contacts__title">Приезжайте в гости:</b>
+            <div class="contacts__item  contacts__item--order-2">
+              <div class="contacts__title-wrap">
+                <b class="contacts__title">Приезжайте в гости:</b>
+              </div>
               <span class="contacts__data">ул. Большая Конюшенная, 19/8</span>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="page-footer__container  page-footer__container--hide">
+      <div class="page-footer__container  page-footer__container--hide  page-footer__container--top-padding">
         <div class="logo"></div>
         <div class="page-footer__social">
           <a href="" class="social-btn  social-btn--twitter">twitter</a>
@@ -247,5 +274,6 @@
       </div>
     </footer>
 
+  <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

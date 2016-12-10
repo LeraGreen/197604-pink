@@ -1,4 +1,11 @@
 .logo {
   width: 155px; //временно для сеток
   height: 60px; //временно для сеток
+  background-color: $main-color; //временно для сеток
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  @media (min-width: $screen-md) {
+    margin: 0;
+  }
 }

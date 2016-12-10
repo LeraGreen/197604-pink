@@ -10,30 +10,124 @@
   padding-bottom: 12px;
   padding-left: 34px;
   padding-right: 34px;
-  border: 4px solid $font-color-second;
+  border: 3px solid $font-color-second;
   border-radius: 40px;
   cursor: pointer;
   background-color: $header-color;
+  touch-action: manipulation;
+  width: 100%;
+
+  @media (min-width: $screen-md) {
+    background-color: transparent;
+  }
+
+  &:hover {
+
+    @media (min-width: $screen-md) {
+      background-color: $bg-main;
+      color: $main-color;
+    }
+  }
+
+  &:focus {
+
+    @media (min-width: $screen-md) {
+      color: $focus-transparent-btn;
+    }
+  }
 
 
   &--pink-border {
     background-color: $bg-second;
     color: $main-color;
     border-color: $main-color;
+    width: 100%;
+    margin-bottom: 15px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 27px;
+      width: 95%;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+      flex-basis: 45%;
+    }
+
+    &:hover {
+      background-color: $main-color;
+      color: $font-color-second;
+    }
+
+    &:focus {
+      color: $focus-pink-btn;
+      outline: none;
+    }
   }
 
   &--grey {
     background-color: $bg-second;
     color: $grey;
     border-color: $grey;
+    width: 100%;
+    margin-bottom: 15px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 27px;
+      width: 95%;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+      flex-basis: 45%;
+    }
+
+    &:hover {
+      border-color: $hover-btn-grey;
+      color: $hover-btn-grey;
+    }
+
+    &:focus {
+      color: $focus-btn-grey;
+      border-color: $hover-btn-grey;
+      background-color: $hover-btn-grey;
+      outline: none;
+    }
   }
 
   &--green-large {
-    border-radius: 0;
+    width: 100%;
+    border: 1px solid $form-btn;
+    border-radius: 1%;
     text-transform: uppercase;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
     background-color: $form-btn;
+    line-height: 1.667em;
+
+    &:hover {
+      background-color: $form-btn-hover;
+    }
+
+    &:focus {
+      color: $form-btn-focus;
+      outline: none;
+    }
+
+    &:disabled {
+      background-color: $grey-lighter;
+      outline: none;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 64%;
+    }
+  }
+
+  &--popup {
+
+    @media (min-width: $screen-lg) {
+      width: 100%;
+    }
   }
 }

@@ -5,59 +5,130 @@
 .features__promo {
   font-size: $font-size-title;
   font-weight: $light;
+
+  @media (min-width: $screen-md) {
+    font-size: $font-size-super-big;
+    line-height: 1.2em;
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size-gigant;
+    line-height: 1.2em;
+  }
+
+  &--margin-bottom {
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--margin-top {
+
+    @media (min-width: $screen-md) {
+      margin-top: 0;
+    }
+  }
 }
 
 .features__title {
   font-size: $font-size-big;
   font-weight: $bold;
   color: $font-color-third;
+  line-height: 1.333em;
+
+  @media (min-width: $screen-md) {
+    line-height: 0.556em;
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size-biggest;
+    line-height: 1em;
+  }
+}
+
+.features__title-wrap {
+
+  @media (min-width: $screen-lg) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
 }
 
 .features__descr {
   font-weight: $light;
+  font-size: $font-size;
+  line-height: 1.714em;
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size-big;
+    line-height: 1.667em;
+  }
 }
 
 .features__container {
-  padding-top: 46px;
-}
-
-.features__item {
-  margin-bottom: 40px;
+  padding-top: 21px;
 
   @media (min-width: $screen-md) {
-    margin-bottom: 20px;
+    padding-top: 11px;
+    @include clearfix;
   }
 
   @media (min-width: $screen-lg) {
-    display: inline-block;
+    padding-top: 17px;
+  }
+}
+
+.features__item {
+  margin-bottom: 33px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $screen-lg) {
     width: 31%;
     vertical-align: top;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
   }
 }
 
 .features__list {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 300px;
-  padding-top: 52px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 285px;
+  padding-top: 84px;
 
   @media (min-width: $screen-md) {
     float: right;
     width: 310px;
     text-align: left;
-    padding-bottom: 40px;
+    padding-bottom: 0;
+    padding-top: 22px;
+    padding-left: 0;
   }
 
   @media (min-width: $screen-lg) {
     float: none;
-    min-width: 940px;
+    width: 940px;
+    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
   }
 }
 
 .features__wrap {
   background-color: $bg-second;
   position: relative;
+
+  @media (min-width: $screen-lg) {
+    padding-top: 175px;
+  }
 
   &::after {
     content: '';
@@ -67,7 +138,16 @@
     background-repeat: no-repeat;
     height: 279px;
     bottom: 0;
-    left: 28%;
+    left: 25%;
+
+    @media (min-width: $screen-md) {
+      left: 5%;
+      //временно до урока по svg и picture
+      width: 267px;
+      height: 481px;
+      background-size: 100%;
+      background-position-y: -4%;
+    }
 
     @media (min-width: $screen-lg) {
       display: none;
@@ -88,5 +168,49 @@
 
   @media (min-width: $screen-lg) {
     display: block;
+  }
+}
+
+
+.features__promo-wrap {
+
+  @media (min-width: $screen-md) {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
+
+
+.features__img {
+
+  @media (min-width: $screen-lg) {
+    display: block;
+    min-height: 278px;
+    width: 186px;
+    background-size: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 123%;
+    left: 20%;
+  }
+}
+
+.features__promo-container {
+  margin-bottom: 44px;
+
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 100px;
+  }
+
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 202px;
   }
 }

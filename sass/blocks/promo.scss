@@ -1,6 +1,42 @@
 .promo {
-  margin-top: 48px;
   text-align: center;
+  position: relative;
+  min-height: 170px;
+
+  @media (min-width: $screen-md) {
+    min-height: 330px;
+  }
+
+  @media (min-width: $screen-lg) {
+    min-height: 284px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -68px;
+    left: 0;
+    right: 0;
+    height: 170px + 68px;
+    background: url('../img/bg-back-mobile@1x.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    @media (min-width: $screen-md) {
+      background-size: cover;
+      background-position: top;
+      height: 330px + 112px;
+      top: -112px;
+    }
+
+    @media (min-width: $screen-md) {
+      background-size: cover;
+      background-position: top;
+      height: 284px + 112px;
+      top: -112px;
+    }
+  }
 }
 
 .promo__title {
@@ -9,4 +45,24 @@
   color: $font-color-second;
   padding-left: 20px;
   padding-right: 20px;
+  line-height: 1.2em;
+
+  @media (min-width: $screen-md) {
+    font-size: $font-size-gigant;
+  }
+}
+
+.promo__inner {
+  @include container;
+  padding-top: 20px;
+
+  @media (min-width: $screen-md) {
+    padding-top: 35px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-top: 29px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }

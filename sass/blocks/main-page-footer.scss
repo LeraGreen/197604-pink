@@ -1,14 +1,30 @@
+.main-page-footer {
+  position: relative;
+}
+
 .main-page-footer__container {
-  padding-top: 45px;
-  padding-bottom: 200px;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $bg-main;
+  padding-bottom: 0;
   text-align: center;
 
   @media (min-width: $screen-md) {
     font-size: 0;
   }
 
-  @media (min-width: $screen-md) {
-    font-size: 0;
+  @media (min-width: $screen-lg) {
+    padding-top: 23px;
+  }
+
+  &--no-padding-top  {
+
+    @media (min-width: $screen-md) {
+      padding-top: 0;
+    }
   }
 }
 

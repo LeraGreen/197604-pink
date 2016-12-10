@@ -8,35 +8,42 @@
   </head>
   <body>
 
-    <header class="page-header">
-      <div class="page-header__container">
-        <nav class="main-nav">
-          <div class="main-nav__inner">
-            <div class="main-nav__main-menu">
-              <div class="main-nav__main-logo">
-                <a href="" class="main-logo">
-                  <img src="" alt="pink">
-                </a>
-              </div>
-              <div class="menu-toggler"><span class="menu-toggler__item"></span></div>
-            </div>
-            <ul class="main-nav__list visually-hidden">
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">html academy</a>
-              </li>
-            </ul>
+    <header class="page-header  page-header--no-bg">
+      <div id="main-menu-wrapper" class="page-header__top-line  page-header__top-line--open">
+        <div class="page-header__container">
+          <div class="page-header__top-line-inner">
+            <a href="/" class="page-header__logo">PINK</a>
+            <span id="main-menu-toggler" class="page-header__menu-toggler  page-header__menu-toggler--close"><span></span></span>
           </div>
-        </nav>
-        <div class="promo">
+            <nav class="main-nav">
+              <ul class="main-nav__list ">
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">Главная</a>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">Фотографии</a>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">Конкурс</a>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">HTML Academy</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="promo">
+        <div class="promo__inner">
           <h1 class="promo__title">Фотографии пользователей</h1>
         </div>
       </div>
@@ -49,7 +56,7 @@
           <div class="gallery__intro">
             <p class="gallery__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
           </div>
-          <div class="gallery-item">
+          <div class="gallery-item  gallery-item--panorama">
             <div class="gallery-item__photo  gallery-item__photo--panorama">
               <a href="" class="gallery-item__photo-link">
                 <img src="" alt="панорама дня" width="" height="" class="gallery-item__panorama-img">
@@ -57,7 +64,7 @@
               <span class="gallery-item__label">Панорама дня</span>
             </div>
               <div class="gallery-item__comment  gallery-item__comment--panorama">
-                <div class="gallery-item__comment-container">
+                <div class="gallery-item__comment-container  gallery-item__comment-container--panorama">
                   <p class="gallery-item__comment-data">
                     <span class="gallery-item__comment-author">Анна</span>
                     <span class="gallery-item__comment-time">(5 минут назад)</span>
@@ -75,7 +82,7 @@
               <div class="gallery-item__inner">
                 <div class="gallery-item__photo">
                   <a href="" class="gallery-item__photo-link">
-                    <img src="img/photo-1-mobile@1x.jpg" alt="фотография пользователя" width="" height="">
+                    <img src="img/photo-1-mobile@1x.jpg" alt="фотография пользователя" width="" height="" class="gallery-item__pnoto-img">
                   </a>
                 </div>
                 <div class="gallery-item__comment">
@@ -97,7 +104,7 @@
               <div class="gallery-item__inner">
                 <div class="gallery-item__photo">
                   <a href="" class="gallery-item__photo-link">
-                    <img src="img/photo-2-mobile@1x.jpg" alt="фотография пользователя" width="" height="">
+                    <img src="img/photo-2-mobile@1x.jpg" alt="фотография пользователя" width="" height="" class="gallery-item__pnoto-img">
                   </a>
                 </div>
                 <div class="gallery-item__comment">
@@ -119,7 +126,7 @@
               <div class="gallery-item__inner">
                 <div class="gallery-item__photo">
                   <a href="" class="gallery-item__photo-link">
-                    <img src="img/photo-3-mobile@1x.jpg" alt="фотография пользователя" width="" height="">
+                    <img src="img/photo-3-mobile@1x.jpg" alt="фотография пользователя" width="" height="" class="gallery-item__pnoto-img">
                   </a>
                 </div>
                 <div class="gallery-item__comment">
@@ -141,7 +148,7 @@
               <div class="gallery-item__inner">
                 <div class="gallery-item__photo">
                   <a href="" class="gallery-item__photo-link">
-                    <img src="img/photo-4-mobile@1x.jpg" alt="фотография пользователя" width="" height="">
+                    <img src="img/photo-4-mobile@1x.jpg" alt="фотография пользователя" width="" height=""  class="gallery-item__pnoto-img">
                   </a>
                 </div>
                 <div class="gallery-item__comment">
@@ -163,7 +170,7 @@
               <div class="gallery-item__inner">
                 <div class="gallery-item__photo">
                   <a href="" class="gallery-item__photo-link">
-                    <img src="img/photo-5-mobile@1x.jpg" alt="фотография пользователя" width="" height="">
+                    <img src="img/photo-5-mobile@1x.jpg" alt="фотография пользователя" width="" height="" class="gallery-item__pnoto-img">
                   </a>
                 </div>
                 <div class="gallery-item__comment">
@@ -185,13 +192,13 @@
               <div class="gallery-item__inner">
                 <div class="gallery-item__photo">
                   <a href="" class="gallery-item__photo-link">
-                    <img src="img/photo-6-mobile@1x.jpg" alt="фотография пользователя" width="280" height="180">
+                    <img src="img/photo-6-mobile@1x.jpg" alt="фотография пользователя" width="" height=""  class="gallery-item__pnoto-img">
                   </a>
                 </div>
                 <div class="gallery-item__comment">
                   <div class="gallery-item__comment-container">
                     <p class="gallery-item__comment-data">
-                      <span class="gallery-item__comment-author">Анна</span>
+                      <span class="gallery-item__comment-author">Надежда</span>
                       <span class="gallery-item__comment-time">(45 часов назад)</span>
                     </p>
                     <p class="gallery-item__comment-text">Всем GM и взаимные лайки!</p>
@@ -204,8 +211,8 @@
             </div>
           </div>
 
-          <div class="gallery__intro">
-            <p class="gallery__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <div class="gallery__intro  gallery__intro--gl-bottom">
+            <p class="gallery__text">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
           </div>
         </div>
       </section>
@@ -214,33 +221,36 @@
         <div class="filter-form__inner">
           <div class="filter-form__photo-edit">
             <div class="filter-form__photo">
-              <img src="img/photo-7-mobile@1x.jpg" alt="фото для обработки" width="280" height="374">
+              <img src="img/photo-7-mobile@1x.jpg" alt="фото для обработки" width="" height="" class="gallery-item__pnoto-img">
             </div>
             <div class="filter-form__wrapper">
               <div class="filter-form__filters">
-                <div class="filter-form__filter">
+                <input type="radio" id="crop-photo" class="filter-form__crop" checked>
+                <input type="radio" id="fill-photo" class="filter-form__fill">
+                <input type="radio" id="contrast-photo" class="filter-form__contrast">
+                <div class="filter-form__filter  filter-form__filter--crop">
                   <label for="crop-photo">обрезать</label>
-                  <input type="radio" id="crop-photo" class="filter-form__crop">
+                  <!-- <input type="radio" id="crop-photo" class="filter-form__crop"> -->
                 </div>
-                <div class="filter-form__filter">
+                <div class="filter-form__filter  filter-form__filter--fill">
                   <label for="fill-photo">заливка</label>
-                  <input type="radio" id="fill-photo" class="filter-form__fill">
+                  <!-- <input type="radio" id="fill-photo" class="filter-form__fill"> -->
                 </div>
-                <div class="filter-form__filter">
+                <div class="filter-form__filter  filter-form__filter--contrast">
                   <label for="contrast-photo">контраст</label>
-                  <input type="radio" id="contrast-photo" class="filter-form__contrast">
+                  <!-- <input type="radio" id="contrast-photo" class="filter-form__contrast"> -->
                 </div>
-                <div class="field-range">
+                <div class="field-range  field-range--crop">
                   <div class="field-range__input-wrap">
                     <input class="field-range__input" type="range">
                   </div>
                 </div>
-                <div class="field-range">
+                <div class="field-range  field-range--fill">
                   <div class="field-range__input-wrap">
                     <input class="field-range__input" type="range">
                   </div>
                 </div>
-                <div class="field-range">
+                <div class="field-range  field-range--contrast">
                   <div class="field-range__input-wrap">
                     <input class="field-range__input" type="range">
                   </div>
@@ -271,5 +281,6 @@
       </div>
     </footer>
 
+  <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

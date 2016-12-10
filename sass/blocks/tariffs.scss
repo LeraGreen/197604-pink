@@ -4,5 +4,17 @@
 
 .tariffs__container {
   padding-top: 67px;
-  padding-bottom: 60px;
+  padding-bottom: 39px;
+  overflow: hidden;
+
+  @media (min-width: $screen-md) {
+    overflow: visible;
+    padding-top: 32px;
+    padding-bottom: 23px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-top: 80px;
+    padding-bottom: 23px;
+  }
 }

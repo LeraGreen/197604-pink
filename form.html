@@ -8,35 +8,43 @@
   </head>
   <body>
 
-    <header class="page-header">
-      <div class="page-header__container">
-        <nav class="main-nav">
-          <div class="main-nav__inner">
-            <div class="main-nav__main-menu">
-              <div class="main-nav__main-logo">
-                <a href="" class="main-logo">
-                  <img src="" alt="pink">
-                </a>
-              </div>
-              <div class="menu-toggler"><span class="menu-toggler__item"></span></div>
-            </div>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="" class="main-nav__link">html academy</a>
-              </li>
-            </ul>
+
+    <header class="page-header  page-header--no-bg">
+      <div id="main-menu-wrapper" class="page-header__top-line  page-header__top-line--open">
+        <div class="page-header__container">
+          <div class="page-header__top-line-inner">
+            <a href="/" class="page-header__logo">PINK</a>
+            <span id="main-menu-toggler" class="page-header__menu-toggler  page-header__menu-toggler--close"><span></span></span>
           </div>
-        </nav>
-        <div class="promo">
+            <nav class="main-nav">
+              <ul class="main-nav__list ">
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">Главная</a>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">Фотографии</a>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">Конкурс</a>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <div class="main-nav__item-inner">
+                    <a href="" class="main-nav__link">HTML Academy</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="promo">
+        <div class="promo__inner">
           <h1 class="promo__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </div>
@@ -46,38 +54,41 @@
       <form action="" class="form">
         <div class="form__container">
 
-          <div class="form__step">
+          <div class="form__step  form__step--order-0  form__step--margin-bottom">
             <div class="form__step-inner">
-              <p class="field-text">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!</p>
+              <div class="form__intro-wrap">
+                <p class="form__intro">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!<span class="visually-hidden--sm"> Пожалуйста, заполните форму ниже:</span></p>
+              </div>
             </div>
           </div>
 
-          <fieldset class="form__step">
-            <div class="form__step-inner">
-              <label class="field-text">
-                <div class="field-text__name">Фамилия:</div>
-                <div class="field-text__input-wrap">
-                  <input class="field-text__input" type="text" placeholder="Укажите фамилию*" required>
+          <fieldset class="form__step  form__step--order-1  form__step--no-border  form__step--flex-basis">
+            <div class="form__step-inner  form__step-inner--no-padding">
+              <label class="field-text  field-text--flex-row  field-text--margin  field-text--no-margin-top">
+                <div class="field-text__name  field-text__name--flex-el">Фамилия:</div>
+                <div class="field-text__input-wrap  field-text__input-wrap--flex-el">
+                  <input class="field-text__input  field-text__input--flex-el" type="text" placeholder="Укажите фамилию *" required>
                 </div>
               </label>
-              <label class="field-text">
-                <div class="field-text__name">Имя:</div>
-                <div class="field-text__input-wrap">
-                  <input class="field-text__input" type="text" placeholder="Введите ваше имя*" required>
+              <label class="field-text  field-text--flex-row  field-text--margin">
+                <div class="field-text__name  field-text__name--flex-el">Имя:</div>
+                <div class="field-text__input-wrap field-text__input-wrap--flex-el">
+                  <input class="field-text__input  field-text__input--flex-el" type="text" placeholder="Введите ваше имя *" required>
                 </div>
               </label>
-              <label class="field-text">
-                <div class="field-text__name">Отчество:</div>
-                <div class="field-text__input-wrap">
-                  <input class="field-text__input" type="text" placeholder="Ну и отчество тоже" required>
+              <label class="field-text  field-text--flex-row  field-text--margin  field-text--no-margin-bottom">
+                <div class="field-text__name  field-text__name--flex-el">Отчество:</div>
+                <div class="field-text__input-wrap  field-text__input-wrap--flex-el  field-text__input-wrap--no-margin-bottom">
+                  <input class="field-text__input  field-text__input--flex-el" type="text" placeholder="Ну и отчество тоже" required>
                 </div>
               </label>
             </div>
           </fieldset>
 
-          <fieldset class="form__step  form__step--bg-grey">
-            <div class="form__step-inner">
-              <h2 class="form__step-title">Ваши безбашенные достижения в путешествии</h2>
+          <fieldset class="form__step  form__step--bg-grey  form__step--order-4  form__step--margin  form__step--margin-lg">
+            <legend class="form__step-title  form__step-legend visually-hidden--sm">Ваши безбашенные достижения в путешествии</legend>
+            <div class="form__step-inner  form__step-inner--padding">
+              <h2 class="form__step-title  visually-hidden--md">Ваши безбашенные достижения в путешествии</h2>
               <ul class="form__achieves-list">
                 <li class="field-checkbox">
                   <label class="field-checkbox__name">
@@ -119,26 +130,28 @@
             </div>
           </fieldset>
 
-          <fieldset class="form__step">
-            <div class="form__step-inner">
-              <label class="field-text">
+          <fieldset class="form__step  form__step--order-3  form__step--margin  form__step--margin-lg">
+            <legend class="form__step-title  form__step-legend  form__step-legend--margin-top-smaller visually-hidden--sm">Контактная информация</legend>
+            <div class="form__step-inner  form__step-inner--padding  form__step-inner--flex-lg">
+              <label class="field-text  field-text--flex-reverse">
                 <div class="field-text__name">Номер телефона</div>
-                <div class="field-text__input-wrap">
-                  <input class="field-text__input" type="tel" placeholder="Номер, пожалуйста" required>
+                <div class="field-text__input-wrap  field-text__input-wrap--grey-bg">
+                  <input class="field-text__input  field-text__input--small" type="tel" placeholder="Номер, пожалуйста" required>
                 </div>
               </label>
-              <label class="field-text">
-                <div class="field-text__name">Адресок почты</div>
-                <div class="field-text__input-wrap">
-                  <input class="field-text__input" type="email" placeholder="Введите почту*" required>
+              <label class="field-text  field-text--flex-reverse">
+                <div class="field-text__name">Адрес<span class="visually-hidden--md">ок</span> почты</div>
+                <div class="field-text__input-wrap  field-text__input-wrap--grey-bg">
+                  <input class="field-text__input  field-text__input--small" type="email" placeholder="Введите почту *" required>
                 </div>
               </label>
             </div>
           </fieldset>
 
-          <fieldset class="form__step  form__step--bg-grey">
-            <div class="form__step-inner">
-              <h2 class="form__step-title">С каким приложением путешествовали?</h2>
+          <fieldset class="form__step  form__step--bg-grey form__step--order-2  form__step--margin  form__step--flex-basis  form__step--flex-margin  form__step--no-margin-bottom">
+            <legend class="form__step-title  form__step-legend  visually-hidden--sm">С каким приложением путешествовали?</legend>
+            <div class="form__step-inner  form__step-inner--padding">
+              <h2 class="form__step-title  visually-hidden--md">С каким приложением путешествовали?</h2>
               <ul class="form__user-platforms">
                 <li class="field-radio">
                   <label class="field-radio__name">
@@ -162,40 +175,53 @@
             </div>
           </fieldset>
 
-          <fieldset class="form__step">
-            <div class="form__step-inner">
-              <h2 class="form__step-title">Опишите свои эмоции</h2>
-              <textarea name="" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <fieldset class="form__step  form__step--order-5  form__step--margin  form__step--margin-lg">
+            <legend class="form__step-title  form__step-legend  visually-hidden--sm">Опишите свои эмоции</legend>
+            <div class="form__step-inner  form__step-inner--padding    form__step-inner--padding-bottom">
+              <h2 class="form__step-title  form__step-title--margin  visually-hidden--md">Опишите свои эмоции</h2>
+              <textarea class="field-text__textarea" name="" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
 
-          <div class="form__step">
-            <div class="form__step-inner">
+          <div class="form__step  form__step--order-6  form__step--margin  form__step--margin-lg">
+            <div class="form__step-inner  form__step-inner--padding">
               <div class="form__button-wrapper">
                 <button class="btn  btn--green-large" type="submit">Отправить форму</button>
               </div>
-              <p class="form__note">* &#8212; обязательные поля</p>
+              <div class="form__note-wrapper">
+                <p class="form__note"><span class="form__note-star">*</span> &#8212; обязательные<span class="visually-hidden--sm-md"> для заполнения</span> поля</p>
+              </div>
             </div>
           </div>
         </div>
       </form>
 
-      <div class="popup">
-        <div class="popup__inner">
-          <b class="popup__title">Ваша заявка отправлена</b>
-          <p class="field-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-          <div class="popup__footer  popup__footer--bg-grey">
+      <div class="popup  popup--big-width">
+        <div class="popup__inner  popup__inner--padding  popup__inner--medium-width">
+          <div class="popup__title-wrap">
+            <b class="popup__title">Ваша заявка отправлена</b>
+          </div>
+          <div class="popup__text-wrap">
+            <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+          </div>
+        </div>
+        <div class="popup__footer">
+          <div class="popup__footer-inner">
             <div class="popup__button-wrapper">
-              <button class="btn  btn--green-large" type="button">Закрыть окно</button>
+              <button class="btn  btn--green-large  btn--popup" type="button">Закрыть окно</button>
             </div>
           </div>
         </div>
       </div>
 
       <div class="popup">
-        <div class="popup__inner">
-          <b class="popup__title">Что-то пошло не так!</b>
-          <p class="field-text">Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить.</p>
+        <div class="popup__inner  popup__inner--padding-bottom">
+          <div class="popup__title-wrap">
+            <b class="popup__title">Что-то пошло не так!</b>
+          </div>
+          <div class="popup__text-wrap">
+            <p class="popup__text">Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить.</p>
+          </div>
           <div class="popup__button-wrapper">
             <button class="btn  btn--green-large" type="button">ok</button>
           </div>
@@ -204,7 +230,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__container">
+      <div class="page-footer__container  page-footer__container--no-padding-top  page-footer__container--padding-top">
         <div class="logo"></div>
         <div class="page-footer__social">
           <a href="" class="social-btn  social-btn--twitter">twitter</a>
@@ -218,5 +244,6 @@
       </div>
     </footer>
 
+  <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

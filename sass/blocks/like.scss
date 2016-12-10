@@ -2,10 +2,16 @@
   font-size: $font-size-small;
   text-transform: uppercase;
   color: $main-color;
+  line-height: 2em;
+
+  @media (min-width: $screen-md) {
+    margin-top: 0;
+  }
 }
 
 .like__count {
   font-size: $font-size-small;
   text-transform: uppercase;
   color: $main-color;
+  line-height: 2em;
 }

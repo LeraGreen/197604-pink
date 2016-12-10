@@ -3,21 +3,89 @@
 
   @media (min-width: $screen-md) {
     display: block;
-    min-height: 420px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $screen-lg) {
     background-color: $bg-second;
-    min-height: 446px;
+    padding-bottom: 111px;
   }
 }
 
 .advert-promo__container {
-  @include container;
-  @include clearfix;
+
+  @media (min-width: $screen-md) {
+    @include container;
+    @include clearfix;
+    padding-top: 56px;
+  }
 }
 
 .advert-promo__content {
-  float: right;
-  width: 530px;
+
+  @media (min-width: $screen-md) {
+    float: right;
+    width: 50%;
+    text-align: left;
+    margin-top: 41px;
+    padding-right: 14px;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 61%;
+  }
+}
+
+.advert-promo__title {
+
+  @media (min-width: $screen-md) {
+    color: $font-color-third;
+    font-size: $font-size-biggest;
+    line-height: 1.200em;
+
+    @media (min-width: $screen-lg) {
+      line-height: 1em;
+    }
+  }
+}
+
+.advert-promo__title br {
+
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+}
+
+
+.advert-promo__text {
+
+  @media (min-width: $screen-md) {
+    font-size: $font-size;
+    line-height: 1.714em;
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size-big;
+    line-height: 1.667em;
+  }
+}
+
+.advert-promo__title-wrap {
+
+  @media (min-width: $screen-md) {
+    padding-right: 25px;
+  }
+}
+
+
+.advert-promo__link {
+
+  @media (min-width: $screen-md) {
+    color: $main-color;
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size-big;
+    line-height: 1.667em;
+  }
 }

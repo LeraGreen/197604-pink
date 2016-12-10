@@ -1,0 +1,134 @@
+.download {
+  position: relative;
+  z-index: 0;
+  padding-top: 395px + 68px;
+
+
+  @media (min-width: $screen-md) {
+    padding-top: 0;
+    min-height: 617px + 125px;
+    @include clearfix;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -68px;
+    left: 0;
+    right: 0;
+    height: 395px + 68px + 68px;
+    background: url('../img/bg-back-mobile@1x.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $screen-md) {
+      height: 616px + 112px + 126px;
+      top: -112px;
+    }
+
+    @media (min-width: $screen-lg) {
+      height: 616px + 112px + 126px;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 121px;
+    left: 50%;
+    width: 309px;
+    height: 342px;
+    transform: translateX(-155px);
+    background:url('../img/iphone-hand-mobile@1x.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $screen-md) {
+      top: auto;
+      bottom: 0;
+      width: 489px;
+      height: 544px;
+    }
+  }
+}
+
+.download__os-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 34px;
+
+  @media (min-width: $screen-md) {
+    margin-top: 40px;
+    margin-bottom: 36px;
+  }
+}
+
+.download__link {
+  text-decoration: none;
+  color: $font-color-second;
+  margin-right: 15px;
+  margin-left: 15px;
+  //временно пока до урока по картинкам
+  min-height: 65px;
+}
+
+.download__item {
+  min-height: 65px;
+}
+
+.download__inner {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 17px;
+
+  @media (min-width: $screen-md) {
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 91px;
+    padding-bottom: 0;
+    @include clearfix;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 91px;
+    padding-bottom: 0;
+    @include clearfix;
+  }
+}
+
+.download__descr {
+  font-size: $font-size;
+  font-weight: $light;
+  line-height: 1.714em;
+
+  @media (min-width: $screen-md) {
+    font-size: $font-size-big;
+    line-height: 1.333em;
+  }
+}
+
+.download__container {
+  width: 300px;
+  float: left;
+}
+
+.download__title {
+  font-weight: $light;
+  font-size: $font-size-super-big;
+  line-height: 1.2em;
+  display: block;
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 33px;
+}
