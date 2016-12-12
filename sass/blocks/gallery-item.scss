@@ -8,6 +8,7 @@
   &--panorama {
 
     @media (min-width: $screen-md) {
+      width: 100%;
       margin-bottom: 50px;
     }
   }
@@ -160,16 +161,16 @@
   line-height: 1.714em;
 }
 
-.gallery-item__inner {
-  width: 280px;
-  margin: 0 auto;
-  background-color: $bg-second;
+// .gallery-item__inner {
+//   width: 280px;
+//   margin: 0 auto;
+//   background-color: $bg-second;
 
-  @media (min-width: $screen-md) {
-    width: 300px;
-    margin: 0 auto;
-  }
-}
+//   @media (min-width: $screen-md) {
+//     width: 300px;
+//     margin: 0 auto;
+//   }
+// }
 
 .gallery-item__comment {
 

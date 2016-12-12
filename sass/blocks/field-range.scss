@@ -1,13 +1,16 @@
 .field-range {
-  width: 100%;
-  margin-top: 35px;
 
-  @media (min-width: $screen-md) {
-    flex-basis: 203px;
+  @media (min-width: $screen-sm) and (max-width: $screen-md) {
+    display: none;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
-  @media (min-width: $screen-lg) {
-    flex-basis: 287px;
+  @media (min-width: $screen-md) {
+    display: block;
+    flex-grow: 1;
   }
 }
 
@@ -107,26 +110,5 @@
   &::-ms-fill-lower,
   &::-ms-tooltip {
     display: none;
-  }
-}
-
-.field-range--crop {
-
-  @media (min-width: $screen-md) {
-    order: 2;
-  }
-}
-
-.field-range--fill {
-
-  @media (min-width: $screen-md) {
-    order: 4;
-  }
-}
-
-.field-range--contrast {
-
-  @media (min-width: $screen-md) {
-    order: 6;
   }
 }
