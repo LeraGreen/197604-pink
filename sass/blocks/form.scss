@@ -168,10 +168,12 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  margin-bottom: 43px;
+  margin-left: 5px;
+  margin-right: 5px;
+  // margin-bottom: 43px;
 
   &--margin {
-    margin-bottom: 15px
+    // margin-bottom: 15px
   }
 }
 
@@ -223,7 +225,7 @@
   border-radius: 2px;
 }
 
-.form__container fieldset:first-child {
+.form .form__container fieldset:first-of-type {
   border: none;
 }
 
@@ -246,9 +248,8 @@
 
   @media (min-width: $screen-lg) {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    height: 176px;
+    justify-content: space-between;
   }
 }
 
