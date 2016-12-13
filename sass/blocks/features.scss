@@ -99,15 +99,73 @@
     @media (min-width: $screen-lg) {
       content: '';
       position: absolute;
-      min-height: 278px;
-      width: 186px;
+      min-height: 302px;
+      width: 292px;
       background-size: 100%;
       margin: 0 auto;
       background-repeat: no-repeat;
-      position: absolute;
       bottom: 123%;
       left: 20%;
-      background-color: pink;
+    }
+  }
+
+  &--mood-sad {
+
+    &:before {
+
+      @media (min-width: $screen-lg) {
+        background: url('../img/iphone-screen-1-desktop@1x.png');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background: url('../img/iphone-screen-1-desktop@2x.png');
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: 292px 302px;
+        }
+      }
+    }
+  }
+
+  &--mood-normal {
+
+    &:before {
+
+      @media (min-width: $screen-lg) {
+        background: url('../img/iphone-screen-2-desktop@1x.png');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background: url('../img/iphone-screen-2-desktop@2x.png');
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: 292px 302px;
+        }
+      }
+    }
+  }
+
+  &--mood-happy {
+
+    &:before {
+
+      @media (min-width: $screen-lg) {
+        background: url('../img/iphone-screen-3-desktop@1x.png');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background: url('../img/iphone-screen-3-desktop@2x.png');
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: 292px 302px;
+        }
+      }
     }
   }
 }
@@ -155,13 +213,27 @@
     bottom: 0;
     left: 25%;
 
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url('../img/iphone-screen-mobile@2x.png');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 157px 320px;
+    }
+
     @media (min-width: $screen-md) {
       left: 5%;
-      //временно до урока по svg и picture
       width: 267px;
       height: 481px;
+      background: url('../img/iphone-screen-3-tablet@1x.png');
       background-size: 100%;
       background-position-y: -4%;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: url('../img/iphone-screen-3-tablet@2x.png');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 268px 481px;
+      }
     }
 
     @media (min-width: $screen-lg) {

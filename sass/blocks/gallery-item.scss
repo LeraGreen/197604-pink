@@ -38,22 +38,15 @@
     margin-right: 0;
     width: 100%;
 
-    //временно для сеток, до урока по картинкам
     background-color: $panorama-color;
     height: 137px;
-    background-image: url('../../img/panorama-mobile@1x.jpg');
-    background-repeat: no-repeat;
 
     @media (min-width: $screen-md) {
-      //временно для сеток, до урока по картинкам
       height: 510px;
-      background-size: 100% 100%;
     }
 
     @media (min-width: $screen-lg) {
-      //временно для сеток, до урока по картинкам
       height: 508px;
-      background-size: 100% 100%;
     }
   }
 }
