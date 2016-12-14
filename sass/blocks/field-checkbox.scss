@@ -75,6 +75,15 @@
   cursor: pointer;
 }
 
-// .field-checkbox__input + .field-checkbox__name-text {
-//   cursor: pointer;
-// }
+.field-checkbox__input:checked + .field-checkbox__name-text:after {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 1px;
+  left: 7px;
+  content: '';
+  background-image: url('../../img/icon-yes-form.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 17px;
+}

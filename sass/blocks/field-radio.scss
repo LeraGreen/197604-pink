@@ -33,3 +33,14 @@
   border-radius: 50%;
   cursor: pointer;
 }
+
+.field-radio__input:checked + .field-radio__name-text:after {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  content: '';
+  background-color: $main-color;
+  border-radius: 50%;
+}

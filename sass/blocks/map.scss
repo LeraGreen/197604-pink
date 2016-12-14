@@ -1,13 +1,40 @@
 .map {
-  background-color: green;
   width: 100%;
-  min-height: 614px;
+  height: 821px;
+  background: url('../../img/bg-map-mobile@1x.jpg');
+  background-position: center 80%;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url('../../img/bg-map-mobile@2x.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
 
   @media (min-width: $screen-md) {
     min-height: 781px;
+    background: url('../../img/bg-map-tablet@1x.jpg');
+    background-position: center -190%;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url('../../img/bg-map-tablet@2x.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center 125%;
+    }
   }
 
   @media (min-width: $screen-lg) {
     min-height: 870px;
+    background: url('../../img/bg-map-desktop@1x.jpg');
+    background-position: center -190%;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url('../../img/bg-map-desktop@2x.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
   }
 }

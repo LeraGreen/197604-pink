@@ -13,4 +13,45 @@
   margin-bottom: 42px;
   margin-left: 5px;
   margin-right: 5px;
+  cursor: pointer;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    width: 33px;
+    height: 33px;
+    top: 7px;
+    left: 7px;
+  }
+}
+
+.social-btn--twitter {
+
+  &:before {
+    background-image: url('../../img/icon-twitter.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px 15px;
+  }
+}
+
+.social-btn--facebook {
+
+  &:before {
+    background-image: url('../../img/icon-facebook.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 7px 19px;
+  }
+}
+
+.social-btn--youtube {
+
+  &:before {
+    background-image: url('../../img/icon-youtube.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px 14px;
+  }
 }

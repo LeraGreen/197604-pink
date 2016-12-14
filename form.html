@@ -146,13 +146,13 @@
             <div class="form__step-inner  form__step-inner--padding  form__step-inner--flex-lg">
               <label class="field-text  field-text--flex-reverse">
                 <div class="field-text__name">Номер телефона</div>
-                <div class="field-text__input-wrap  field-text__input-wrap--grey-bg">
+                <div class="field-text__input-wrap  field-text__input-wrap--grey-bg  field-text__input-wrap--icon  field-text__input-wrap--icon-phone">
                   <input class="field-text__input  field-text__input--small" type="tel" placeholder="Номер, пожалуйста" required>
                 </div>
               </label>
               <label class="field-text  field-text--flex-reverse">
                 <div class="field-text__name">Адрес<span class="visually-hidden--md">ок</span> почты</div>
-                <div class="field-text__input-wrap  field-text__input-wrap--grey-bg">
+                <div class="field-text__input-wrap  field-text__input-wrap--grey-bg  field-text__input-wrap--icon  field-text__input-wrap--icon-mail">
                   <input class="field-text__input  field-text__input--small" type="email" placeholder="Введите почту *" required>
                 </div>
               </label>
@@ -166,19 +166,19 @@
               <ul class="form__user-platforms">
                 <li class="field-radio">
                   <label class="field-radio__name">
-                    <input type="radio" class="field-radio__input" checked>
+                    <input type="radio" name="user-platform" value="iOS" class="field-radio__input" checked>
                     <span class="field-radio__name-text">Pink для iOS</span>
                   </label>
                 </li>
                 <li class="field-radio">
                   <label class="field-radio__name">
-                    <input type="radio" class="field-radio__input">
+                    <input type="radio" name="user-platform" value="Android" class="field-radio__input">
                     <span class="field-radio__name-text">Pink на Android</span>
                   </label>
                 </li>
                 <li class="field-radio">
                   <label class="field-radio__name">
-                    <input type="radio" class="field-radio__input">
+                    <input type="radio" name="user-platform" value="Windows Phone" class="field-radio__input">
                     <span class="field-radio__name-text">Windows Phone</span>
                   </label>
                 </li>
@@ -241,8 +241,19 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__container  page-footer__container--no-padding-top  page-footer__container--padding-top">
-        <div class="logo"></div>
+      <div class="page-footer__container  page-footer__container--top-padding">
+        <div class="logo">
+          <picture>
+            <source
+              media="(min-width: 960px)"
+              srcset="img/logo-pink-blue-desktop.svg">
+            <source
+              media="(min-width: 660px)"
+              srcset="img/logo-pink-blue-mobile.svg">
+              <img src="img/logo-pink-blue-mobile.svg"
+                    alt="Pink">
+          </picture>
+        </div>
         <div class="page-footer__social">
           <a href="" class="social-btn  social-btn--twitter">twitter</a>
           <a href="" class="social-btn  social-btn--facebook">facebook</a>
@@ -250,7 +261,9 @@
         </div>
         <div class="page-footer__copyright">
           <span>Разработано</span>
-          <a class="page-footer__copyright-logo" href="https://htmlacademy.ru" target="_blank">htmlacademy</a>
+          <a class="page-footer__copyright-logo" href="https://htmlacademy.ru" target="_blank">htmlacademy
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="28" height="35"><path class="page-footer__copyright-logo-svg" fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+          </a>
         </div>
       </div>
     </footer>

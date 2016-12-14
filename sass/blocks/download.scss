@@ -26,7 +26,7 @@
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background: url('../img/bg-back-mobile@2x.jpg');
       background-repeat: no-repeat;
-      background-size: 700px auto;
+      background-size: 500px auto;
       background-position: center;
     }
 
@@ -96,15 +96,15 @@
         background: url('../img/iphone-hand-tablet@2x.png');
         background-repeat: no-repeat;
         background-position: 0 0;
-        background-size: 700px 545px;
+        background-size: 500px 545px;
       }
     }
 
     @media (min-width: $screen-lg) {
       top: auto;
       bottom: 0;
-      width: 700px;
-      height: 544px;
+      width: 900px;
+      height: 645px;
       background: url('../img/iphone-hand-desktop@1x.png');
       background-position: 0 0;
       background-repeat: no-repeat;
@@ -114,7 +114,7 @@
         background: url('../img/iphone-hand-desktop@2x.png');
         background-repeat: no-repeat;
         background-position: 0 0;
-        background-size: 2560px 853px;
+        background-size: 1050px 645px;
       }
     }
   }
@@ -126,6 +126,7 @@
   display: flex;
   justify-content: space-around;
   margin-top: 34px;
+  align-items: baseline;
 
   @media (min-width: $screen-md) {
     margin-top: 40px;
@@ -138,8 +139,15 @@
   color: $font-color-second;
   margin-right: 15px;
   margin-left: 15px;
-  //временно пока до урока по картинкам
-  min-height: 65px;
+  height: 65px;
+  display: inline-block;
+
+  &--android {
+
+    @media (min-width: $screen-md) and (max-width: $screen-lg - 1px) {
+      opacity: 0.6;
+    }
+  }
 }
 
 .download__item {

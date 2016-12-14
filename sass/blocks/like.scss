@@ -1,3 +1,22 @@
+.like {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url('../../img/icon-heart.svg');
+    background-repeat: no-repeat;
+    // left: 0;
+    top: 0;
+
+    @media (min-width: $screen-md) {
+      right: 0;
+    }
+  }
+}
+
 .like__text {
   font-size: $font-size-small;
   text-transform: uppercase;

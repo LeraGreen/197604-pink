@@ -35,3 +35,32 @@
     font-size: 0;
   }
 }
+
+.main-page-footer__inner {
+  width: 100%;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 75px;
+    background-image: url('../../img/bg-triangle-white-footer.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 110% auto;
+    bottom: -74px;
+    left: 0;
+    background-color: transparent;
+
+    @media (min-width: $screen-md) {
+      height: 105px;
+      bottom: -104px;
+    }
+
+    @media (min-width: $screen-lg) {
+      height: 142px;
+      bottom: -141px;
+    }
+  }
+}

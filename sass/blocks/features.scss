@@ -240,6 +240,21 @@
       display: none;
     }
   }
+
+
+  &:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100px;
+    background-image: url('../../img/bg-triangle-white.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    top: -100px;
+    left: 0;
+    transform: rotate(180deg);
+  }
 }
 
 .features__inner {
@@ -277,3 +292,4 @@
     margin-bottom: 202px;
   }
 }
+

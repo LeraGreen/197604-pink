@@ -91,7 +91,6 @@
 
 .field-text__input-wrap {
   margin-top: 10px;
-  // margin-bottom: 21px;
 
   &--flex-el {
 
@@ -112,17 +111,47 @@
     }
   }
 
-  &--no-margin-bottom  {
+  &--icon  {
 
-    @media (min-width: $screen-lg) {
-      margin-bottom: 0;
+    @media (min-width: $screen-md) {
+      position: relative;
+    }
+
+    &:after {
+
+      @media (min-width: $screen-md) {
+        position: absolute;
+        content: '';
+        width: 35px;
+        height: 35px;
+        top: 12px;
+        right: 12px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     }
   }
 
-  &--no-margin-top {
+  &--icon-phone {
 
-    @media (min-width: $screen-lg) {
-      margin-top: 0;
+    &:after{
+
+      @media (min-width: $screen-md) {
+        background-image: url('../../img/icon-phone.svg');
+        background-size: 20px 20px;
+
+      }
+    }
+  }
+
+  &--icon-mail {
+
+    &:after {
+
+      @media (min-width: $screen-md) {
+        background-image: url('../../img/icon-mail.svg');
+        background-size: 18px 14px;
+      }
     }
   }
 }

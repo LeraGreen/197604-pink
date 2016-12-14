@@ -39,3 +39,22 @@
     align-self: center;
   }
 }
+
+.page-footer__copyright-logo {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.page-footer__copyright-logo-svg {
+  fill: $main-color;
+}
+
+.page-footer__copyright-logo:hover .page-footer__copyright-logo-svg {
+  fill: $font-color-main;
+}
+
+.page-footer__copyright-logo:focus .page-footer__copyright-logo-svg {
+  fill: $grey-light;
+}
