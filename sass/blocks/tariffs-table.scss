@@ -13,16 +13,16 @@
 .tariffs-table__item-header {
   text-align: center;
   vertical-align: middle;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 22px;
+  padding-bottom: 26px;
   background-color: $header-menu-color;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-left: 2px solid $grey-lighter;
   border-right: 2px solid $grey-lighter;
 
   @media (min-width: $screen-md) {
-    padding-top: 10px;
+    padding-top: 13px;
     padding-bottom: 5px;
     width: 155px;
   }
@@ -32,6 +32,51 @@
     padding-bottom: 23px;
     width: 235px;
   }
+
+  &--hit {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 74px;
+    height: 73px;
+    background-image: url('../../img/bg-hit.svg');
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    background-size: 74px 73px;
+    background-position: center;
+
+    @media (min-width: $screen-md) {
+      background-image: url('../../img/bg-hit-tablet.svg');
+      width: 61px;
+      height: 61px;
+      top: 0;
+      left: 0;
+      background-size: 61px 61px;
+      background-position: center;
+    }
+  }
+
+  &:after {
+    content: 'хит';
+    position: absolute;
+    text-transform: uppercase;
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $font-color-second;
+    line-height: 2.143em;
+    top: 12px;
+    left: 9px;
+    transform: rotate(-45deg);
+
+    @media (min-width: $screen-md) {
+      top: 4px;
+      left: 6px;
+    }
+  }
+}
 }
 
 .tariffs-table__item-title {
@@ -62,6 +107,7 @@
   @media (min-width: $screen-md) {
     font-size: $font-size-big;
     line-height: 1.667em;
+    margin-top: 0;
   }
 
   @media (min-width: $screen-lg) {
@@ -73,24 +119,78 @@
 
 .tariffs-table__feauture {
   padding-top: 19px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
   background-color: $bg-main;
   padding-left: 22px;
   padding-right: 5px;
   text-transform: uppercase;
-  border-left: 2px solid $grey-lighter;
-  border-bottom: 2px solid $grey-lighter;
+  border: 2px solid $grey-lighter;
 
   @media (min-width: $screen-md) {
     padding-left: 19px;
-    padding-bottom: 8px;
+    padding-bottom: 9px;
     padding-top: 6px;
   }
 
   @media (min-width: $screen-lg) {
     padding-left: 25px;
-    padding-bottom: 12px;
-    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-top: 13px;
+  }
+
+  &--no-top-border {
+    border-top: none;
+  }
+
+  &--check {
+  position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 31px;
+      height: 27px;
+      background-image: url('../img/icon-yes.svg');
+      background-repeat: no-repeat;
+      right: 16px;
+      background-size: contain;
+
+      @media (min-width: $screen-md) {
+        right: 58px;
+        bottom: 5px;
+      }
+
+      @media (min-width: $screen-lg) {
+        right: 99px;
+        bottom: 12px;
+      }
+    }
+  }
+
+  &--cross {
+  position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 27px;
+      height: 27px;
+      background-image: url('../img/icon-no.svg');
+      background-repeat: no-repeat;
+      right: 19px;
+      bottom: 17px;
+      background-size: contain;
+
+      @media (min-width: $screen-md) {
+        right: 61px;
+        bottom: 9px;
+      }
+
+      @media (min-width: $screen-lg) {
+        right: 102px;
+        bottom: 16px;
+      }
+    }
   }
 }
 
@@ -104,7 +204,7 @@
 }
 
 .tariffs__table-wrapper {
-  padding-bottom: 40px;
+  padding-bottom: 13px;
 
   @media (min-width: $screen-md) {
     width: 620px;
@@ -153,77 +253,6 @@
     @media (min-width: $screen-md) {
       display: none;
     }
-  }
-}
-
-.tariffs-table__feauture--check {
-  position: relative;
-
-  &:after {
-    content: '';
-    position: absolute;
-    width: 22px;
-    height: 16px;
-    background-image: url('../img/icon-yes.svg');
-    background-repeat: no-repeat;
-    right: 0;
-    background-size: 22px 16px;
-  }
-}
-
-.tariffs-table__feauture--cross {
-  position: relative;
-
-  &:before {
-    content: '';
-    position: absolute;
-    width: 27px;
-    height: 27px;
-    background-image: url('../img/icon-no.svg');
-    background-repeat: no-repeat;
-    right: 0;
-    background-size: 27px 27px;
-    background-position: center;
-  }
-}
-
-.tariffs-table__item-header--hit {
-  position: relative;
-
-  &:before {
-    content: '';
-    position: absolute;
-    width: 74px;
-    height: 73px;
-    background-image: url('../../img/bg-hit.svg');
-    background-repeat: no-repeat;
-    top: 0;
-    left: 0;
-    background-size: 74px 73px;
-    background-position: center;
-
-    @media (min-width: $screen-md) {
-      background-image: url('../../img/bg-hit-tablet.svg');
-      width: 61px;
-      height: 61px;
-      top: 0;
-      left: 0;
-      background-size: 61px 61px;
-      background-position: center;
-    }
-  }
-
-  &:after {
-    content: 'хит';
-    position: absolute;
-    text-transform: uppercase;
-    font-family: $font-family;
-    font-size: $font-size;
-    color: $font-color-second;
-    line-height: 2.143em;
-    top: 10px;
-    left: 10px;
-    transform: rotate(-45deg);
   }
 }
 

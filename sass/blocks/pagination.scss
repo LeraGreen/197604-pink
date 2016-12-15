@@ -1,6 +1,12 @@
 .pagination {
   text-align: center;
   font-size: 0;
+  margin-top: 10px;
+  padding-top: 12px;
+
+  @media (min-width: $screen-md) {
+    padding-top: 0;
+  }
 }
 
 .pagination__link {
@@ -11,6 +17,14 @@
   height: 6px;
   background-color: $grey-light;
   border-radius: 50%;
+
+  &:hover {
+    background-color: $grey-dark;
+  }
+
+  &:active {
+    background-color: $grey-lightest;
+  }
 }
 
 .pagination__item {
@@ -20,13 +34,21 @@
   vertical-align: middle;
   cursor: pointer;
   text-align: center;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 4px;
+  margin-right: 4px;
 
   &--active span {
-    background-color: transparent;
+    background-color: $bg-main;
     width: 12px;
     height: 12px;
     border: 3px solid $font-color-main;
+
+    &:hover {
+      background-color: $bg-main;
+    }
+
+    &:active {
+      background-color: $bg-main;
+    }
   }
 }

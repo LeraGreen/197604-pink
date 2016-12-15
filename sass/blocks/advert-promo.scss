@@ -1,11 +1,4 @@
 .advert-promo {
-  display: none;
-  @include clearfix;
-
-  @media (min-width: $screen-md) {
-    display: block;
-    padding-bottom: 50px;
-  }
 
   @media (min-width: $screen-lg) {
     margin-top: -1px;
@@ -23,11 +16,14 @@
 
   @media (min-width: $screen-md) {
     @include container;
-    // @include clearfix;
     padding-top: 56px;
     position: relative;
+    padding-bottom: 40px;
   }
 
+  @media (min-width: $screen-lg) {
+    padding-bottom: 85px;
+  }
 
   &:before {
 
@@ -39,9 +35,18 @@
       background-image: url('../../img/icon-timer.svg');
       background-repeat: no-repeat;
       background-position: left center;
-      background-size: 239px 238px;
+      background-size: 242px 274px;
       left: 0;
-      top: 30px;
+      top: 45px;
+    }
+
+    @media (min-width: $screen-lg) {
+      background-size: 309px 347px;
+      width: 350px;
+      height: 350px;
+      left: -4px;
+      top: -2px;
+
     }
   }
 
@@ -54,8 +59,14 @@
       font-weight: $bold;
       line-height: 1.656em;
       color: $main-color;
-      top: 110px;
+      top: 130px;
       left: 66px;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 120px;
+      top: 92px;
+      left: 80px;
     }
   }
 }
@@ -68,6 +79,7 @@
     text-align: left;
     margin-top: 41px;
     padding-right: 14px;
+    padding-bottom: 28px;
   }
 
   @media (min-width: $screen-lg) {
@@ -81,6 +93,8 @@
     color: $font-color-third;
     font-size: $font-size-biggest;
     line-height: 1.200em;
+    display: inline-block;
+    margin-bottom: 8px;
 
     @media (min-width: $screen-lg) {
       line-height: 1em;
@@ -100,19 +114,14 @@
 
   @media (min-width: $screen-md) {
     font-size: $font-size;
-    line-height: 1.714em;
+    line-height: 1.715em;
+    margin-bottom: 11px;
   }
 
   @media (min-width: $screen-lg) {
     font-size: $font-size-big;
     line-height: 1.667em;
-  }
-}
-
-.advert-promo__title-wrap {
-
-  @media (min-width: $screen-md) {
-    padding-right: 25px;
+    padding-top: 15px;
   }
 }
 
@@ -126,5 +135,11 @@
   @media (min-width: $screen-lg) {
     font-size: $font-size-big;
     line-height: 1.667em;
+    display: inline-block;
+    margin-top: 20px;
   }
+}
+
+.advert-promo__inner {
+  @include clearfix;
 }

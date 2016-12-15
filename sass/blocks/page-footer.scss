@@ -10,6 +10,7 @@
   @media (min-width: $screen-md) {
     display: flex;
     justify-content: space-between;
+    padding-top: 36px;
   }
 
   @media (min-width: $screen-lg) {
@@ -44,6 +45,15 @@
   font-size: 0;
   display: inline-block;
   vertical-align: middle;
+  margin-top: 10px;
+
+  &:hover .page-footer__copyright-logo-svg {
+    fill: $font-color-main;
+  }
+
+  &:active .page-footer__copyright-logo-svg {
+    fill: $grey-light;
+  }
 }
 
 
@@ -51,10 +61,9 @@
   fill: $main-color;
 }
 
-.page-footer__copyright-logo:hover .page-footer__copyright-logo-svg {
-  fill: $font-color-main;
-}
+.page-footer__social {
 
-.page-footer__copyright-logo:focus .page-footer__copyright-logo-svg {
-  fill: $grey-light;
+  @media (min-width: $screen-md) {
+    margin-left: -26px;
+  }
 }

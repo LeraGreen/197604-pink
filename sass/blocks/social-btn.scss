@@ -24,6 +24,14 @@
     top: 7px;
     left: 7px;
   }
+
+  &:hover {
+    border-color: $font-color-main;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .social-btn--twitter {
