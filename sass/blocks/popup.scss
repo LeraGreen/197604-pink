@@ -18,9 +18,9 @@
   }
 
   &--fail {
-     top: 1420px;
-     left: 0;
-     background-color: $bg-main;
+    top: 1420px;
+    left: 0;
+    background-color: $bg-main;
 
     @media (min-width: $screen-md) {
       left: 95px;
@@ -34,9 +34,9 @@
   }
 
   &--success {
-     top: 1893px;
-     left: 0;
-     background-color: $bg-main;
+    top: 1893px;
+    left: 0;
+    background-color: $bg-main;
 
     @media (min-width: $screen-md) {
       left: 95px;
