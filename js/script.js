@@ -28,7 +28,7 @@ function setMarkers(map) {
   ];
 
   var image = {
-    url: '../img/icon-map-marker.svg',
+    url: 'img/icon-map-marker.svg',
     size: new google.maps.Size(36, 36),
     anchor: new google.maps.Point(18, 18)
   };
