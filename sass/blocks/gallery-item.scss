@@ -1,10 +1,6 @@
 .gallery-item {
   margin-bottom: 20px;
 
-  @media (min-width: $screen-lg) {
-      margin-bottom: 45px;
-    }
-
   &--panorama {
 
     @media (min-width: $screen-md) {
@@ -12,12 +8,52 @@
       margin-bottom: 50px;
     }
   }
-}
 
-.gallery__items-wrap .gallery-item {
-
-  @media (min-width: $screen-md) {
+  &--usual {
     background-color: $bg-second;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 55px;
+    }
+
+    .gallery-item__comment {
+      padding-bottom: 4px;
+      padding-top: 15px;
+
+      @media (min-width: $screen-md) {
+        padding-bottom: 10px;
+        padding-top: 22px;
+        padding-left: 27px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .like {
+
+      @media (min-width: $screen-md) {
+        margin-top: auto;
+        padding-left: 0;
+      }
+
+      &:before {
+
+        @media (min-width: $screen-md) {
+          right: 21px;
+          left: auto;
+          bottom: 18px;
+        }
+      }
+    }
   }
 }
 
@@ -47,6 +83,7 @@
 
     @media (min-width: $screen-lg) {
       height: 508px;
+      overflow: hidden;
     }
   }
 }
@@ -72,73 +109,11 @@
   }
 
   @media (min-width: $screen-lg) {
-    top: 11%;
-    left: 79%;
+    left: auto;
+    top: 55px;
+    right: 9px;
   }
 
-}
-
-.gallery-item__comment-container {
-  padding-left: 18px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  text-align: left;
-
-  @media (min-width: $screen-md) {
-    padding-top: 10px;
-    padding-left: 28px;
-    padding-bottom: 10px;
-    padding-right: 30px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  & .like {
-    @media (min-width: $screen-md) {
-      margin-top: auto;
-    }
-  }
-
-
-  &--panorama {
-
-    @media (min-width: $screen-md) {
-      padding-right: 26px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-
-    @media (min-width: $screen-lg) {
-      padding-top: 3px;
-    }
-  }
-
-  &--panorama .gallery-item__comment-data {
-    @media (min-width: $screen-md) {
-      order: 1;
-    }
-  }
-
-  &--panorama .like {
-    @media (min-width: $screen-md) {
-      order: 2;
-    }
-  }
-
-  &--panorama .like .like__text{
-    @media (min-width: $screen-md) {
-      margin-bottom: 0;
-    }
-  }
-
-  &--panorama .gallery-item__comment-text {
-    @media (min-width: $screen-md) {
-      order: 3;
-    }
-  }
 }
 
 .gallery-item__comment-time {
@@ -154,23 +129,65 @@
   line-height: 1.714em;
 }
 
-// .gallery-item__inner {
-//   width: 280px;
-//   margin: 0 auto;
-//   background-color: $bg-second;
-
-//   @media (min-width: $screen-md) {
-//     width: 300px;
-//     margin: 0 auto;
-//   }
-// }
-
 .gallery-item__comment {
+  padding-left: 18px;
+  padding-top: 17px;
+  padding-right: 10px;
+  padding-bottom: 7px;
 
   &--panorama {
     @include container;
     background-color: $bg-second;
-    padding-top: 4px;
+
+    @media (min-width: $screen-md) {
+      padding-top: 23px;
+      padding-left: 28px;
+      padding-bottom: 1px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-bottom: 8px;
+    }
+
+    .gallery-item__comment-data {
+
+      @media (min-width: $screen-md) {
+        order: 1;
+      }
+    }
+
+    .gallery-item__comment-text {
+
+      @media (min-width: $screen-md) {
+        order: 3;
+        width: 100%;
+      }
+
+      @media (min-width: $screen-lg) {
+        margin-bottom: 5px;
+      }
+    }
+
+    .like {
+
+      @media (min-width: $screen-md) {
+        order: 2;
+        padding-left: 0;
+        padding-right: 52px;
+      }
+
+      &:before {
+
+        @media (min-width: $screen-md) {
+          left: auto;
+          right: 18px;
+          bottom: 17px;
+        }
+      }
+    }
   }
 }
 
@@ -182,6 +199,7 @@
 
 .gallery-item__photo-link {
   cursor: pointer;
+  display: inline-block;
 }
 
 

@@ -1,15 +1,16 @@
 .field-range {
 
-  @media (min-width: $screen-sm) and (max-width: $screen-md) {
+  @media (min-width: $screen-sm) and (max-width: $screen-md - 1px) {
     display: none;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 12px;
     left: 0;
   }
 
   @media (min-width: $screen-md) {
     display: block;
+    padding-right: 31px;
     flex-grow: 1;
   }
 }

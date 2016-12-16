@@ -1,15 +1,17 @@
 .like {
   position: relative;
+  padding-left: 33px;
 
   &:before {
     content: '';
     position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     background-image: url('../../img/icon-heart.svg');
     background-repeat: no-repeat;
-    // left: 0;
-    top: 0;
+    background-position: center;
+    left: 0;
+    bottom: 6px;
 
     @media (min-width: $screen-md) {
       right: 0;

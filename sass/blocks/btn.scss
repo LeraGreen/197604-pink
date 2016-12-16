@@ -23,10 +23,10 @@
   }
 
   @media (min-width: $screen-lg) {
-    font-size: 21px;
     margin-top: 19px;
     padding-bottom: 15px;
     padding-left: 29px;
+    line-height: 1em;
   }
 
   &:hover {
@@ -125,10 +125,6 @@
     &:disabled {
       background-color: $grey-lighter;
       outline: none;
-    }
-
-    @media (min-width: $screen-lg) {
-      width: 64%;
     }
   }
 

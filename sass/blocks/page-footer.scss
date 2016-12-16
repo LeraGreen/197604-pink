@@ -1,7 +1,7 @@
 .page-footer__container {
   text-align: center;
   @include container;
-  padding-top: 32px;
+  padding-top: 39px;
 
   &--hide {
     display: none;
@@ -11,17 +11,12 @@
     display: flex;
     justify-content: space-between;
     padding-top: 36px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $screen-lg) {
     padding-top: 100px;
-  }
-
-  &--padding-top  {
-
-    @media (min-width: $screen-lg) {
-      padding-top: 35px;
-    }
+    padding-bottom: 80px;
   }
 
   &--top-padding {
@@ -34,10 +29,15 @@
 
 .page-footer__copyright {
   color: $font-color-main;
-  margin-bottom: 40px;
+  margin-top: 25px;
 
   @media (min-width: $screen-md) {
     align-self: center;
+    margin-top: 0;
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size-big;
   }
 }
 
@@ -62,8 +62,19 @@
 }
 
 .page-footer__social {
+  margin-top: 35px;
 
   @media (min-width: $screen-md) {
     margin-left: -26px;
+    margin-top: 0;
   }
+
+  @media (min-width: $screen-lg) {
+    margin-left: 17px;
+  }
+}
+
+.page-footer__copyright-logo-icon {
+  width: 40px;
+  height: 40px;
 }

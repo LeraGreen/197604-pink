@@ -5,6 +5,10 @@
   padding-left: 3.889em;
   position: relative;
   display: block;
+
+  @media (min-width: $screen-md) {
+    padding-left: 59px;
+  }
 }
 
 .field-radio__input {
@@ -32,6 +36,14 @@
   border: 2px solid $grey-lighter;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.field-radio__input:hover + .field-radio__name-text:before {
+  border-color: $font-color-main;
+}
+
+.field-radio__input:active + .field-radio__name-text:before {
+  border-color: $main-color;
 }
 
 .field-radio__input:checked + .field-radio__name-text:after {

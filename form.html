@@ -31,22 +31,22 @@
               <ul class="main-nav__list ">
                 <li class="main-nav__item">
                   <div class="main-nav__item-inner">
-                    <a href="" class="main-nav__link">Главная</a>
+                    <a href="index.html" class="main-nav__link">Главная</a>
                   </div>
                 </li>
                 <li class="main-nav__item">
                   <div class="main-nav__item-inner">
-                    <a href="" class="main-nav__link">Фотографии</a>
+                    <a href="photo.html" class="main-nav__link">Фотографии</a>
                   </div>
                 </li>
                 <li class="main-nav__item">
                   <div class="main-nav__item-inner">
-                    <a href="" class="main-nav__link">Конкурс</a>
+                    <a href="" class="main-nav__link  main-nav__link--active">Конкурс</a>
                   </div>
                 </li>
                 <li class="main-nav__item">
                   <div class="main-nav__item-inner">
-                    <a href="" class="main-nav__link">HTML Academy</a>
+                    <a href="https://htmlacademy.ru" class="main-nav__link">HTML Academy</a>
                   </div>
                 </li>
               </ul>
@@ -55,7 +55,7 @@
         </div>
       </div>
       <div class="promo">
-        <div class="promo__inner">
+        <div class="promo__inner  promo__inner--form-page">
           <h1 class="promo__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </div>
@@ -65,41 +65,39 @@
       <form action="" class="form">
         <div class="form__container">
 
-          <div class="form__step  form__step--order-0  form__step--margin-bottom">
-            <div class="form__step-inner">
-              <div class="form__intro-wrap">
-                <p class="form__intro">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!<span class="visually-hidden--sm"> Пожалуйста, заполните форму ниже:</span></p>
-              </div>
+          <div class="form__step  form__step--order-0">
+            <div class="form__step-inner  form__step-inner--promo">
+              <p class="form__intro">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!<span class="visually-hidden  visually-hidden--sm-inline"> Пожалуйста, заполните форму ниже:</span></p>
             </div>
           </div>
 
-          <fieldset class="form__step  form__step--order-1  form__step--no-border  form__step--flex-basis">
-            <div class="form__step-inner  form__step-inner--no-padding">
-              <label class="field-text  field-text--flex-row  field-text--margin  field-text--no-margin-top">
+          <fieldset class="form__step  form__step--order-1  form__step--data-name">
+            <div class="form__step-inner  form__step-inner--data-name">
+              <label class="field-text  field-text--flex-row">
                 <div class="field-text__name  field-text__name--flex-el">Фамилия:</div>
                 <div class="field-text__input-wrap  field-text__input-wrap--flex-el">
                   <input class="field-text__input  field-text__input--flex-el" type="text" placeholder="Укажите фамилию *" required>
                 </div>
               </label>
-              <label class="field-text  field-text--flex-row  field-text--margin">
+              <label class="field-text  field-text--flex-row">
                 <div class="field-text__name  field-text__name--flex-el">Имя:</div>
                 <div class="field-text__input-wrap field-text__input-wrap--flex-el">
                   <input class="field-text__input  field-text__input--flex-el" type="text" placeholder="Введите ваше имя *" required>
                 </div>
               </label>
-              <label class="field-text  field-text--flex-row  field-text--margin  field-text--no-margin-bottom">
+              <label class="field-text  field-text--flex-row">
                 <div class="field-text__name  field-text__name--flex-el">Отчество:</div>
-                <div class="field-text__input-wrap  field-text__input-wrap--flex-el  field-text__input-wrap--no-margin-bottom">
+                <div class="field-text__input-wrap  field-text__input-wrap--flex-el">
                   <input class="field-text__input  field-text__input--flex-el" type="text" placeholder="Ну и отчество тоже" required>
                 </div>
               </label>
             </div>
           </fieldset>
 
-          <fieldset class="form__step  form__step--bg-grey  form__step--order-4  form__step--margin  form__step--margin-lg">
-            <legend class="form__step-title  form__step-legend visually-hidden--sm">Ваши безбашенные достижения в путешествии</legend>
-            <div class="form__step-inner  form__step-inner--padding">
-              <h2 class="form__step-title  visually-hidden--md">Ваши безбашенные достижения в путешествии</h2>
+          <fieldset class="form__step form__step--achieves form__step--bg-grey  form__step--order-4">
+            <legend class="form__step-title  form__step-legend  visually-hidden visually-hidden--sm-inline">Ваши безбашенные достижения в путешествии</legend>
+            <div class="form__step-inner  form__step-inner--achieves">
+              <h2 class="form__step-title  visually-hidden  visually-hidden--md-lg">Ваши безбашенные достижения в путешествии</h2>
               <ul class="form__achieves-list">
                 <li class="field-checkbox  field-checkbox--order-1">
                   <label class="field-checkbox__name">
@@ -141,9 +139,9 @@
             </div>
           </fieldset>
 
-          <fieldset class="form__step  form__step--order-3  form__step--margin  form__step--margin-lg">
-            <legend class="form__step-title  form__step-legend  form__step-legend--margin-top-smaller visually-hidden--sm">Контактная информация</legend>
-            <div class="form__step-inner  form__step-inner--padding  form__step-inner--flex-lg">
+          <fieldset class="form__step  form__step--order-3 form__step--data-contacts">
+            <legend class="form__step-title  form__step-legend visually-hidden  visually-hidden--sm">Контактная информация</legend>
+            <div class="form__step-inner  form__step-inner--flex-lg  form__step-inner--data-contacts">
               <label class="field-text  field-text--flex-reverse">
                 <div class="field-text__name">Номер телефона</div>
                 <div class="field-text__input-wrap  field-text__input-wrap--grey-bg  field-text__input-wrap--icon  field-text__input-wrap--icon-phone">
@@ -151,7 +149,7 @@
                 </div>
               </label>
               <label class="field-text  field-text--flex-reverse">
-                <div class="field-text__name">Адрес<span class="visually-hidden--md">ок</span> почты</div>
+                <div class="field-text__name">Адрес<span class="visually-hidden  visually-hidden--md-lg-inline">ок</span> почты</div>
                 <div class="field-text__input-wrap  field-text__input-wrap--grey-bg  field-text__input-wrap--icon  field-text__input-wrap--icon-mail">
                   <input class="field-text__input  field-text__input--small" type="email" placeholder="Введите почту *" required>
                 </div>
@@ -159,10 +157,10 @@
             </div>
           </fieldset>
 
-          <fieldset class="form__step  form__step--bg-grey form__step--order-2  form__step--margin  form__step--flex-basis  form__step--flex-margin  form__step--no-margin-bottom">
-            <legend class="form__step-title  form__step-legend  visually-hidden--sm">С каким приложением путешествовали?</legend>
-            <div class="form__step-inner  form__step-inner--padding">
-              <h2 class="form__step-title  visually-hidden--md">С каким приложением путешествовали?</h2>
+          <fieldset class="form__step  form__step--bg-grey form__step--order-2  form__step--platforms">
+            <legend class="form__step-title  form__step-legend  visually-hidden visually-hidden--sm-inline">С каким приложением путешествовали?</legend>
+            <div class="form__step-inner  form__step-inner--platforms">
+              <h2 class="form__step-title  visually-hidden  visually-hidden--md-lg">С каким приложением путешествовали?</h2>
               <ul class="form__user-platforms">
                 <li class="field-radio">
                   <label class="field-radio__name">
@@ -186,28 +184,28 @@
             </div>
           </fieldset>
 
-          <fieldset class="form__step  form__step--order-5  form__step--margin  form__step--margin-lg">
-            <legend class="form__step-title  form__step-legend  visually-hidden--sm">Опишите свои эмоции</legend>
-            <div class="form__step-inner  form__step-inner--padding    form__step-inner--padding-bottom">
-              <h2 class="form__step-title  form__step-title--margin  visually-hidden--md">Опишите свои эмоции</h2>
+          <fieldset class="form__step  form__step--order-5  form__step--reviews">
+            <legend class="form__step-title  form__step-legend  visually-hidden visually-hidden--sm-inline">Опишите свои эмоции</legend>
+            <div class="form__step-inner  form__step-inner--reviews">
+              <h2 class="form__step-title visually-hidden  visually-hidden--md-lg">Опишите свои эмоции</h2>
               <textarea class="field-text__textarea" name="" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
 
-          <div class="form__step  form__step--order-6  form__step--margin  form__step--margin-lg">
-            <div class="form__step-inner  form__step-inner--padding">
+          <div class="form__step  form__step--order-6  form__step--send-form">
+            <div class="form__step-inner  form__step-inner--send-form">
               <div class="form__button-wrapper">
                 <button class="btn  btn--green-large" type="submit">Отправить форму</button>
               </div>
               <div class="form__note-wrapper">
-                <p class="form__note"><span class="form__note-star">*</span> &#8212; обязательные<span class="visually-hidden--sm-md"> для заполнения</span> поля</p>
+                <p class="form__note"><span class="form__note-star">*</span> &#8212; обязательные<span class="visually-hidden  visually-hidden--sm-md-inline"> для заполнения</span> поля</p>
               </div>
             </div>
           </div>
         </div>
       </form>
 
-      <div class="popup  popup--big-width">
+      <div class="popup  popup--big-width  popup--hide  popup--success">
         <div class="popup__inner  popup__inner--padding  popup__inner--medium-width">
           <div class="popup__title-wrap">
             <b class="popup__title">Ваша заявка отправлена</b>
@@ -225,7 +223,7 @@
         </div>
       </div>
 
-      <div class="popup">
+      <div class="popup  popup--hide  popup--fail">
         <div class="popup__inner  popup__inner--padding-bottom">
           <div class="popup__title-wrap">
             <b class="popup__title">Что-то пошло не так!</b>

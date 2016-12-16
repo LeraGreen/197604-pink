@@ -38,15 +38,13 @@
     position: absolute;
     width: 30px;
     height: 50px;
-    background-repeat: no-repeat;
+    cursor: pointer;
   }
+
 
   &--previous {
 
     @media (min-width: $screen-lg) {
-      background-image: url('../../img/icon-review-arrow-left.svg');
-      background-position: left center;
-      background-size: 21px 41px;
       left: 0;
       top: 209px;
     }
@@ -56,12 +54,17 @@
   &--next {
 
     @media (min-width: $screen-lg) {
-      background-image: url('../../img/icon-review-arrow-right.svg');
-      background-position: left center;
-      background-size: 21px 41px;
       right: -9px;
       top: 209px;
     }
+  }
+
+  &:hover .reviews__tab-svg {
+    fill: $grey-dark;
+  }
+
+  &:active .reviews__tab-svg {
+    fill: $grey-lightest;
   }
 }
 

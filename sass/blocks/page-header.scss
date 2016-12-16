@@ -1,10 +1,13 @@
 .page-header {
   background-color: $header-color;
   color: $font-color-second;
-  @include clearfix;
 
   &--no-bg {
     background-color: transparent;
+  }
+
+  &--main {
+    @include clearfix;
   }
 }
 

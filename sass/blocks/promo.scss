@@ -26,11 +26,11 @@
     @media (min-width: $screen-md) {
       background-size: cover;
       background-position: top;
-      height: 330px + 112px;
+      height: 441px;
       top: -112px;
     }
 
-    @media (min-width: $screen-md) {
+    @media (min-width: $screen-lg) {
       background-size: cover;
       background-position: top;
       height: 284px + 112px;
@@ -54,7 +54,7 @@
 
 .promo__inner {
   @include container;
-  padding-top: 20px;
+  padding-top: 16px;
 
   @media (min-width: $screen-md) {
     padding-top: 35px;
@@ -64,5 +64,12 @@
     padding-top: 29px;
     padding-left: 150px;
     padding-right: 150px;
+  }
+
+  &--form-page {
+    @media (min-width: $screen-lg) {
+      padding-left: 0;
+      padding-right: 0
+    }
   }
 }

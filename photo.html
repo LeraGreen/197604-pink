@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    </script>
   </head>
   <body>
 
@@ -30,22 +33,22 @@
               <ul class="main-nav__list ">
                 <li class="main-nav__item">
                   <div class="main-nav__item-inner">
-                    <a href="" class="main-nav__link">Главная</a>
+                    <a href="index.html" class="main-nav__link">Главная</a>
                   </div>
                 </li>
                 <li class="main-nav__item">
                   <div class="main-nav__item-inner">
-                    <a href="" class="main-nav__link">Фотографии</a>
+                    <a href="" class="main-nav__link  main-nav__link--active">Фотографии</a>
                   </div>
                 </li>
                 <li class="main-nav__item">
                   <div class="main-nav__item-inner">
-                    <a href="" class="main-nav__link">Конкурс</a>
+                    <a href="form.html" class="main-nav__link">Конкурс</a>
                   </div>
                 </li>
                 <li class="main-nav__item">
                   <div class="main-nav__item-inner">
-                    <a href="" class="main-nav__link">HTML Academy</a>
+                    <a href="https://htmlacademy.ru" class="main-nav__link">HTML Academy</a>
                   </div>
                 </li>
               </ul>
@@ -63,7 +66,7 @@
     <main>
       <section class="gallery">
         <div class="gallery__inner">
-          <h1 class="visually-hidden">Фотографии пользователей приложения Pink</h1>
+          <h1 class="hidden-text">Фотографии пользователей приложения Pink</h1>
           <div class="gallery__intro">
             <p class="gallery__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
           </div>
@@ -97,7 +100,7 @@
           </div>
 
           <div class="gallery__items-wrap">
-            <div class="gallery-item">
+            <div class="gallery-item  gallery-item--usual">
                 <div class="gallery-item__photo">
                   <a href="" class="gallery-item__photo-link">
                     <picture>
@@ -125,7 +128,7 @@
                 </div>
             </div>
 
-            <div class="gallery-item">
+            <div class="gallery-item  gallery-item--usual">
                 <div class="gallery-item__photo">
                   <a href="" class="gallery-item__photo-link">
                     <picture>
@@ -153,7 +156,7 @@
                 </div>
             </div>
 
-            <div class="gallery-item">
+            <div class="gallery-item  gallery-item--usual">
                 <div class="gallery-item__photo">
                   <a href="" class="gallery-item__photo-link">
                     <picture>
@@ -181,7 +184,7 @@
                 </div>
             </div>
 
-            <div class="gallery-item">
+            <div class="gallery-item  gallery-item--usual">
                 <div class="gallery-item__photo">
                   <a href="" class="gallery-item__photo-link">
                     <picture>
@@ -209,7 +212,7 @@
                 </div>
             </div>
 
-            <div class="gallery-item">
+            <div class="gallery-item  gallery-item--usual">
                 <div class="gallery-item__photo">
                   <a href="" class="gallery-item__photo-link">
                     <picture>
@@ -237,7 +240,7 @@
                 </div>
             </div>
 
-            <div class="gallery-item">
+            <div class="gallery-item  gallery-item--usual">
                 <div class="gallery-item__photo">
                   <a href="" class="gallery-item__photo-link">
                     <picture>
@@ -277,13 +280,23 @@
         <div class="filter-form__inner">
           <div class="filter-form__photo-edit">
             <div class="filter-form__photo">
-              <img src="img/photo-7-mobile@1x.jpg" alt="фото для обработки" width="" height="" class="gallery-item__pnoto-img">
+              <picture>
+                <source
+                  media="(min-width: 960px)"
+                  srcset="img/photo-7-desktop@2x.jpg 2x, img/photo-7-desktop@1x.jpg 1x">
+                <source
+                  media="(min-width: 660px)"
+                  srcset="img/photo-7-tablet@2x.jpg 2x, img/photo-7-tablet@1x.jpg 1x">
+                <img src="img/photo-7-mobile@1x.jpg"
+                    srcset="img/photo-7-mobile@2x.jpg 2x, img/photo-7-mobile@1x.jpg 1x"
+                    alt="фото для обработки" class="filter-form__img">
+                </picture>
             </div>
             <div class="filter-form__wrapper">
               <div class="filter-form__filters">
                 <div class="filter-form__filter filter-form__filter--active filter-form__filter--crop  filter-form__filter--active">
                   <span class="filter-form__label  filter-form__label--crop">обрезать
-                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <svg class="filter-form__label-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                     <path fill="none" d="M0,0h48v48H0V0z"/>
                     <path class="filter-form__label-svg" fill="#b5b9be" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
                     </svg>
@@ -296,7 +309,7 @@
                 </div>
                 <div class="filter-form__filter  filter-form__filter--fill">
                   <span class="filter-form__label  filter-form__label--fill">заливка
-                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <svg class="filter-form__label-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                     <path fill="none" d="M0,0h48v48H0V0z"/>
                     <path class="filter-form__label-svg" fill="#b5b9be" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
                     <rect class="filter-form__label-svg" fill="#b5b9be" y="40" width="48" height="3"/>
@@ -310,7 +323,7 @@
                 </div>
                 <div class="filter-form__filter  filter-form__filter--contrast">
                   <span class="filter-form__label  filter-form__label--contrast">контраст
-                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                    <svg class="filter-form__label-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
                     <path class="filter-form__label-svg" fill="#b5b9be" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
                     <path class="filter-form__label-svg" fill="#b5b9be" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
                    </svg>
@@ -332,7 +345,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__container  page-footer__container--top-padding">
+      <div class="page-footer__container">
         <div class="logo">
           <picture>
             <source
@@ -353,7 +366,7 @@
         <div class="page-footer__copyright">
           <span>Разработано</span>
           <a class="page-footer__copyright-logo" href="https://htmlacademy.ru" target="_blank">htmlacademy
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="28" height="35"><path class="page-footer__copyright-logo-svg" fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+            <svg class="page-footer__copyright-logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="28" height="35"><path class="page-footer__copyright-logo-svg" fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
           </a>
         </div>
       </div>

@@ -39,4 +39,20 @@
       display: block;
     }
   }
+
+  &--md-lg-inline {
+    display: inline;
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &--sm-md-inline {
+    display: none;
+
+    @media (min-width: $screen-lg) {
+      display: inline;
+    }
+  }
 }

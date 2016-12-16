@@ -24,3 +24,10 @@ p {
   margin-right: 0px;
   margin-bottom: 1em;
 }
+
+.no-js {
+
+  .filter-form {
+    display: none;
+  }
+}
