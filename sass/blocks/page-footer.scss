@@ -2,6 +2,7 @@
   text-align: center;
   @include container;
   padding-top: 39px;
+  padding-bottom: 27px;
 
   &--hide {
     display: none;
@@ -11,19 +12,12 @@
     display: flex;
     justify-content: space-between;
     padding-top: 36px;
-    padding-bottom: 40px;
+    padding-bottom: 44px;
   }
 
   @media (min-width: $screen-lg) {
-    padding-top: 100px;
-    padding-bottom: 80px;
-  }
-
-  &--top-padding {
-
-    @media (min-width: $screen-lg) {
-      padding-top: 71px;
-    }
+    padding-top: 71px;;
+    padding-bottom: 87px;
   }
 }
 

@@ -73,6 +73,7 @@
     margin-left: 0;
     margin-right: 0;
     width: 100%;
+    text-align: center;
 
     background-color: $panorama-color;
     height: 137px;
@@ -211,4 +212,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background-color: #cdd9e7;
+
+  &--panorama {
+    background-color: #2e3820;
+  }
 }

@@ -45,8 +45,8 @@
   &--previous {
 
     @media (min-width: $screen-lg) {
-      left: 0;
-      top: 209px;
+      left: -4px;
+      top: 212px;
     }
   }
 
@@ -54,8 +54,8 @@
   &--next {
 
     @media (min-width: $screen-lg) {
-      right: -9px;
-      top: 209px;
+      right: -5px;
+      top: 212px;
     }
   }
 

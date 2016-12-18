@@ -17,13 +17,50 @@
   @media (min-width: $screen-lg) {
     width: 150px;
   }
+
+  &:hover .page-header-logo .page-header-logo__mobile {
+    fill: $main-color;
+  }
+
+  &:active .page-header-logo .page-header-logo__mobile {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
+  &:hover .page-header-logo .page-header-logo__tablet {
+
+    @media (min-width: $screen-md) {
+      fill: $main-color;
+    }
+  }
+
+  &:active .page-header-logo .page-header-logo__tablet {
+
+    @media (min-width: $screen-md) {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &:hover .page-header-logo .page-header-logo__desktop {
+
+    @media (min-width: $screen-lg) {
+      fill: $main-color;
+    }
+  }
+
+  &:active .page-header-logo .page-header-logo__desktop {
+
+    @media (min-width: $screen-lg) {
+      fill: $bg-main;
+      opacity: 0.3;
+    }
+  }
 }
 
 .page-header__top-line {
   position: relative;
   z-index: 1;
   display: flex;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.5);
   flex-wrap: wrap;
   align-items: center;
 
@@ -51,58 +88,6 @@
 
   @media (min-width: $screen-lg) {
     display: none;
-  }
-}
-
-.page-header__menu-toggler--open:hover {
-
-  & span {
-    background: $main-color;
-
-    &:before,
-    &:after {
-      background: $main-color;
-    }
-  }
-}
-
-.page-header__menu-toggler--open:active {
-
-  & span {
-    background: $main-color;
-    opacity: 0.3;
-
-    &:before,
-    &:after {
-      background: $main-color;
-      opacity: 0.3;
-    }
-  }
-}
-
-
-.page-header__menu-toggler--close:hover {
-
-  span {
-    background: transparent;
-
-    &:before,
-    &:after {
-      background-color: $main-color;
-    }
-  }
-}
-
-.page-header__menu-toggler--close:active {
-
-  span {
-    background: transparent;
-
-    &:before,
-    &:after {
-      background-color: $main-color;
-      opacity: 0.3;
-    }
   }
 }
 
@@ -160,15 +145,16 @@
   width: 280px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 20px;
   padding-bottom: 20px;
 
   @media (min-width: $screen-md) {
     width: 620px;
     margin: 0 auto;
-    padding-top: 32px;
+    padding-top: 27px;
     padding-bottom: 32px;
+    align-items: center;
   }
 
   @media (min-width: $screen-lg) {

@@ -2,40 +2,20 @@
   position: relative;
 }
 
-.main-page-footer__container {
-  position: absolute;
-  z-index: 1000;
-  top: -1px;
-  left: 0;
-  width: 100%;
-  background-color: $bg-main;
-  padding-bottom: 0;
-  text-align: center;
-
-  @media (min-width: $screen-md) {
-    font-size: 0;
-  }
-
-  @media (min-width: $screen-lg) {
-    padding-top: 23px;
-  }
-
-  &--no-padding-top  {
-
-    @media (min-width: $screen-md) {
-      padding-top: 0;
-    }
-  }
-}
-
 .main-page-footer__content-wrap {
   @include container;
   padding-top: 44px;
   padding-bottom: 10px;
+  text-align: center;
 
   @media (min-width: $screen-md) {
     font-size: 0;
-    padding-top: 18px;
+    padding-top: 46px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-top: 73px;
     padding-bottom: 0;
   }
 }
@@ -43,10 +23,6 @@
 .main-page-footer__inner {
   width: 100%;
   position: relative;
-
-  @media (min-width: $screen-md) {
-    padding-top: 30px;
-  }
 
   &:before {
     position: absolute;
@@ -60,6 +36,7 @@
     bottom: -74px;
     left: 0;
     background-color: transparent;
+    z-index: 100;
 
     @media (min-width: $screen-md) {
       height: 105px;
@@ -67,7 +44,7 @@
     }
 
     @media (min-width: $screen-lg) {
-      height: 142px;
+      height: 137px;
       bottom: -134px
     }
   }
