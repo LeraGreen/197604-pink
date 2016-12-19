@@ -91,25 +91,48 @@
   }
 }
 
+.page-header__menu-toggler:hover span,
+.page-header__menu-toggler:hover span:before,
+.page-header__menu-toggler:hover span:after {
+  background-color: $main-color;
+}
+
+.page-header__menu-toggler:active span,
+.page-header__menu-toggler:active span:before,
+.page-header__menu-toggler:active span:after {
+  background-color: $main-color;
+  opacity: 0.3;
+}
+
+.page-header__menu-toggler--close:hover span:before,
+.page-header__menu-toggler--close:hover span:after {
+  background-color: $main-color;
+}
+
+.page-header__menu-toggler--close:active span,
+.page-header__menu-toggler--close:active span:before,
+.page-header__menu-toggler--close:active span:after {
+  background-color: $main-color;
+  opacity: 0.3;
+}
+
 .page-header__menu-toggler span {
   display: inline-block;
   vertical-align: bottom;
   width: 100%;
   height: 4px;
-  background: $bg-main;
+  background-color: $bg-main;
   position: relative;
-  transition: background .3s .2s;
 
   &:before,
   &:after {
     width: 100%;
     height: 4px;
-    background: $bg-main;
+    background-color: $bg-main;
     position: absolute;
     right: 0;
     content: '';
     transform-origin: 50% 50%;
-    transition: all .3s .6s, transform .3s;
   }
 
   &:before {
@@ -122,12 +145,10 @@
 }
 
 .page-header__menu-toggler--close span {
-  transition: background .3s 0.0s;
   background: transparent;
 
   &:before,
   &:after {
-    transition: all .3s, transform .3s .5s;
     top: 0;
     width: 30px;
   }

@@ -4,7 +4,6 @@
   &--panorama {
 
     @media (min-width: $screen-md) {
-      width: 100%;
       margin-bottom: 50px;
     }
   }
@@ -79,11 +78,11 @@
     height: 137px;
 
     @media (min-width: $screen-md) {
-      height: 510px;
+      height: 509px;
     }
 
     @media (min-width: $screen-lg) {
-      height: 508px;
+      height: 506px;
       overflow: hidden;
     }
   }
@@ -105,7 +104,7 @@
   left: 50%;
 
   @media (min-width: $screen-md) {
-    top: 12%;
+    top: 57px;
     left: 76%;
   }
 
@@ -201,6 +200,20 @@
 .gallery-item__photo-link {
   cursor: pointer;
   display: inline-block;
+  height: 180px;
+
+  &--panorama {
+    height: 137px;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      height: 509px;
+    }
+
+    @media (min-width: $screen-lg) {
+      height: 506px;
+    }
+  }
 }
 
 
@@ -216,5 +229,22 @@
 
   &--panorama {
     background-color: #2e3820;
+  }
+}
+
+.gallery-item__img {
+
+  &--panorama {
+    @media (min-width: $screen-md) {
+      height: 509px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @media (min-width: $screen-lg) {
+      height: 506px;
+      width: 100vw;
+      object-fit: cover;
+    }
   }
 }

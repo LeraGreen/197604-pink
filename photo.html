@@ -108,14 +108,14 @@
           </div>
           <div class="gallery-item  gallery-item--panorama">
             <div class="gallery-item__photo  gallery-item__photo--panorama">
-              <a href="" class="gallery-item__photo-link">
+              <a href="" class="gallery-item__photo-link  gallery-item__photo-link--panorama">
                 <picture>
                   <source
-                    media="(min-width: 960px)"
-                    srcset="img/panorama-desktop@2x.jpg 2x, img/panorama-desktop@1x.jpg 1x">
+                    srcset="img/panorama-desktop@2x.jpg 2x, img/panorama-desktop@1x.jpg 1x"
+                    media="(min-width: 960px)">
                   <source
-                    media="(min-width: 660px)"
-                    srcset="img/panorama-tablet@2x.jpg 2x, img/panorama-tablet@1x.jpg 1x">
+                    srcset="img/panorama-tablet@2x.jpg 2x, img/panorama-tablet@1x.jpg 1x"
+                    media="(min-width: 660px)">
                   <img src="img/panorama-mobile@1x.jpg"
                       srcset="img/panorama-mobile@2x.jpg 2x, img/panorama-mobile@1x.jpg 1x"
                       alt="Панорама дня" class="gallery-item__img  gallery-item__img--panorama">
@@ -381,7 +381,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__container">
+      <div class="page-footer__container  page-footer__container--page-photo">
         <a href="index.html" class="logo">
           <svg class="logo__svg" width="150" height="50">
             <g class="logo__mobile-tablet">

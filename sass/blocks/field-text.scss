@@ -25,6 +25,7 @@
 }
 
 .field-text__name {
+  display: block;
   font-size: $font-size;
   text-transform: uppercase;
   color: $main-color;
@@ -56,14 +57,11 @@
 
   &:focus {
     outline: none;
+    border-color: $main-color;
   }
 
   &:hover {
     border-color: $font-color-main;
-  }
-
-  &:active {
-    border-color: $main-color;
   }
 
   &--flex-el {
@@ -87,7 +85,12 @@
 }
 
 .field-text__input-wrap {
+  display: block;
   margin-top: 10px;
+
+  @media (min-width: $screen-md) {
+    margin-top: 15px;
+  }
 
   &--flex-el {
 

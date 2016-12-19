@@ -19,7 +19,37 @@
     padding-top: 71px;;
     padding-bottom: 87px;
   }
+
+  &--page-photo {
+
+    @media (min-width: $screen-lg) {
+      padding-top: 100px;
+    }
+  }
 }
+
+.page-footer__container--page-photo {
+
+  .page-footer__social {
+    margin-top: 23px;
+
+    @media (min-width: $screen-md) {
+      margin-top: 0;
+    }
+  }
+}
+
+.page-footer__container--page-form {
+
+  .page-footer__social {
+    margin-top: 23px;
+
+    @media (min-width: $screen-md) {
+      margin-top: 0;
+    }
+  }
+}
+
 
 .page-footer__copyright {
   color: $font-color-main;

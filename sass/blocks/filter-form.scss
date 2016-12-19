@@ -9,7 +9,7 @@
 
   &::after {
 
-    @media (min-width: $screen-sm) and (max-width: $screen-md - 1px) {
+    @media (max-width: $screen-md - 1px) {
       content: '';
       position: absolute;
       width: 100%;
@@ -28,7 +28,7 @@
 .filter-form__inner {
   width: 280px;
   margin: 0 auto;
-  padding-top: 19px;
+  padding-top: 20px;
   padding-bottom: 26px;
 
   @media (min-width: $screen-md) {
@@ -39,9 +39,10 @@
   }
 
   @media (min-width: $screen-lg) {
-    width: 782px;
+    width: 801px;
     margin: 0 auto;
-    padding-bottom: 55px;
+    padding-bottom: 52px;
+    padding-left: 10px;
   }
 }
 
@@ -75,7 +76,7 @@
   }
 
   @media (min-width: $screen-lg) {
-    flex-basis: 410px;
+    flex-basis: 422px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -92,7 +93,9 @@
 
   @media (min-width: $screen-lg) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 22px;
+    padding-bottom: 10px;
   }
 }
 
@@ -121,7 +124,7 @@
 
   &--active .field-range {
 
-    @media (min-width: $screen-sm) and (max-width: $screen-md) {
+    @media (max-width: $screen-md) {
       display: block;
     }
   }
@@ -164,7 +167,7 @@
   }
 
   @media (min-width: $screen-lg) {
-    width: 100%;
+    width: 410px;
   }
 }
 

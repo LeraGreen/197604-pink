@@ -91,7 +91,7 @@
   &--reviews {
 
     @media (min-width: $screen-md) {
-      margin-top: 50px;
+      margin-top: 56px;
     }
 
     @media (min-width: $screen-lg) {
@@ -167,7 +167,11 @@
 
   &--promo {
     padding-bottom: 5px;
-    padding-top: 30px;
+    padding-top: 44px;
+
+    @media (min-width: $screen-md) {
+      padding-top: 63px;
+    }
 
     @media (min-width: $screen-lg) {
       width: 940px;
@@ -185,7 +189,7 @@
 
     @media (min-width: $screen-lg) {
       padding-top: 0;
-      padding-bottom: 15px;
+      padding-bottom: 0;
     }
 
     .field-text:last-child {
@@ -217,10 +221,10 @@
     @media (min-width: $screen-md) {
       padding-top: 21px;
       padding-left: 58px;
-      padding-bottom: 46px;
+      padding-bottom: 49px;
     }
 
-    @media (min-width: $screen-md) {
+    @media (min-width: $screen-lg) {
       padding-bottom: 38px;
     }
   }
@@ -235,10 +239,12 @@
       padding-left: 0;
       padding-right: 0;
       align-items: baseline;
+      padding-top: 9px;
     }
 
     @media (min-width: $screen-lg) {
       align-items: flex-end;
+      padding-top: 12px;
     }
   }
 
@@ -320,7 +326,7 @@
 
 .form fieldset {
 
-  @media (min-width: $screen-sm) and (max-width: $screen-md - 1px) {
+  @media (max-width: $screen-md - 1px) {
     border: none;
   }
 
