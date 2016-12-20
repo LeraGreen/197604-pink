@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $screen-lg) {
-    min-height: 284px;
+    min-height: 278px;
   }
 
   &:before {
@@ -22,18 +22,19 @@
     background: url('../img/bg-back-mobile@1x.jpg');
     background-position: center top;
     background-repeat: no-repeat;
+    background-color:$header-color;
 
     @media (min-width: $screen-md) {
       background-size: cover;
       background-position: top;
-      height: 330px + 112px;
+      height: 441px;
       top: -112px;
     }
 
-    @media (min-width: $screen-md) {
+    @media (min-width: $screen-lg) {
       background-size: cover;
       background-position: top;
-      height: 284px + 112px;
+      height: 391px;
       top: -112px;
     }
   }
@@ -46,15 +47,16 @@
   padding-left: 20px;
   padding-right: 20px;
   line-height: 1.2em;
+  margin-bottom: 0;
 
   @media (min-width: $screen-md) {
-    font-size: $font-size-gigant;
+    font-size: $font-size-giant;
   }
 }
 
 .promo__inner {
   @include container;
-  padding-top: 20px;
+  padding-top: 16px;
 
   @media (min-width: $screen-md) {
     padding-top: 35px;
@@ -64,5 +66,14 @@
     padding-top: 29px;
     padding-left: 150px;
     padding-right: 150px;
+  }
+
+  &--form-page {
+    padding-top: 25px;
+
+    @media (min-width: $screen-lg) {
+      padding-left: 0;
+      padding-right: 0
+    }
   }
 }

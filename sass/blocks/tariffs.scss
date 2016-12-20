@@ -1,20 +1,44 @@
 .tariffs {
   background-color: $bg-second;
+  position: relative;
+  margin-top: 87px;
+
+  @media (min-width: $screen-md) {
+    margin-top: 75px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-top: 83px;
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100px;
+    background-image: url('../img/bg-triangle-white.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    top: -99px;
+    left: 0;
+    transform: rotate(180deg);
+  }
 }
 
 .tariffs__container {
-  padding-top: 67px;
-  padding-bottom: 39px;
+  padding-top: 28px;
+  padding-bottom: 43px;
   overflow: hidden;
 
   @media (min-width: $screen-md) {
     overflow: visible;
-    padding-top: 32px;
-    padding-bottom: 23px;
+    padding-top: 15px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $screen-lg) {
-    padding-top: 80px;
-    padding-bottom: 23px;
+    padding-top: 59px;
+    padding-bottom: 26px;
   }
 }

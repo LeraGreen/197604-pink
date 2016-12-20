@@ -2,36 +2,84 @@
   margin: 0 auto;
   border-collapse: collapse;
   transform: translateX(-31%);
+  width: 261%;
 
   @media (min-width: $screen-md) {
     transform: translateX(0);
+    width: 100%;
   }
 }
 
 .tariffs-table__item-header {
   text-align: center;
   vertical-align: middle;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 22px;
+  padding-bottom: 26px;
   background-color: $header-menu-color;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-left: 2px solid $grey-lighter;
   border-right: 2px solid $grey-lighter;
 
   @media (min-width: $screen-md) {
-    padding-left: 39px;
-    padding-right: 39px;
-    padding-top: 15px;
+    padding-top: 13px;
     padding-bottom: 5px;
+    width: 155px;
   }
 
   @media (min-width: $screen-lg) {
-    padding-left: 67px;
-    padding-right: 67px;
     padding-top: 16px;
     padding-bottom: 23px;
+    width: 235px;
   }
+
+  &--hit {
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    background-color: $main-color;
+    transform: rotate(-45deg);
+    bottom: 55px;
+    left: -37px;
+
+    @media (min-width: $screen-md) {
+      bottom: 44px;
+    }
+
+    @media (min-width: $screen-lg) {
+      bottom: 54px;
+      left: -37px;
+    }
+  }
+
+  &:after {
+    content: 'хит';
+    position: absolute;
+    text-transform: uppercase;
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $font-color-second;
+    line-height: 2.143em;
+    bottom: 57px;
+    left: 9px;
+    transform: rotate(-45deg);
+
+    @media (min-width: $screen-md) {
+      bottom: 45px;
+      left: 6px;
+    }
+
+    @media (min-width: $screen-lg) {
+      bottom: 57px;
+      left: 11px;
+    }
+  }
+}
 }
 
 .tariffs-table__item-title {
@@ -57,46 +105,118 @@
   font-weight: $light;
   text-transform: uppercase;
   white-space: nowrap;
+  margin-top: 8px;
 
   @media (min-width: $screen-md) {
     font-size: $font-size-big;
     line-height: 1.667em;
+    margin-top: 0;
   }
 
   @media (min-width: $screen-lg) {
     font-size: $font-size-title;
     line-height: 1.250em;
+    margin-top: 0;
   }
 }
 
 .tariffs-table__feauture {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   background-color: $bg-main;
-  padding-left: 28px;
+  padding-left: 22px;
+  padding-right: 5px;
   text-transform: uppercase;
-  border-left: 2px solid $grey-lighter;
-  border-bottom: 2px solid $grey-lighter;
+  border: 2px solid $grey-lighter;
 
   @media (min-width: $screen-md) {
     padding-left: 19px;
-    padding-right: 19px;
-    padding-bottom: 8px;
-    padding-top: 8px;
+    padding-bottom: 9px;
+    padding-top: 6px;
   }
 
   @media (min-width: $screen-lg) {
     padding-left: 25px;
-    padding-right: 61px;
-    padding-bottom: 12px;
-    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-top: 13px;
+  }
+
+  &--no-top-border {
+    border-top: none;
+  }
+
+  &--check {
+  position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 31px;
+      height: 27px;
+      background-image: url('../img/icon-yes.svg');
+      background-repeat: no-repeat;
+      right: 16px;
+      background-size: contain;
+
+      @media (min-width: $screen-md) {
+        right: 58px;
+        bottom: 5px;
+      }
+
+      @media (min-width: $screen-lg) {
+        right: 99px;
+        bottom: 12px;
+      }
+    }
+  }
+
+  &--cross {
+  position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 27px;
+      height: 27px;
+      background-image: url('../img/icon-no.svg');
+      background-repeat: no-repeat;
+      right: 19px;
+      bottom: 17px;
+      background-size: contain;
+
+      @media (min-width: $screen-md) {
+        right: 61px;
+        bottom: 9px;
+      }
+
+      @media (min-width: $screen-lg) {
+        right: 102px;
+        bottom: 16px;
+      }
+    }
+  }
+}
+
+.tariffs-table__cell-inner {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $screen-md) {
+    justify-content: center;
   }
 }
 
 .tariffs__table-wrapper {
-  padding-bottom: 40px;
+  padding-bottom: 13px;
+
+  @media (min-width: $screen-md) {
+    width: 620px;
+    margin: 0 auto;
+  }
 
   @media (min-width: $screen-lg) {
+    width: 940px;
+    margin: 0 auto;
     padding-bottom: 71px;
   }
 }
@@ -105,7 +225,7 @@
   display: none;
 
   @media (min-width: $screen-md) {
-    display: block;
+    display: table-cell;
     visibility: hidden;
   }
 }
@@ -114,7 +234,7 @@
   display: none;
 
   @media (min-width: $screen-md) {
-    display: block;
+    display: table-cell;
   }
 }
 

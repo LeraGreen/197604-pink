@@ -1,74 +1,58 @@
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  display: none;
+
 
   &--sm {
 
-    @media (min-width: $screen-sm) and (max-width: $screen-md - 1px) {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      padding: 0;
-      border: 0;
-      clip: rect(0 0 0 0);
-      overflow: hidden;
-    }
-
     @media (min-width: $screen-md) {
-      display: inline;
+      display: block;
     }
   }
 
-  &--md {
+  &--sm-inline {
 
     @media (min-width: $screen-md) {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      padding: 0;
-      border: 0;
-      clip: rect(0 0 0 0);
-      overflow: hidden;
-    }
-  }
-
-  &--sm-md {
-
-    @media (max-width: $screen-lg - 1px) {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      padding: 0;
-      border: 0;
-      clip: rect(0 0 0 0);
-      overflow: hidden;
-    }
-
-    @media (min-width: $screen-lg) {
       display: inline;
     }
   }
 
   &--lg {
+    display: block;
 
     @media (min-width: $screen-lg) {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      padding: 0;
-      border: 0;
-      clip: rect(0 0 0 0);
-      overflow: hidden;
+      display: none;
+    }
+  }
+
+  &--md-lg {
+    display: block;
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &--sm-md {
+    display: none;
+
+    @media (min-width: $screen-lg) {
+      display: block;
+    }
+  }
+
+  &--md-lg-inline {
+    display: inline;
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &--sm-md-inline {
+    display: none;
+
+    @media (min-width: $screen-lg) {
+      display: inline;
     }
   }
 }

@@ -4,6 +4,11 @@
   line-height: 1.667em;
   padding-left: 3.889em;
   position: relative;
+  display: block;
+
+  @media (min-width: $screen-md) {
+    padding-left: 59px;
+  }
 }
 
 .field-radio__input {
@@ -24,7 +29,7 @@
   width: 39px;
   height: 39px;
   position: absolute;
-  top: -36%;
+  top: -3px;
   left: 0;
   content: '';
   background-color: $bg-main;
@@ -33,6 +38,21 @@
   cursor: pointer;
 }
 
-.field-radio__input + .field-radio__name-text {
-  cursor: pointer;
+.field-radio__input:hover + .field-radio__name-text:before {
+  border-color: $font-color-main;
+}
+
+.field-radio__input:active + .field-radio__name-text:before {
+  border-color: $main-color;
+}
+
+.field-radio__input:checked + .field-radio__name-text:after {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  content: '';
+  background-color: $main-color;
+  border-radius: 50%;
 }

@@ -1,41 +1,40 @@
 .contacts {
-  padding-bottom: 40px;
   background-color: $bg-main;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 25px;
+  padding-top: 16px;
 
   @media (min-width: $screen-md) {
     padding-top: 0;
-    padding-bottom: 10px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $screen-lg) {
     display: flex;
     justify-content: space-between;
-    padding-top: 6px;
+    padding-top: 22px;
   }
 }
 
 .contacts__promo {
   font-size: $font-size-title;
   font-weight: $light;
-  margin-bottom: 24px;
+  margin-bottom: 5px;
   line-height: 1.2em;
 
   @media (min-width: $screen-md) {
     font-size: $font-size-super-big;
-    margin-top: 49px;
     line-height: 1.2em;
   }
 
   @media (min-width: $screen-lg) {
-    font-size: $font-size-gigant;
+    font-size: $font-size-giant;
     line-height: 1em;
   }
 }
 
 .contacts__promo-wrap {
+  margin-bottom: 20px;
 
   @media (min-width: $screen-md) {
     padding-left: 40px;
@@ -49,19 +48,19 @@
 }
 
 .contacts__item {
-  margin-bottom: 9px;
-  white-space: pre-line;
+  margin-bottom: 21px;
 
   @media (min-width: $screen-md) {
     display: inline-block;
     width: 45%;
     vertical-align: top;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    margin-top: 26px;
   }
 
   @media (min-width: $screen-lg) {
     display: block;
-    width: 33%;
+    width: 29%;
     vertical-align: top;
   }
 
@@ -85,11 +84,35 @@
       order: 3;
     }
   }
+
+  &--margin-left {
+
+    @media (min-width: $screen-md) {
+      margin-left: 33px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-left: 0;
+    }
+  }
+
+  &--margin-right {
+
+    @media (min-width: $screen-md)  {
+      margin-right: 20px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-right: 0;
+    }
+  }
 }
 
 .contacts__title {
+  display: block;
   font-size: $font-size-big;
   font-weight: $bold;
+  margin-bottom: 5px;
 }
 
 .contacts__data {
@@ -97,11 +120,25 @@
   font-size: $font-size-title;
   font-weight: $light;
   color: $main-color;
-}
-
-.contacts__title-wrap {
+  line-height: 1.3em;
+  white-space: pre-wrap;
 
   @media (min-width: $screen-lg) {
-    margin-bottom: 2px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 17px
+  }
+
+  &--mail {
+
+    &:hover {
+      color: $font-color-main;
+      text-decoration: underline;
+    }
+
+    &:focus {
+      color: $grey-light;
+      text-decoration: none;
+    }
   }
 }

@@ -4,7 +4,6 @@
 @import 'mixins.scss';
 
 @import 'blocks/scaffolding.scss';
-@import 'blocks/visually-hidden.scss';
 @import 'blocks/page-header.scss';
 @import 'blocks/main-nav.scss';
 @import 'blocks/btn.scss';
@@ -34,3 +33,6 @@
 @import 'blocks/logo.scss';
 @import 'blocks/map.scss';
 @import 'blocks/download.scss';
+@import 'blocks/hidden-text.scss';
+@import 'blocks/visually-hidden.scss';
+@import 'blocks/page-header-logo.scss';

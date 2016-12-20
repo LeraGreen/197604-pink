@@ -5,6 +5,7 @@
   @media (min-width: $screen-lg) {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
   }
 }
 
@@ -12,11 +13,13 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  border-top: 1px solid $border-dark;
 
   @media (min-width: $screen-lg) {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    border: 0;
   }
 }
 
@@ -41,6 +44,20 @@
   font-weight: $bold;
   text-align: center;
 
+  &:hover {
+    color: $main-color;
+  }
+
+  &:active {
+    color: $main-color;
+    opacity: 0.3;
+
+    @media (min-width: $screen-lg) {
+      color: $font-color-second;
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: $screen-lg) {
     padding: 0;
     color: $font-color-second;
@@ -51,7 +68,51 @@
     font-weight: $normal;
     text-align: center;
   }
+
+  &--active {
+    position: relative;
+
+    &:after {
+
+      @media (min-width: $screen-lg) {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $bg-main;
+        left: 0;
+        bottom: -5px;
+      }
+    }
+
+    &:hover {
+
+      &:after {
+
+        @media (min-width: $screen-lg) {
+          background-color: $main-color;
+        }
+      }
+    }
+
+    &:active {
+
+      @media (min-width: $screen-lg) {
+        color: $main-color;
+        opacity: 1;
+      }
+
+      &:after {
+
+        @media (min-width: $screen-lg) {
+          background-color: $main-color;
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
+
 
 .main-nav__item-inner {
   width: 280px;
