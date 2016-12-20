@@ -74,7 +74,6 @@
     width: 100%;
     text-align: center;
 
-    background-color: $panorama-color;
     height: 137px;
 
     @media (min-width: $screen-md) {
@@ -202,6 +201,14 @@
   display: inline-block;
   height: 180px;
 
+  @media (min-width: $screen-md) {
+      height: 300px;
+    }
+
+  @media (min-width: $screen-lg) {
+    height: 400px;
+  }
+
   &--panorama {
     height: 137px;
     width: 100%;
@@ -221,30 +228,23 @@
   margin-bottom: 0;
 }
 
-.gallery-item__pnoto-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-color: #cdd9e7;
-
-  &--panorama {
-    background-color: #2e3820;
-  }
-}
-
 .gallery-item__img {
 
   &--panorama {
+    background-color: $panorama-color;
+
     @media (min-width: $screen-md) {
       height: 509px;
       width: 100%;
       object-fit: cover;
+      font-family: 'object-fit: cover;'
     }
 
     @media (min-width: $screen-lg) {
       height: 506px;
       width: 100vw;
       object-fit: cover;
+      font-family: 'object-fit: cover;'
     }
   }
 }
