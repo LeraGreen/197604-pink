@@ -20,8 +20,8 @@ gulp.task("style", function() {
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer({browsers: ["last 2 versions"]}),
-      mqpacker({sort: true}),
+      autoprefixer({browsers: ["last 2 versions"]})
+      // mqpacker({sort: true}),
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
@@ -32,7 +32,7 @@ gulp.task("style", function() {
 
 gulp.task("serve", function() {
   server.init({
-    server: ".",
+    server: "./build",
     notify: false,
     open: true,
     cors: true,

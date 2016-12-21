@@ -325,13 +325,12 @@
 }
 
 .form fieldset {
+  border: none;
 
-  @media (max-width: $screen-md - 1px) {
-    border: none;
+  @media (min-width: $screen-md) {
+    border: 2px solid $grey-lighter;
+    border-radius: 2px;
   }
-
-  border: 2px solid $grey-lighter;
-  border-radius: 2px;
 }
 
 .form .form__container fieldset:first-of-type {

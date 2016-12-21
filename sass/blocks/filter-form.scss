@@ -8,15 +8,16 @@
   }
 
   &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $grey;
+    bottom: 201px;
+    left: 0;
 
-    @media (max-width: $screen-md - 1px) {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      background-color: $grey;
-      bottom: 201px;
-      left: 0;
+    @media (min-width: $screen-md) {
+      content: none;
     }
   }
 }
@@ -123,10 +124,7 @@
   }
 
   &--active .field-range {
-
-    @media (max-width: $screen-md) {
-      display: block;
-    }
+    display: block;
   }
 
   &:hover .filter-form__label-svg{
