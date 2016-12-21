@@ -63,7 +63,7 @@
             </g>
           </svg>
             </a>
-            <span id="main-menu-toggler" class="page-header__menu-toggler  page-header__menu-toggler--close"><span></span></span>
+            <span id="main-menu-toggler" class="page-header__menu-toggler  page-header__menu-toggler--close  page-header__menu-toggler--open"><span></span></span>
           </div>
             <nav class="main-nav">
               <ul class="main-nav__list ">
@@ -101,8 +101,8 @@
 
     <main>
       <section class="gallery">
+        <h1 class="hidden-text">Фотографии пользователей приложения Pink</h1>
         <div class="gallery__inner">
-          <h1 class="hidden-text">Фотографии пользователей приложения Pink</h1>
           <div class="gallery__intro">
             <p class="gallery__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
           </div>
@@ -438,6 +438,8 @@
       </div>
     </footer>
 
-  <script src="js/script.js" charset="utf-8"></script>
+  <script src="dist/ofi.browser.js" async></script>
+  <script>objectFitImages();</script>
+  <script src="js/script.js" charset="utf-8" async></script>
   </body>
 </html>
