@@ -21,13 +21,13 @@ gulp.task("style", function() {
     .pipe(sass())
     .pipe(postcss([
       autoprefixer({browsers: ["last 2 versions"]})
-      // mqpacker({sort: true}),
+      // mqpacker({sort: true})
     ]))
     .pipe(gulp.dest("build/css"))
+    .pipe(server.stream())
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
-    .pipe(server.stream());
+    .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("serve", function() {
@@ -71,7 +71,8 @@ gulp.task("copy", function() {
       "fonts/**/*.{woff,woff2}",
       "img/**",
       "js/**",
-      "*.html"
+      "*.html",
+      "css/polyfill.object-fit.css"
     ], {
       base: "."
     })

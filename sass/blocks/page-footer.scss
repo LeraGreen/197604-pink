@@ -70,6 +70,12 @@
   display: inline-block;
   vertical-align: middle;
   margin-top: 10px;
+  margin-left: 5px;
+
+  @media (min-width: $screen-lg) {
+    margin-top: 0;
+    margin-left: 0;
+  }
 
   &:hover .page-footer__copyright-logo-svg {
     fill: $font-color-main;
@@ -77,6 +83,11 @@
 
   &:active .page-footer__copyright-logo-svg {
     fill: $grey-light;
+  }
+
+  & svg {
+    width: 39px;
+    height: 44px;
   }
 }
 

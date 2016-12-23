@@ -223,6 +223,7 @@
 
 .tariffs-table__item-header:first-child {
   display: none;
+  border: 0;
 
   @media (min-width: $screen-md) {
     display: table-cell;

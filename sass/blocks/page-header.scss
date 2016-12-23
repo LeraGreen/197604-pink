@@ -156,7 +156,12 @@
   &:before,
   &:after {
     top: 0;
+    right: -4px;
     width: 30px;
+
+    @media (min-width: $screen-md) {
+      top: 4px;
+    }
   }
 
   &:before {
