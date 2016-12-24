@@ -2,15 +2,17 @@
   margin-left: 0;
   margin-right: 0;
   padding-top: 18px;
+  margin-bottom: 25px;
 
   @media (min-width: $screen-md) {
     display: flex;
     flex-direction: column;
     margin-top: 26px;
+    margin-bottom: 14px;
   }
 
   @media (min-width: $screen-lg) {
-    margin-top: 101px;
+    margin-top: 99px;
     padding-left: 100px;
     padding-right: 100px;
   }
@@ -30,15 +32,18 @@
   color: $font-color-main;
   font-size: $font-size;
   line-height: 2.143em;
-  padding-left: 7px;
-  padding-right: 7px;
+  padding-left: 0;
+  padding-right: 0;
 
   @media (min-width: $screen-md) {
     order: 1;
     font-size: $font-size-big;
     line-height: 1.667em;
-    padding-left: 0;
-    padding-right: 0;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-left: 17px;
+    padding-right: 17px;
   }
 }
 

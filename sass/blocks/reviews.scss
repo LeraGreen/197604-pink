@@ -5,7 +5,7 @@
 
 .reviews__container {
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   @include container;
 
   @media (min-width: $screen-lg) {
@@ -66,4 +66,8 @@
   &:active .reviews__tab-svg {
     fill: $grey-lightest;
   }
+}
+
+.reviews__pagination {
+  padding-top: 2px;
 }

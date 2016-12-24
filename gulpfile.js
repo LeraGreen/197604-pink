@@ -20,8 +20,12 @@ gulp.task("style", function() {
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer({browsers: ["last 2 versions"]})
-      // mqpacker({sort: true})
+      autoprefixer({browsers: ["last 2 versions"]}),
+      mqpacker({
+        sort: function (a, b) {
+          return a.localeCompare(b);
+        }
+      })
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream())

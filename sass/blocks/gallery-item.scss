@@ -78,11 +78,13 @@
 
     @media (min-width: $screen-md) {
       height: 509px;
+      width: 100%;
     }
 
     @media (min-width: $screen-lg) {
       height: 506px;
       overflow: hidden;
+      width: 100%;
     }
   }
 }
