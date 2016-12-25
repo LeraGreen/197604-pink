@@ -94,7 +94,7 @@
 
   @media (min-width: $screen-md) {
     margin-top: 28px;
-    padding-top: 35px;
+    padding-top: 39px;
   }
 
   @media (min-width: $screen-lg) {
@@ -132,8 +132,12 @@
     display: block;
   }
 
-  &:hover .filter-form__label-svg{
+  &:hover .filter-form__label-svg {
     fill: $grey-darker;
+
+    @media (min-width: $screen-md) {
+      fill: $main-color;
+    }
   }
 
   &--active:hover .filter-form__label-svg {
@@ -143,12 +147,19 @@
   &:nth-child(n+2) {
 
     @media (min-width: $screen-md) {
-      padding-top: 24px;
+      padding-top: 21px;
     }
 
     @media (min-width: $screen-lg) {
       padding-top: 17px;
     }
+  }
+}
+
+.filter-form__label-svg {
+
+  @media (min-width: $screen-md) {
+    fill: $main-color;
   }
 }
 
@@ -202,12 +213,14 @@
     width: 25px;
     height: 25px;
     margin-right: 28px;
+    cursor: default;
   }
 
   @media (min-width: $screen-lg) {
     width: 45px;
     height: 45px;
     margin-right: 45px;
+    cursor: default;
   }
 
   &--contrast {
@@ -216,8 +229,8 @@
     .filter-form__label-icon {
 
       @media (min-width: $screen-md) {
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 17px;
       }
 
       @media (min-width: $screen-lg) {

@@ -3,6 +3,8 @@
   border-collapse: collapse;
   transform: translateX(-31%);
   width: 261%;
+  table-layout: fixed;
+  background-color: $bg-main;
 
   @media (min-width: $screen-md) {
     transform: translateX(0);
@@ -20,6 +22,7 @@
   padding-right: 10px;
   border-left: 2px solid $grey-lighter;
   border-right: 2px solid $grey-lighter;
+  width: 35%;
 
   @media (min-width: $screen-md) {
     padding-top: 13px;
@@ -123,9 +126,8 @@
 .tariffs-table__feauture {
   padding-top: 19px;
   padding-bottom: 19px;
-  background-color: $bg-main;
   padding-left: 22px;
-  padding-right: 5px;
+  padding-right: 55px;
   text-transform: uppercase;
   border: 2px solid $grey-lighter;
 
@@ -133,12 +135,14 @@
     padding-left: 19px;
     padding-bottom: 9px;
     padding-top: 6px;
+    padding-right: 5px;
   }
 
   @media (min-width: $screen-lg) {
     padding-left: 25px;
     padding-bottom: 15px;
     padding-top: 13px;
+    padding-right: 5px;
   }
 
   &--no-top-border {
@@ -159,13 +163,13 @@
       background-size: contain;
 
       @media (min-width: $screen-md) {
-        right: 58px;
-        bottom: 5px;
+        right: 37%;
+        bottom: 20%;
       }
 
       @media (min-width: $screen-lg) {
-        right: 99px;
-        bottom: 12px;
+        right: 42%;
+        bottom: 20%;
       }
     }
   }
@@ -185,13 +189,13 @@
       background-size: contain;
 
       @media (min-width: $screen-md) {
-        right: 61px;
-        bottom: 9px;
+        right: 40%;
+        bottom: 25%;
       }
 
       @media (min-width: $screen-lg) {
-        right: 102px;
-        bottom: 16px;
+        right: 43%;
+        bottom: 27%;
       }
     }
   }
@@ -222,12 +226,14 @@
 }
 
 .tariffs-table__item-header:first-child {
+  visibility: hidden;
   display: none;
   border: 0;
 
   @media (min-width: $screen-md) {
     display: table-cell;
-    visibility: hidden;
+    visibility: visible;
+    background-color: $bg-second;
   }
 }
 
