@@ -16,7 +16,7 @@
   background-color: $header-color;
   touch-action: manipulation;
   width: 100%;
-  white-space: nowrap;
+  white-space: pre-wrap;
 
   @media (min-width: $screen-md) {
     background-color: transparent;
@@ -25,7 +25,8 @@
   @media (min-width: $screen-lg) {
     margin-top: 23px;
     padding-bottom: 15px;
-    padding-left: 29px;
+    padding-left: 17px;
+    padding-right: 15px;
     line-height: 0.857em;
     font-size: 21px;
   }
@@ -52,6 +53,8 @@
     border-color: $main-color;
     width: 100%;
     margin-bottom: 15px;
+    padding-left: 34px;
+    padding-right: 34px;
 
     @media (min-width: $screen-md) {
       margin-bottom: 27px;
@@ -61,19 +64,40 @@
 
     @media (min-width: $screen-lg) {
       margin-bottom: 0;
-      flex-basis: 45%;
+      flex-basis: auto;
+      width: 45%;
       font-size: $font-size-big;
-      padding-left: 40px;
+      padding-left: 21px;
     }
 
     &:hover {
       background-color: $main-color;
       color: $font-color-second;
+
+      @media (min-width: $screen-md) {
+        background-color: $main-color;
+        color: $font-color-second;
+      }
+
+      @media (min-width: $screen-lg) {
+        background-color: $main-color;
+        color: $font-color-second;
+      }
     }
 
     &:active {
       color: $focus-pink-btn;
       outline: none;
+
+      @media (min-width: $screen-md) {
+        color: $focus-pink-btn;
+        outline: none;
+      }
+
+      @media (min-width: $screen-lg) {
+        color: $focus-pink-btn;
+        outline: none;
+      }
     }
   }
 
@@ -83,6 +107,8 @@
     border-color: $grey;
     width: 100%;
     margin-bottom: 15px;
+    padding-left: 34px;
+    padding-right: 34px;
 
     @media (min-width: $screen-md) {
       margin-bottom: 27px;
@@ -92,14 +118,28 @@
 
     @media (min-width: $screen-lg) {
       margin-bottom: 0;
-      flex-basis: 45%;
+      flex-basis: auto;
+      width: 45%;
       font-size: $font-size-big;
-      padding-left: 43px;
+      padding-left: 18px;
     }
 
     &:hover {
       border-color: $hover-btn-grey;
       color: $hover-btn-grey;
+      background-color: $bg-second;
+
+      @media (min-width: $screen-md) {
+        border-color: $hover-btn-grey;
+        color: $hover-btn-grey;
+        background-color: $bg-second;
+      }
+
+      @media (min-width: $screen-lg) {
+        border-color: $hover-btn-grey;
+        color: $hover-btn-grey;
+        background-color: $bg-second;
+      }
     }
 
     &:active {
@@ -107,6 +147,20 @@
       border-color: $hover-btn-grey;
       background-color: $hover-btn-grey;
       outline: none;
+
+      @media (min-width: $screen-md) {
+        color: $focus-btn-grey;
+        border-color: $hover-btn-grey;
+        background-color: $hover-btn-grey;
+        outline: none;
+      }
+
+      @media (min-width: $screen-lg) {
+        color: $focus-btn-grey;
+        border-color: $hover-btn-grey;
+        background-color: $hover-btn-grey;
+        outline: none;
+      }
     }
   }
 
@@ -120,6 +174,8 @@
     background-color: $form-btn;
     line-height: 1.667em;
     border: 1px solid $form-btn;
+    padding-left: 34px;
+    padding-right: 34px;
 
     @media (min-width: $screen-md) {
       padding-top: 16px;
@@ -140,16 +196,44 @@
 
     &:hover {
       background-color: $form-btn-hover;
+
+      @media (min-width: $screen-md) {
+        background-color: $form-btn-hover;
+      }
+
+      @media (min-width: $screen-lg) {
+        background-color: $form-btn-hover;
+      }
     }
 
     &:active {
       color: $form-btn-focus;
       outline: none;
+
+      @media (min-width: $screen-md) {
+        color: $form-btn-focus;
+        outline: none;
+      }
+
+      @media (min-width: $screen-lg) {
+        color: $form-btn-focus;
+        outline: none;
+      }
     }
 
     &:disabled {
       background-color: $grey-lighter;
       outline: none;
+
+      @media (min-width: $screen-md) {
+        background-color: $grey-lighter;
+        outline: none;
+      }
+
+      @media (min-width: $screen-lg) {
+        background-color: $grey-lighter;
+        outline: none;
+      }
     }
   }
 

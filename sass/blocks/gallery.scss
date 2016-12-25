@@ -54,12 +54,12 @@
 
     @media (min-width: $screen-md) {
       margin-bottom: 10px;
-      padding-top: 53px;
+      padding-top: 28px;
       padding-bottom: 10px;
     }
 
     @media (min-width: $screen-lg) {
-      padding-top: 25px;
+      padding-top: 0;
       padding-bottom: 30px;
       margin-bottom: 17px;
       margin-top: 4px;
@@ -86,5 +86,24 @@
     @media (min-width: $screen-lg) {
       margin-bottom: 55px;
     }
+  }
+}
+
+
+.gallery__items-wrap .gallery-item--usual:nth-last-child(2) .like {
+
+  @media (min-width: $screen-md) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-top: 24px;
+  }
+}
+
+.gallery__items-wrap .gallery-item--usual:last-child .like {
+
+  @media (min-width: $screen-md) {
+    margin-top: 24px;
   }
 }
