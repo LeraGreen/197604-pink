@@ -165,11 +165,21 @@
       @media (min-width: $screen-md) {
         right: 37%;
         bottom: 20%;
+
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          right: 37%;
+          bottom: 60%;
+        }
       }
 
       @media (min-width: $screen-lg) {
         right: 42%;
         bottom: 20%;
+
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          right: 42%;
+          bottom: 60%;
+        }
       }
     }
   }
@@ -191,11 +201,21 @@
       @media (min-width: $screen-md) {
         right: 40%;
         bottom: 25%;
+
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          right: 40%;
+          bottom: 60%;
+        }
       }
 
       @media (min-width: $screen-lg) {
         right: 43%;
         bottom: 27%;
+
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          right: 43%;
+          bottom: 60%;
+        }
       }
     }
   }
