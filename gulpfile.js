@@ -21,18 +21,22 @@ gulp.task("style", function() {
     .pipe(sass())
     .pipe(postcss([
       autoprefixer({browsers: ["last 2 versions"]}),
-      mqpacker({sort: true}),
+      mqpacker({
+        sort: function (a, b) {
+          return a.localeCompare(b);
+        }
+      })
     ]))
     .pipe(gulp.dest("build/css"))
+    .pipe(server.stream())
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
-    .pipe(server.stream());
+    .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("serve", function() {
   server.init({
-    server: ".",
+    server: "./build",
     notify: false,
     open: true,
     cors: true,

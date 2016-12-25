@@ -8,21 +8,27 @@
   }
 
   &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $grey;
+    bottom: 201px;
+    left: 0;
 
-    @media (max-width: $screen-md - 1px) {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      background-color: $grey;
-      bottom: 201px;
-      left: 0;
+    @media (min-width: $screen-md) {
+      content: none;
     }
   }
 }
 
 .filter-form__img {
   background-color: #6c81a6;
+
+  @media (min-width: $screen-md) {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .filter-form__inner {
@@ -123,10 +129,7 @@
   }
 
   &--active .field-range {
-
-    @media (max-width: $screen-md) {
-      display: block;
-    }
+    display: block;
   }
 
   &:hover .filter-form__label-svg{

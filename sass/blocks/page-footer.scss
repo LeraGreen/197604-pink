@@ -12,11 +12,11 @@
     display: flex;
     justify-content: space-between;
     padding-top: 36px;
-    padding-bottom: 44px;
+    padding-bottom: 27px;
   }
 
   @media (min-width: $screen-lg) {
-    padding-top: 71px;;
+    padding-top: 71px;
     padding-bottom: 87px;
   }
 
@@ -28,6 +28,19 @@
   }
 }
 
+.page-footer__social {
+  margin-top: 35px;
+
+  @media (min-width: $screen-md) {
+    margin-left: -14px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-left: 10px;
+  }
+}
+
 .page-footer__container--page-photo {
 
   .page-footer__social {
@@ -36,10 +49,18 @@
     @media (min-width: $screen-md) {
       margin-top: 0;
     }
+
+    @media (min-width: $screen-lg) {
+      margin-left: 17px;
+    }
   }
 }
 
 .page-footer__container--page-form {
+
+  @media (min-width: $screen-lg) {
+    padding-top: 65px;
+  }
 
   .page-footer__social {
     margin-top: 23px;
@@ -58,10 +79,12 @@
   @media (min-width: $screen-md) {
     align-self: center;
     margin-top: 0;
+    margin-right: -5px;
   }
 
   @media (min-width: $screen-lg) {
     font-size: $font-size-big;
+    margin-right: 0;
   }
 }
 
@@ -70,6 +93,11 @@
   display: inline-block;
   vertical-align: middle;
   margin-top: 10px;
+  margin-left: 5px;
+
+  @media (min-width: $screen-lg) {
+    margin-left: 0;
+  }
 
   &:hover .page-footer__copyright-logo-svg {
     fill: $font-color-main;
@@ -78,24 +106,16 @@
   &:active .page-footer__copyright-logo-svg {
     fill: $grey-light;
   }
+
+  & svg {
+    width: 39px;
+    height: 44px;
+  }
 }
 
 
 .page-footer__copyright-logo-svg {
   fill: $main-color;
-}
-
-.page-footer__social {
-  margin-top: 35px;
-
-  @media (min-width: $screen-md) {
-    margin-left: -26px;
-    margin-top: 0;
-  }
-
-  @media (min-width: $screen-lg) {
-    margin-left: 17px;
-  }
 }
 
 .page-footer__copyright-logo-icon {

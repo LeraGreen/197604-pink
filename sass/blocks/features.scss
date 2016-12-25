@@ -66,6 +66,8 @@
   @media (min-width: $screen-lg) {
     font-size: $font-size-big;
     line-height: 1.667em;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -239,7 +241,7 @@
 
   @media (min-width: $screen-lg) {
     @include clearfix;
-    padding-top: 255px;
+    padding-top: 259px;
   }
 
   &::before {

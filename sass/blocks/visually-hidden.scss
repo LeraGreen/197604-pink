@@ -1,10 +1,22 @@
 .visually-hidden {
   display: none;
 
+  @media (min-width: $screen-md) {
+      display: none;
+    }
+
+  @media (min-width: $screen-lg) {
+      display: none;
+    }
+
 
   &--sm {
 
     @media (min-width: $screen-md) {
+      display: block;
+    }
+
+    @media (min-width: $screen-lg) {
       display: block;
     }
   }
@@ -14,10 +26,18 @@
     @media (min-width: $screen-md) {
       display: inline;
     }
+
+    @media (min-width: $screen-lg) {
+      display: inline;
+    }
   }
 
   &--lg {
     display: block;
+
+    @media (min-width: $screen-md) {
+      display: block;
+    }
 
     @media (min-width: $screen-lg) {
       display: none;
@@ -30,10 +50,18 @@
     @media (min-width: $screen-md) {
       display: none;
     }
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
   }
 
   &--sm-md {
     display: none;
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
 
     @media (min-width: $screen-lg) {
       display: block;
@@ -46,10 +74,31 @@
     @media (min-width: $screen-md) {
       display: none;
     }
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
   }
 
   &--sm-md-inline {
+    display: inline;
+
+
+    @media (min-width: $screen-md) {
+      display: inline;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &--lg-inline {
     display: none;
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
 
     @media (min-width: $screen-lg) {
       display: inline;

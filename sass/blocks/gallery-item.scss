@@ -78,11 +78,13 @@
 
     @media (min-width: $screen-md) {
       height: 509px;
+      width: 100%;
     }
 
     @media (min-width: $screen-lg) {
       height: 506px;
       overflow: hidden;
+      width: 100%;
     }
   }
 }
@@ -197,6 +199,7 @@
 }
 
 .gallery-item__photo-link {
+  font-family: 'object-fit: cover';
   cursor: pointer;
   display: inline-block;
   height: 180px;
@@ -223,28 +226,40 @@
   }
 }
 
-
 .gallery-item__comment-data {
   margin-bottom: 0;
 }
 
 .gallery-item__img {
 
+  @media (min-width: $screen-md) {
+    width: 300px;
+    height: 300px;
+    font-family: 'object-fit: cover';
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 300px;
+    height: 400px;
+    font-family: 'object-fit: cover';
+  }
+
   &--panorama {
     background-color: $panorama-color;
+    width: 100%;
 
     @media (min-width: $screen-md) {
       height: 509px;
       width: 100%;
       object-fit: cover;
-      font-family: 'object-fit: cover;'
+      font-family: 'object-fit: cover';
     }
 
     @media (min-width: $screen-lg) {
       height: 506px;
       width: 100vw;
       object-fit: cover;
-      font-family: 'object-fit: cover;'
+      font-family: 'object-fit: cover';
     }
   }
 }

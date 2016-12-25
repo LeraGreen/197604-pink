@@ -23,10 +23,11 @@
   }
 
   @media (min-width: $screen-lg) {
-    margin-top: 19px;
+    margin-top: 23px;
     padding-bottom: 15px;
     padding-left: 29px;
-    line-height: 1em;
+    line-height: 0.857em;
+    font-size: 21px;
   }
 
   &:hover {
@@ -55,11 +56,14 @@
     @media (min-width: $screen-md) {
       margin-bottom: 27px;
       width: 95%;
+      font-size: $font-size-big;
     }
 
     @media (min-width: $screen-lg) {
       margin-bottom: 0;
       flex-basis: 45%;
+      font-size: $font-size-big;
+      padding-left: 40px;
     }
 
     &:hover {
@@ -83,11 +87,14 @@
     @media (min-width: $screen-md) {
       margin-bottom: 27px;
       width: 95%;
+      font-size: $font-size-big;
     }
 
     @media (min-width: $screen-lg) {
       margin-bottom: 0;
       flex-basis: 45%;
+      font-size: $font-size-big;
+      padding-left: 43px;
     }
 
     &:hover {
@@ -112,6 +119,24 @@
     padding-bottom: 16px;
     background-color: $form-btn;
     line-height: 1.667em;
+    border: 1px solid $form-btn;
+
+    @media (min-width: $screen-md) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      background-color: $form-btn;
+      line-height: 1.667em;
+      border: 1px solid $form-btn;
+      font-size: $font-size-big;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      background-color: $form-btn;
+      line-height: 1.667em;
+      font-size: $font-size-big;
+    }
 
     &:hover {
       background-color: $form-btn-hover;
