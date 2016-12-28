@@ -22,6 +22,7 @@
   }
 
   &--sm-inline {
+    display: none;
 
     @media (min-width: $screen-md) {
       display: inline;
@@ -102,6 +103,20 @@
 
     @media (min-width: $screen-lg) {
       display: inline;
+    }
+  }
+
+  &--sm-inline-block {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: inline-block;
+      vertical-align: baseline;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: inline-block;
+      vertical-align: baseline;
     }
   }
 }

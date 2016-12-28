@@ -80,6 +80,7 @@
 
     @media (min-width: $screen-lg) {
       width: 313px;
+      height: 100%;
     }
   }
 }
@@ -109,6 +110,7 @@
 
     @media (min-width: $screen-lg) {
       width: 375px;
+      height: 62px;
     }
   }
 
@@ -207,6 +209,8 @@
   @media (min-width: $screen-md) {
     width: 499px;
     height: 193px;
+    margin-top: 24px;
+    padding-left: 16px;
   }
 
   @media (min-width: $screen-lg) {

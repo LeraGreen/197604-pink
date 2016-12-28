@@ -19,47 +19,26 @@
     width: 150px;
   }
 
-  &:hover .page-header-logo .page-header-logo__mobile {
+  &:hover:not(:active) .page-header-logo .page-header-logo__mobile {
     fill: $main-color;
   }
 
-  &:active .page-header-logo .page-header-logo__mobile {
-    fill: rgba(255, 255, 255, 0.3);
-  }
-
-  &:hover .page-header-logo .page-header-logo__tablet {
+  &:hover:not(:active) .page-header-logo .page-header-logo__tablet {
 
     @media (min-width: $screen-md) {
       fill: $main-color;
     }
   }
 
-  &:active .page-header-logo .page-header-logo__tablet {
-
-    @media (min-width: $screen-md) {
-      fill: rgba(255, 255, 255, 0.3);
-    }
-  }
-
-  &:hover .page-header-logo .page-header-logo__desktop {
+  &:hover:not(:active) .page-header-logo .page-header-logo__desktop {
 
     @media (min-width: $screen-lg) {
       fill: $main-color;
     }
   }
 
-  &:active .page-header-logo .page-header-logo__desktop {
-
-    @media (min-width: $screen-lg) {
-      fill: rgba(250, 250, 250, 0.3);
-    }
-  }
-
-  &:active .page-header-logo .page-header-logo__desktop .page-header-logo__stars{
-
-    @media (min-width: $screen-lg) {
-      fill: rgba(210, 40, 86, 0.3);
-    }
+  &:active .page-header-logo {
+    opacity: 0.3;
   }
 }
 

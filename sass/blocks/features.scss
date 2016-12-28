@@ -204,14 +204,15 @@
 .features__wrap {
   background-color: $bg-second;
   position: relative;
-  margin-top: 100px;
+  margin-top: 60px;
 
   @media (min-width: $screen-md) {
-    margin-top: 123px;
+    margin-top: 102px;
   }
 
   @media (min-width: $screen-lg) {
     margin-top: 0;
+    padding-top: 5px;
   }
 
   &:before {
@@ -221,8 +222,7 @@
     height: 100px;
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: cover;
+    background-size: 110% auto;
     top: -99px;
     left: 0;
     transform: rotate(180deg);
@@ -231,13 +231,13 @@
 
 .features__inner {
   @include container;
-  padding-top: 20px;
+  padding-top: 60px;
   position: relative;
   padding-bottom: 288px;
 
   @media (min-width: $screen-md) {
     @include clearfix;
-    padding-top: 0;
+    padding-top: 20px;
     padding-bottom: 5px;
   }
 
@@ -309,6 +309,6 @@
   }
 
   @media (min-width: $screen-lg) {
-    margin-bottom: 174px;
+    margin-bottom: 169px;
   }
 }

@@ -1,6 +1,7 @@
 .page-header-logo {
   width: 76px;
   height: 25px;
+  pointer-events: none;
 
   @media (min-width: $screen-md) {
     width: 150px;
