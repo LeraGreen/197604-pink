@@ -77,50 +77,30 @@
   line-height: 1.2em;
   margin-bottom: 0;
   margin-top: 0;
-  padding-top: 5px;
 
   @media (min-width: $screen-md) {
     font-size: $font-size-giant;
-    padding-top: 34px;
-  }
-
-  @media (min-width: $screen-lg) {
-    padding-top: 29px;
   }
 
   &--page-photo {
-    padding-top: 14px;
-
-    @media (min-width: $screen-md) {
-      padding-top: 34px;
-    }
 
     @media (min-width: $screen-lg) {
-      padding-top: 30px;
+      padding-left: 179px;
+      padding-right: 179px;
     }
   }
 }
 
 .promo__inner {
   @include container;
-  padding-top: 16px;
+  padding-top: 30px;
 
   @media (min-width: $screen-md) {
-    padding-top: 35px;
+    padding-top: 69px;
+    padding-bottom: 15px;
   }
 
   @media (min-width: $screen-lg) {
-    padding-top: 29px;
-    padding-left: 150px;
-    padding-right: 150px;
-  }
-
-  &--form-page {
-    padding-top: 25px;
-
-    @media (min-width: $screen-lg) {
-      padding-left: 0;
-      padding-right: 0
-    }
+    padding-top: 58px;
   }
 }

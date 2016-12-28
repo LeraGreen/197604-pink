@@ -35,6 +35,7 @@
 
     @media (min-width: $screen-lg) {
       padding-top: 100px;
+      padding-bottom: 60px;
     }
   }
 
@@ -42,6 +43,14 @@
 
     @media (min-width: $screen-lg) {
       padding-top: 65px;
+      padding-bottom: 61px;
+    }
+  }
+
+  &--main-page {
+
+    @media (min-width: $screen-lg) {
+      padding-bottom: 60px;
     }
   }
 }
@@ -117,6 +126,7 @@
   & svg {
     width: 39px;
     height: 44px;
+    pointer-events: none;
   }
 }
 

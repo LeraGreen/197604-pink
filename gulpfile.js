@@ -14,6 +14,7 @@ var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
 var run = require("run-sequence");
 var del = require("del");
+var ghPages = require("gulp-gh-pages");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -80,8 +81,14 @@ gulp.task("copy", function() {
       base: "."
     })
     .pipe(gulp.dest("build"))
-})
+});
 
 gulp.task("del", function() {
   return del("build");
-})
+});
+
+gulp.task("deploy", function() {
+  return gulp.src("./build/**/*")
+    .pipe(ghPages())
+    console.log("https://leragreen.github.io/197604-pink/");
+});

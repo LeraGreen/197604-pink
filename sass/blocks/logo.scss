@@ -1,31 +1,25 @@
 .logo {
   margin: 0 auto;
+  display: inline-block;
+  vertical-align: top;
 
   @media (min-width: $screen-md) {
     margin: 0;
   }
 
-  &:hover .logo__mobile-tablet {
+  &:hover:not(:active) .logo__mobile-tablet {
     fill: $main-color;
   }
 
-  &:active .logo__mobile-tablet {
-    fill: $font-color-main;
-    opacity: 0.3;
-  }
-
-  &:hover .logo__desktop {
+  &:hover:not(:active) .logo__desktop {
 
     @media (min-width: $screen-lg) {
       fill: $main-color;
     }
   }
 
-  &:active .logo__desktop {
-    @media (min-width: $screen-lg) {
-      fill: $font-color-main;
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -43,4 +37,8 @@
   @media (min-width: $screen-lg) {
     display: none;
   }
+}
+
+.logo__svg {
+  pointer-events: none;
 }

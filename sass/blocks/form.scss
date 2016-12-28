@@ -75,9 +75,6 @@
     @media (min-width: $screen-md) {
       margin-top: 56px;
     }
-
-    @media (min-width: $screen-lg) {
-    }
   }
 
   &--achieves {
@@ -139,43 +136,30 @@
 
 .form__step--platforms  .form__step-title {
 
-  @media (min-width: $screen-md) {
-    position: absolute;
-    top: -12px;
-    left: 20%;
-    background-color: white;
-  }
-
   @media (min-width: $screen-lg) {
-    left: 8%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
 .form__step--achieves  .form__step-title {
 
   @media (min-width: $screen-md) {
-    position: absolute;
-    top: -12px;
-    left: 15%;
-    background-color: white;
+    transform: translate(-32px, -15px);
   }
 
   @media (min-width: $screen-lg) {
-    left: 27%;
+    transform: translate(-30px, -12px);
   }
 }
 
-.form__step--reviews  .form__step-title {
+.form__step--data-contacts  .form__step-title {
 
   @media (min-width: $screen-md) {
-    position: absolute;
-    top: -12px;
-    left: 30%;
-    background-color: white;
-  }
-
-  @media (min-width: $screen-lg) {
-    left: 37%;
+    background-color: $bg-main;
+    transform: translateY(-21px);
+    display: inline-block;
+    vertical-align: baseline;
   }
 }
 
@@ -199,6 +183,7 @@
     @media (min-width: $screen-lg) {
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
     }
   }
 
@@ -207,9 +192,11 @@
     padding-bottom: 46px;
 
     @media (min-width: $screen-md) {
-      padding-top: 16px;
+      padding-top: 0;
       padding-left: 58px;
+      padding-right: 0;
       padding-bottom: 52px;
+      text-align: center;
     }
 
     @media (min-width: $screen-lg) {
@@ -243,13 +230,6 @@
       padding-top: 0;
       padding-bottom: 0;
     }
-
-    .field-text:last-child {
-
-      @media (min-width: $screen-lg) {
-        margin-bottom: 0;
-      }
-    }
   }
 
   &--platforms {
@@ -257,13 +237,16 @@
     padding-bottom: 48px;
 
     @media (min-width: $screen-md) {
-      padding-top: 19px;
+      padding-top: 0;
       padding-left: 58px;
       padding-bottom: 58px;
+      padding-right: 58px;
+      text-align: center;
     }
 
     @media (min-width: $screen-lg) {
-      padding-left: 79px;
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 
@@ -271,14 +254,16 @@
     padding-top: 37px;
 
     @media (min-width: $screen-md) {
-      padding-top: 31px;
+      padding-top: 0;
       padding-left: 58px;
-      padding-bottom: 49px;
+      padding-bottom: 46px;
+      padding-right: 58px;
+      text-align: center;
     }
 
     @media (min-width: $screen-lg) {
       padding-bottom: 38px;
-      padding-top: 26px;
+      padding-top: 0;
       padding-bottom: 41px;
     }
   }
@@ -293,21 +278,23 @@
       padding-left: 0;
       padding-right: 0;
       align-items: baseline;
-      padding-top: 9px;
+      padding-top: 11px;
     }
 
     @media (min-width: $screen-lg) {
       align-items: flex-end;
-      padding-top: 16px;
+      padding-top: 14px;
     }
   }
 
   &--data-contacts {
 
     @media (min-width: $screen-md) {
-      padding-top: 26px;
+      padding-top: 22px;
       padding-left: 59px;
-      padding-bottom: 8px;
+      padding-bottom: 14px;
+      padding-right: 59px;
+      text-align: center;
     }
 
     @media (min-width: $screen-lg) {
@@ -315,17 +302,13 @@
       padding-top: 17px;
       padding-bottom: 15px;
     }
+  }
+}
 
-    .field-text {
+.form__step-inner--data-name  .field-text:last-child {
 
-      @media (min-width: $screen-md) {
-        margin-bottom: 24px;
-      }
-
-      @media (min-width: $screen-lg) {
-        margin-bottom: 10px;
-      }
-    }
+  @media (min-width: $screen-lg) {
+    margin-bottom: 0;
   }
 }
 
@@ -344,6 +327,7 @@
 
   @media (min-width: $screen-md) {
     margin-bottom: 19px;
+    text-align: left;
   }
 
   @media (min-width: $screen-lg) {
@@ -367,6 +351,17 @@
   @media (min-width: $screen-md) {
     padding-left: 22px;
     padding-right: 22px;
+    background-color: $bg-main;
+    transform: translateY(-12px);
+    display: inline-block;
+    vertical-align: baseline;
+  }
+}
+
+.form__step--data-contacts .form__step-title--legend {
+
+  @media (min-width: $screen-md) {
+    transform: translateY(0);
   }
 }
 
@@ -430,6 +425,11 @@
     margin-bottom: 0;
   }
 
+  @media (min-width: $screen-md) {
+    text-align: left;
+    margin-top: 34px;
+  }
+
   @media (min-width: $screen-lg) {
     display: flex;
     flex-wrap: wrap;
@@ -445,6 +445,15 @@
 
   .field-radio:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $screen-md) {
+    text-align: left;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-top: 37px;
+    padding-left: 49px;
   }
 }
 
