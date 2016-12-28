@@ -1,7 +1,7 @@
 .gallery-item {
-  margin-bottom: 20px;
 
   &--panorama {
+    margin-bottom: 21px;
 
     @media (min-width: $screen-md) {
       margin-bottom: 50px;
@@ -10,6 +10,7 @@
 
   &--usual {
     background-color: $bg-second;
+    margin-bottom: 22px;
 
     @media (min-width: $screen-md) {
       display: flex;
@@ -17,41 +18,42 @@
       width: 300px;
       margin-left: 0;
       margin-right: 0;
+      margin-bottom: 20px;
     }
 
     @media (min-width: $screen-lg) {
       margin-bottom: 55px;
     }
+  }
+}
 
-    .gallery-item__comment {
-      padding-bottom: 4px;
-      padding-top: 15px;
+.gallery-item--usual  .gallery-item__comment {
+  padding-bottom: 5px;
+  padding-top: 15px;
 
-      @media (min-width: $screen-md) {
-        padding-bottom: 10px;
-        padding-top: 22px;
-        padding-left: 27px;
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-      }
-    }
+  @media (min-width: $screen-md) {
+    padding-bottom: 10px;
+    padding-top: 22px;
+    padding-left: 27px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
-    .like {
+.gallery-item--usual  .like {
 
-      @media (min-width: $screen-md) {
-        margin-top: auto;
-        padding-left: 0;
-      }
+  @media (min-width: $screen-md) {
+    margin-top: auto;
+    padding-left: 0;
+  }
 
-      &:before {
+  &:before {
 
-        @media (min-width: $screen-md) {
-          right: 21px;
-          left: auto;
-          bottom: 18px;
-        }
-      }
+    @media (min-width: $screen-md) {
+      right: 21px;
+      left: auto;
+      bottom: 18px;
     }
   }
 }
@@ -114,7 +116,6 @@
     top: 55px;
     right: 9px;
   }
-
 }
 
 .gallery-item__comment-time {
@@ -152,47 +153,47 @@
     @media (min-width: $screen-lg) {
       padding-bottom: 18px;
     }
+  }
+}
 
-    .gallery-item__comment-data {
+.gallery-item__comment--panorama  .gallery-item__comment-data {
 
-      @media (min-width: $screen-md) {
-        order: 1;
-      }
-    }
+  @media (min-width: $screen-md) {
+     order: 1;
+  }
+}
 
-    .gallery-item__comment-text {
+.gallery-item__comment--panorama  .gallery-item__comment-text {
 
-      @media (min-width: $screen-md) {
-        order: 3;
-        width: 100%;
-      }
+  @media (min-width: $screen-md) {
+    order: 3;
+    width: 100%;
+  }
 
-      @media (min-width: $screen-lg) {
-        margin-bottom: 5px;
-      }
-    }
+  @media (min-width: $screen-lg) {
+    margin-bottom: 5px;
+  }
+}
 
-    .like {
+.gallery-item__comment--panorama  .like {
 
-      @media (min-width: $screen-md) {
-        order: 2;
-        padding-left: 0;
-        padding-right: 52px;
-      }
+  @media (min-width: $screen-md) {
+    order: 2;
+    padding-left: 0;
+    padding-right: 52px;
+  }
 
-      &:before {
+  &:before {
 
-        @media (min-width: $screen-md) {
-          left: auto;
-          right: 20px;
-          bottom: 6px;
-        }
-      }
+    @media (min-width: $screen-md) {
+      left: auto;
+      right: 20px;
+      bottom: 6px;
     }
   }
 }
 
-.gallery-item__comment--panorama .like__text {
+.gallery-item__comment--panorama  .like__text {
 
   @media (min-width: $screen-md) {
     margin-bottom: 0;
@@ -210,9 +211,10 @@
 }
 
 .gallery-item__photo-link {
-  font-family: 'object-fit: cover';
+  font-family: "object-fit: cover";
   cursor: pointer;
   display: inline-block;
+  vertical-align: top;
   height: 180px;
 
   @media (min-width: $screen-md) {
@@ -246,13 +248,13 @@
   @media (min-width: $screen-md) {
     width: 300px;
     height: 300px;
-    font-family: 'object-fit: cover';
+    font-family: "object-fit: cover";
   }
 
   @media (min-width: $screen-lg) {
     width: 300px;
     height: 400px;
-    font-family: 'object-fit: cover';
+    font-family: "object-fit: cover";
   }
 
   &--panorama {
@@ -263,14 +265,14 @@
       height: 509px;
       width: 100%;
       object-fit: cover;
-      font-family: 'object-fit: cover';
+      font-family: "object-fit: cover";
     }
 
     @media (min-width: $screen-lg) {
       height: 506px;
       width: 100vw;
       object-fit: cover;
-      font-family: 'object-fit: cover';
+      font-family: "object-fit: cover";
     }
   }
 }

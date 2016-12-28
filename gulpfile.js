@@ -10,9 +10,9 @@ var mqpacker = require("css-mqpacker");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
-var svgstore = require('gulp-svgstore');
-var svgmin = require('gulp-svgmin');
-var run = require('run-sequence');
+var svgstore = require("gulp-svgstore");
+var svgmin = require("gulp-svgmin");
+var run = require("run-sequence");
 var del = require("del");
 
 gulp.task("style", function() {

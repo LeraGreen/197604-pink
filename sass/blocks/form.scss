@@ -329,7 +329,7 @@
   }
 }
 
-.form__step-inner--data-name .field-text {
+.form__step-inner--data-name  .field-text {
 
   @media (min-width: $screen-md) {
     margin-bottom: 36px;
@@ -340,7 +340,7 @@
   }
 }
 
-.form__step-inner--data-contacts .field-text {
+.form__step-inner--data-contacts  .field-text {
 
   @media (min-width: $screen-md) {
     margin-bottom: 19px;
@@ -429,7 +429,6 @@
   .field-checkbox:last-child {
     margin-bottom: 0;
   }
-
 
   @media (min-width: $screen-lg) {
     display: flex;

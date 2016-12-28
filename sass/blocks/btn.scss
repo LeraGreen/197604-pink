@@ -1,8 +1,8 @@
 .btn {
   display: inline-block;
+  vertical-align: middle;
   text-decoration: none;
   text-align: center;
-  vertical-align: middle;
   color: $font-color-second;
   font-size: $font-size-big;
   font-weight: $bold;
@@ -17,6 +17,7 @@
   touch-action: manipulation;
   width: 100%;
   white-space: pre-wrap;
+  outline: none;
 
   @media (min-width: $screen-md) {
     background-color: transparent;
@@ -176,6 +177,7 @@
     border: 1px solid $form-btn;
     padding-left: 34px;
     padding-right: 34px;
+    color: $font-color-second;
 
     @media (min-width: $screen-md) {
       padding-top: 16px;
@@ -196,13 +198,16 @@
 
     &:hover {
       background-color: $form-btn-hover;
+      color: $font-color-second;
 
       @media (min-width: $screen-md) {
         background-color: $form-btn-hover;
+        color: $font-color-second;
       }
 
       @media (min-width: $screen-lg) {
         background-color: $form-btn-hover;
+        color: $font-color-second;
       }
     }
 
@@ -224,15 +229,18 @@
     &:disabled {
       background-color: $grey-lighter;
       outline: none;
+      border-color: $grey-lighter;
 
       @media (min-width: $screen-md) {
         background-color: $grey-lighter;
         outline: none;
+        border-color: $grey-lighter;
       }
 
       @media (min-width: $screen-lg) {
         background-color: $grey-lighter;
         outline: none;
+        border-color: $grey-lighter;
       }
     }
   }
