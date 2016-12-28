@@ -1,9 +1,9 @@
 .field-range {
-    display: none;
-    width: 100%;
-    position: absolute;
-    bottom: 12px;
-    left: 0;
+  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: 12px;
+  left: 0;
 
   @media (min-width: $screen-md) {
     display: block;
@@ -17,6 +17,10 @@
 
 .field-range__input-wrap {
   position: relative;
+
+  @media (min-width: $screen-lg) {
+    width: 293px;
+  }
 }
 
 

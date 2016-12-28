@@ -40,49 +40,49 @@
   position: relative;
   overflow: hidden;
 
-  &:before {
-    content: '';
-    position: absolute;
-    width: 120px;
-    height: 30px;
-    background-color: $main-color;
-    transform: rotate(-45deg);
-    bottom: 55px;
-    left: -37px;
-
-    @media (min-width: $screen-md) {
-      bottom: 44px;
-    }
-
-    @media (min-width: $screen-lg) {
-      bottom: 54px;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 30px;
+      background-color: $main-color;
+      transform: rotate(-45deg);
+      bottom: 55px;
       left: -37px;
-    }
-  }
 
-  &:after {
-    content: 'хит';
-    position: absolute;
-    text-transform: uppercase;
-    font-family: $font-family;
-    font-size: $font-size;
-    color: $font-color-second;
-    line-height: 2.143em;
-    bottom: 57px;
-    left: 9px;
-    transform: rotate(-45deg);
+      @media (min-width: $screen-md) {
+        bottom: 44px;
+      }
 
-    @media (min-width: $screen-md) {
-      bottom: 45px;
-      left: 6px;
+      @media (min-width: $screen-lg) {
+        bottom: 54px;
+        left: -37px;
+      }
     }
 
-    @media (min-width: $screen-lg) {
+    &:after {
+      content: "хит";
+      position: absolute;
+      text-transform: uppercase;
+      font-family: $font-family;
+      font-size: $font-size;
+      color: $font-color-second;
+      line-height: 2.143em;
       bottom: 57px;
-      left: 11px;
+      left: 9px;
+      transform: rotate(-45deg);
+
+      @media (min-width: $screen-md) {
+        bottom: 45px;
+        left: 6px;
+      }
+
+      @media (min-width: $screen-lg) {
+        bottom: 57px;
+        left: 11px;
+      }
     }
   }
-}
 }
 
 .tariffs-table__item-title {
@@ -153,11 +153,11 @@
   position: relative;
 
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       width: 31px;
       height: 27px;
-      background-image: url('../img/icon-yes.svg');
+      background-image: url("../img/icon-yes.svg");
       background-repeat: no-repeat;
       right: 16px;
       background-size: contain;
@@ -188,11 +188,11 @@
   position: relative;
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       width: 27px;
       height: 27px;
-      background-image: url('../img/icon-no.svg');
+      background-image: url("../img/icon-no.svg");
       background-repeat: no-repeat;
       right: 19px;
       bottom: 17px;

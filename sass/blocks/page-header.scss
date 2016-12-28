@@ -13,6 +13,7 @@
 
 .page-header__logo {
   display: inline-block;
+  vertical-align: bottom;
 
   @media (min-width: $screen-lg) {
     width: 150px;
@@ -50,8 +51,14 @@
   &:active .page-header-logo .page-header-logo__desktop {
 
     @media (min-width: $screen-lg) {
-      fill: $bg-main;
-      opacity: 0.3;
+      fill: rgba(250, 250, 250, 0.3);
+    }
+  }
+
+  &:active .page-header-logo .page-header-logo__desktop .page-header-logo__stars{
+
+    @media (min-width: $screen-lg) {
+      fill: rgba(210, 40, 86, 0.3);
     }
   }
 }
@@ -101,8 +108,7 @@
 .page-header__menu-toggler--open:active span,
 .page-header__menu-toggler--open:active span:before,
 .page-header__menu-toggler--open:active span:after {
-  background-color: $main-color;
-  opacity: 0.3;
+  background-color: rgba(210, 40, 86, 0.3);
 }
 
 .page-header__menu-toggler--close:hover span {
@@ -118,8 +124,7 @@
 }
 .page-header__menu-toggler--close:active span:before,
 .page-header__menu-toggler--close:active span:after {
-  background-color: $main-color;
-  opacity: 0.3;
+  background-color: rgba(210, 40, 86, 0.3);
 }
 
 .page-header__menu-toggler span {
@@ -137,7 +142,7 @@
     background-color: $bg-main;
     position: absolute;
     right: 0;
-    content: '';
+    content: "";
     transform-origin: 50% 50%;
   }
 

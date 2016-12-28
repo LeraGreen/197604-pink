@@ -22,17 +22,17 @@
   }
 
   @media (min-width: $screen-lg) {
-    padding-bottom: 89px;
+    padding-bottom: 85px;
   }
 
   &:before {
 
     @media (min-width: $screen-md) {
-      content: '';
+      content: "";
       position: absolute;
       width: 300px;
       height: 300px;
-      background-image: url('../img/icon-timer.svg');
+      background-image: url("../img/icon-timer.svg");
       background-repeat: no-repeat;
       background-position: left center;
       background-size: 242px 274px;
@@ -53,7 +53,7 @@
   &:after {
 
     @media (min-width: $screen-md) {
-      content: '24';
+      content: "24";
       position: absolute;
       font-size: 96px;
       font-weight: $bold;
@@ -77,13 +77,14 @@
     float: right;
     width: 50%;
     text-align: left;
-    margin-top: 41px;
+    padding-top: 39px;
     padding-right: 14px;
     padding-bottom: 28px;
   }
 
   @media (min-width: $screen-lg) {
     width: 61%;
+    padding-top: 40px;
   }
 }
 
@@ -94,15 +95,16 @@
     font-size: $font-size-biggest;
     line-height: 1.200em;
     display: inline-block;
+    vertical-align: text-top;
     margin-bottom: 8px;
+  }
 
-    @media (min-width: $screen-lg) {
-      line-height: 1em;
-    }
+  @media (min-width: $screen-lg) {
+    line-height: 1em;
   }
 }
 
-.advert-promo__title br {
+.advert-promo__title  br {
 
   @media (min-width: $screen-lg) {
     display: none;
@@ -137,6 +139,7 @@
     font-size: $font-size-big;
     line-height: 1.667em;
     display: inline-block;
+    vertical-align: text-bottom;
     margin-top: 20px;
   }
 }
