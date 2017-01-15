@@ -1,5 +1,8 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
+
+Ссылка на GitHub Pages: https://leragreen.github.io/197604-pink/index.html
+
 * Студент: [Валерия Зелёная](https://up.htmlacademy.ru/adaptive/9/user/197604).
 * Наставник: [Николай Громов](https://htmlacademy.ru/profile/id6170).
 
